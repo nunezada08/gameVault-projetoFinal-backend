@@ -25,3 +25,16 @@ model Jogo {
 
   @@map("jogos")       
 }
+
+model Console {
+  id              Int   @id   @default(autoincrement())
+  nome            String
+  nota            Decimal @db.Decimal(10,2)
+  anoLancamento   Int
+  preco           Decimal @db.Decimal(10, 2)
+  descricao       String
+  crestedAt       DateTime    @default(now())
+  updatedAt       DateTime    @updatedAt
+
+  @@map("consoles")       
+}
