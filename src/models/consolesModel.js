@@ -31,3 +31,16 @@ export const deleteConsole = async (id) => {
     where: { id: Number(id) },
   })
 }
+
+ export const update = async (id, data) => {
+    return await prisma.console.update({
+        where: { id: Number(id) },
+        data: {
+            ...(data.nome && { nome: data.nome }),
+            ...(data.nota && { nota: Number(data.nota)}),
+            ...(data.anoLancamento && { anoLancamento: Number(data.anoLancamento)}),
+            ...(data.preco && { preco: Number(data.preco)}),
+            ...(data.descricao && { descricao: data.descricao })
+        }
+    })
+  }
