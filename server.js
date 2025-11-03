@@ -3,6 +3,7 @@ import dotenv from "dotenv";
 import jogosRoute from './src/routes/jogosRoute.js';
 import consolesRoute from './src/routes/consolesRoute.js'
 
+
 const app = express();
 app.use(express.json());
 
