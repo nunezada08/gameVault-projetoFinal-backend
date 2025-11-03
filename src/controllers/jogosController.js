@@ -27,3 +27,27 @@ export const listarTodosJogos = async (req, res) => {
         });
     }
 }
+
+export const listarUm = async (req,res) => {
+    try{
+        const id = req.params.id;
+        const jogo = await jogosModel.findById(id);
+
+        if (!jogo) {
+            return res.status(404).json({
+                erro: 'Jogo não encontrado!',
+                mensagem: 'Verifique se o id do jogo existe',
+                id:id
+            })
+        }
+        res.status(200).json({
+            mensagem: 'Jogo encontrado',
+            jogo
+        })
+    }catch (error) {
+        res.status(500).json({
+            erro: 'Erro ao buscar jogo por id',
+            detalhes: error.message
+        })
+    }
+}
