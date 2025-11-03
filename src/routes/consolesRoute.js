@@ -7,6 +7,6 @@ router.get("/", consolesController.listarTodosConsoles);
 router.get("/:id", consolesController.ConsoleById);
 router.post("/", consolesController.criarConsole);
 router.delete("/:id", consolesController.apagar);
-
+router.put("/:id", consolesController.atualizarConsole)
 
 export default router;

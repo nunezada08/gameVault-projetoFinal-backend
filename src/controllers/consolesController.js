@@ -105,3 +105,32 @@ export const apagar = async (req, res) => {
     })
   }
 }
+
+export const atualizarConsole = async (req, res) => {
+    try {
+        const id = parseInt(req.params.id);
+        const dados = req.body;
+
+        const consoleExiste = await consolesModel.findById(id);
+
+        if (!consoleExiste) {
+            return res.status(404).json({
+                erro: 'console não encontrado com esse id',
+                id: id
+            })
+        }
+
+        const consoleAtualizado = await consolesModel.update(id, dados);
+
+        res.status(200).json({
+            mensagem: 'console atualizado com sucesso',
+            console: consoleAtualizado
+        })
+
+    } catch (error) {
+        res.status(500).json({
+            erro: 'Erro ao atualizar consoles',
+            detalhes: error.message
+        })
+    }
+}
