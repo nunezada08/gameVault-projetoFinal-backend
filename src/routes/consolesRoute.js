@@ -4,14 +4,9 @@ import * as consolesController from '../controllers/consolesController.js';
 const router = Router()
 
 router.get("/", consolesController.listarTodosConsoles);
-
-import * as consolesControllerController from '../controllers/consolesController.js';
-
-const router = Router()
-
-router.get("/:id", consolesController.listarUm);
+router.get("/:id", consolesController.ConsoleById);
 router.post("/", consolesController.criarConsole);
 router.delete("/:id", consolesController.apagar);
-router.put("/:id", consolesController.atualizarJogo);
+
 
 export default router;
