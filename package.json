@@ -7,10 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "cls && nodemon server.js",
     "studio": "npx prisma studio",
-    "seed": "node prisma/seed.js"
+    "seed": "node prisma/seed.mjs"
   },
   "prisma": {
-    "seed": "node prisma/seed.js"
+    "seed": "node prisma/seed.mjs"
   },
   "keywords": [
     "SENAI",

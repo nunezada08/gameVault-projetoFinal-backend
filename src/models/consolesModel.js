@@ -1,8 +1,10 @@
 
+import { PrismaClient } from "@prisma/client";
+const prisma = new PrismaClient();
 
-
-
-
+export const findAll = async () => {
+    return await prisma.console.findMany({
+        orderBy: { nome: 'asc'}
 
 
 export const findById = async (id) => {
@@ -24,51 +26,6 @@ export const create = async (data) => {
     })
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 export const deleteConsole = async (id) => {
     return await prisma.console.delete({

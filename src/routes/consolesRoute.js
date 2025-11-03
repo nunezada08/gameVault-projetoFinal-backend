@@ -1,8 +1,13 @@
 import { Router } from 'express';
-import * as consolesControllerController from '../controllers/consolesController.js';
+import * as consolesController from '../controllers/consolesController.js';
 
 const router = Router()
 
+router.get("/", consolesController.listarTodosConsoles);
+
+import * as consolesControllerController from '../controllers/consolesController.js';
+
+const router = Router()
 
 router.get("/:id", consolesController.listarUm);
 router.post("/", consolesController.criarConsole);

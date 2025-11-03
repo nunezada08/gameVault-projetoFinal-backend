@@ -1,132 +1,163 @@
+// prisma/seedJogos.js (Ou .mjs)
+// Este arquivo contém a lógica de seed para a tabela 'jogo'
+// e exporta a função para ser chamada pelo arquivo mestre (prisma/seed.mjs).
+
 import { PrismaClient } from '@prisma/client';
+
+// A instância do PrismaClient é mantida aqui, mas será passada como parâmetro
+// se você for usar um arquivo mestre. Para o propósito de teste unitário ou 
+// execução manual, ela é mantida.
 const prisma = new PrismaClient();
 
 const famousGames = [
-  { nome: "Super Mario Bros.", desenvolvedor: "Nintendo", genero: "Plataforma", anoLancamento: 1985, preco: 109.95, descricao: "O jogo que salvou a indústria e definiu o gênero plataforma." },
-  { nome: "The Legend of Zelda: Ocarina of Time", desenvolvedor: "Nintendo", genero: "Ação-Aventura", anoLancamento: 1998, preco: 274.95, descricao: "Considerado por muitos o melhor jogo de todos os tempos. Revolucionou o 3D." },
-  { nome: "Tetris", desenvolvedor: "Alexey Pajitnov", genero: "Quebra-Cabeça", anoLancamento: 1984, preco: 27.45, descricao: "O clássico viciante de encaixar blocos." },
-  { nome: "Doom", desenvolvedor: "id Software", genero: "FPS", anoLancamento: 1993, preco: 54.95, descricao: "Popularizou o gênero FPS e o multiplayer em rede." },
-  { nome: "Pac-Man", desenvolvedor: "Namco", genero: "Arcade/Labirinto", anoLancamento: 1980, preco: 27.45, descricao: "Um dos jogos de arcade mais famosos de todos os tempos." },
-  { nome: "Final Fantasy VII", desenvolvedor: "Square", genero: "JRPG", anoLancamento: 1997, preco: 219.95, descricao: "Elevou o JRPG a um novo patamar de popularidade e narrativa cinematográfica." },
-  { nome: "Half-Life 2", desenvolvedor: "Valve", genero: "FPS", anoLancamento: 2004, preco: 109.95, descricao: "Um marco em física e narrativa nos jogos de tiro em primeira pessoa." },
-  { nome: "Minecraft", desenvolvedor: "Mojang", genero: "Sandbox/Sobrevivência", anoLancamento: 2011, preco: 164.95, descricao: "Um fenômeno global que permite construir e explorar mundos infinitos de blocos." },
-  { nome: "World of Warcraft", desenvolvedor: "Blizzard Entertainment", genero: "MMORPG", anoLancamento: 2004, preco: 82.50, descricao: "O MMORPG mais influente e duradouro da história." },
-  { nome: "Grand Theft Auto V", desenvolvedor: "Rockstar Games", genero: "Ação-Aventura", anoLancamento: 2013, preco: 329.95, descricao: "Um sucesso de vendas e crítica com um vasto mundo aberto em Los Santos." },
-  { nome: "The Witcher 3: Wild Hunt", desenvolvedor: "CD Projekt Red", genero: "RPG", anoLancamento: 2015, preco: 164.95, descricao: "Um RPG de mundo aberto com narrativa profunda e personagens marcantes." },
-  { nome: "Red Dead Redemption 2", desenvolvedor: "Rockstar Games", genero: "Ação-Aventura", anoLancamento: 2018, preco: 329.95, descricao: "Um épico faroeste com atenção impecável aos detalhes." },
-  { nome: "God of War", desenvolvedor: "Santa Monica Studio", genero: "Ação", anoLancamento: 2018, preco: 274.95, descricao: "Kratos retorna com seu filho Atreus em uma jornada nórdica emocionante." },
-  { nome: "The Last of Us", desenvolvedor: "Naughty Dog", genero: "Ação-Aventura", anoLancamento: 2013, preco: 219.95, descricao: "Uma história tocante de sobrevivência e laços humanos em um mundo devastado." },
-  { nome: "Dark Souls", desenvolvedor: "FromSoftware", genero: "RPG de Ação", anoLancamento: 2011, preco: 164.95, descricao: "Desafiador, recompensador e revolucionário em design de mundos interconectados." },
-  { nome: "Overwatch", desenvolvedor: "Blizzard Entertainment", genero: "FPS", anoLancamento: 2016, preco: 164.95, descricao: "Um shooter em equipe vibrante que redefiniu o gênero." },
-  { nome: "Fortnite", desenvolvedor: "Epic Games", genero: "Battle Royale", anoLancamento: 2017, preco: 0.00, descricao: "Um fenômeno cultural gratuito com milhões de jogadores." },
-  { nome: "Among Us", desenvolvedor: "InnerSloth", genero: "Party/Social Deduction", anoLancamento: 2018, preco: 16.45, descricao: "Descubra o impostor em partidas divertidas e caóticas." },
-  { nome: "Cyberpunk 2077", desenvolvedor: "CD Projekt Red", genero: "RPG de Ação", anoLancamento: 2020, preco: 274.95, descricao: "Um RPG futurista em mundo aberto com narrativa intensa." },
-  { nome: "The Legend of Zelda: Breath of the Wild", desenvolvedor: "Nintendo", genero: "Ação-Aventura", anoLancamento: 2017, preco: 329.95, descricao: "Exploração e liberdade redefinem a franquia Zelda." },
-  { nome: "Hades", desenvolvedor: "Supergiant Games", genero: "Roguelike", anoLancamento: 2020, preco: 109.95, descricao: "Um roguelike aclamado pela crítica com narrativa dinâmica e gameplay viciante." },
-  { nome: "Elden Ring", desenvolvedor: "FromSoftware", genero: "RPG de Ação", anoLancamento: 2022, preco: 329.95, descricao: "Um vasto mundo aberto criado por Hidetaka Miyazaki e George R. R. Martin." },
-  { nome: "Persona 5", desenvolvedor: "Atlus", genero: "JRPG", anoLancamento: 2016, preco: 219.95, descricao: "Um RPG estiloso e profundo sobre rebeldia e identidade." },
-  { nome: "Metal Gear Solid", desenvolvedor: "Konami", genero: "Stealth/Ação", anoLancamento: 1998, preco: 164.95, descricao: "O título que popularizou o gênero stealth nos videogames." },
-  { nome: "Street Fighter II", desenvolvedor: "Capcom", genero: "Luta", anoLancamento: 1991, preco: 54.95, descricao: "Revolucionou os jogos de luta e criou ícones como Ryu e Chun-Li." },
-  { nome: "Resident Evil 4", desenvolvedor: "Capcom", genero: "Survival Horror", anoLancamento: 2005, preco: 164.95, descricao: "Mistura perfeita de ação e terror, reinventando a franquia." },
-  { nome: "Skyrim", desenvolvedor: "Bethesda", genero: "RPG", anoLancamento: 2011, preco: 164.95, descricao: "Um dos RPGs mais jogados e modificados de todos os tempos." },
-  { nome: "Halo: Combat Evolved", desenvolvedor: "Bungie", genero: "FPS", anoLancamento: 2001, preco: 109.95, descricao: "O título que definiu o padrão de FPS em consoles." },
-  { nome: "Portal 2", desenvolvedor: "Valve", genero: "Puzzle/Plataforma", anoLancamento: 2011, preco: 109.95, descricao: "Um dos jogos de quebra-cabeça mais criativos e engraçados já feitos." },
-  { nome: "Assassin’s Creed II", desenvolvedor: "Ubisoft", genero: "Ação-Aventura", anoLancamento: 2009, preco: 109.95, descricao: "A continuação que consolidou a série e apresentou Ezio Auditore." },
-  { nome: "Uncharted 4: A Thief’s End", desenvolvedor: "Naughty Dog", genero: "Ação-Aventura", anoLancamento: 2016, preco: 274.95, descricao: "O encerramento épico da história de Nathan Drake." },
-  { nome: "The Sims 4", desenvolvedor: "Maxis", genero: "Simulação", anoLancamento: 2014, preco: 164.95, descricao: "Simule a vida e crie histórias no famoso simulador social." },
-  { nome: "League of Legends", desenvolvedor: "Riot Games", genero: "MOBA", anoLancamento: 2009, preco: 0.00, descricao: "Um dos maiores eSports do mundo." },
-  { nome: "Valorant", desenvolvedor: "Riot Games", genero: "FPS Tático", anoLancamento: 2020, preco: 0.00, descricao: "Combina precisão de tiro e habilidades únicas em partidas 5x5." },
-  { nome: "Apex Legends", desenvolvedor: "Respawn Entertainment", genero: "Battle Royale", anoLancamento: 2019, preco: 0.00, descricao: "Um battle royale rápido e estratégico no universo Titanfall." },
-  { nome: "Genshin Impact", desenvolvedor: "HoYoverse", genero: "RPG de Ação", anoLancamento: 2020, preco: 0.00, descricao: "Um RPG de mundo aberto gratuito com belos visuais e narrativa envolvente." },
-  { nome: "Pokémon Red/Blue", desenvolvedor: "Game Freak", genero: "RPG", anoLancamento: 1996, preco: 109.95, descricao: "Os jogos que iniciaram a febre Pokémon mundial." },
-  { nome: "Animal Crossing: New Horizons", desenvolvedor: "Nintendo", genero: "Simulação", anoLancamento: 2020, preco: 274.95, descricao: "Construa sua ilha paradisíaca com amigos e vizinhos animais." },
-  { nome: "Super Smash Bros. Ultimate", desenvolvedor: "Nintendo", genero: "Luta/Party", anoLancamento: 2018, preco: 329.95, descricao: "O crossover definitivo com personagens icônicos dos games." },
-  { nome: "Cuphead", desenvolvedor: "Studio MDHR", genero: "Plataforma/Tiro", anoLancamento: 2017, preco: 109.95, descricao: "Desafiante e estilizado com arte inspirada em desenhos dos anos 30." },
-  { nome: "Hollow Knight", desenvolvedor: "Team Cherry", genero: "Metroidvania", anoLancamento: 2017, preco: 82.45, descricao: "Uma obra-prima indie de exploração e combate refinado." },
-  { nome: "Celeste", desenvolvedor: "Maddy Makes Games", genero: "Plataforma", anoLancamento: 2018, preco: 54.95, descricao: "Um jogo sobre superação e precisão, com narrativa tocante." },
-  { nome: "Undertale", desenvolvedor: "Toby Fox", genero: "RPG", anoLancamento: 2015, preco: 27.45, descricao: "Um RPG que quebra convenções com humor e escolhas significativas." },
-  { nome: "Terraria", desenvolvedor: "Re-Logic", genero: "Aventura/Sandbox", anoLancamento: 2011, preco: 54.95, descricao: "Explore, construa e lute em um mundo 2D cheio de possibilidades." },
-  { nome: "Baldur’s Gate 3", desenvolvedor: "Larian Studios", genero: "RPG", anoLancamento: 2023, preco: 329.95, descricao: "Um RPG profundo baseado em Dungeons & Dragons com escolhas impactantes." },
-  { nome: "Dead Cells", desenvolvedor: "Motion Twin", genero: "Roguelike", anoLancamento: 2018, preco: 82.45, descricao: "Combate fluido e desafiador com elementos de metroidvania." },
-  { nome: "Stardew Valley", desenvolvedor: "ConcernedApe", genero: "Simulação/RPG", anoLancamento: 2016, preco: 54.95, descricao: "Cultive, explore e viva uma vida tranquila no campo." },
-  { nome: "Mass Effect 2", desenvolvedor: "BioWare", genero: "RPG de Ação", anoLancamento: 2010, preco: 164.95, descricao: "Um épico espacial centrado em narrativa e decisões morais." },
-  { nome: "The Elder Scrolls IV: Oblivion", desenvolvedor: "Bethesda", genero: "RPG", anoLancamento: 2006, preco: 164.95, descricao: "O antecessor de Skyrim, expandindo o conceito de mundo aberto." },
-  { nome: "Left 4 Dead 2", desenvolvedor: "Valve", genero: "Tiro Cooperativo", anoLancamento: 2009, preco: 82.45, descricao: "Sobreviva a hordas de zumbis em equipe neste clássico cooperativo." },
-  { nome: "BioShock", desenvolvedor: "2K Games", genero: "FPS", anoLancamento: 2007, preco: 109.95, descricao: "Um FPS filosófico ambientado na cidade subaquática de Rapture." },
-  { nome: "The Stanley Parable", desenvolvedor: "Galactic Cafe", genero: "Exploração/Narrativo", anoLancamento: 2013, preco: 54.95, descricao: "Uma sátira inteligente sobre escolhas e liberdade nos jogos." },
-  { nome: "Outer Wilds", desenvolvedor: "Mobius Digital", genero: "Exploração", anoLancamento: 2019, preco: 109.95, descricao: "Explore um sistema solar em loop temporal para desvendar seus mistérios." },
-  { nome: "Journey", desenvolvedor: "Thatgamecompany", genero: "Aventura/Arte", anoLancamento: 2012, preco: 82.45, descricao: "Uma experiência contemplativa sobre jornada e conexão." },
-  { nome: "Inside", desenvolvedor: "Playdead", genero: "Plataforma/Puzzle", anoLancamento: 2016, preco: 82.45, descricao: "Sombrio, artístico e inesquecível." },
-  { nome: "No Man’s Sky", desenvolvedor: "Hello Games", genero: "Exploração/Espaço", anoLancamento: 2016, preco: 164.95, descricao: "Explore um universo procedural praticamente infinito." },
-  { nome: "Horizon Zero Dawn", desenvolvedor: "Guerrilla Games", genero: "Ação/RPG", anoLancamento: 2017, preco: 274.95, descricao: "Uma caçadora enfrenta máquinas em um futuro pós-apocalíptico." },
-  { nome: "Sekiro: Shadows Die Twice", desenvolvedor: "FromSoftware", genero: "Ação", anoLancamento: 2019, preco: 274.95, descricao: "Combate técnico e precisão em um Japão feudal brutal." },
-  { nome: "Returnal", desenvolvedor: "Housemarque", genero: "Roguelike/Sci-Fi", anoLancamento: 2021, preco: 329.95, descricao: "Um shooter roguelike com narrativa psicológica intensa." },
-  { nome: "It Takes Two", desenvolvedor: "Hazelight Studios", genero: "Coop/Aventura", anoLancamento: 2021, preco: 219.95, descricao: "Uma aventura cooperativa inovadora sobre amor e reconciliação." },
-  { nome: "Control", desenvolvedor: "Remedy", genero: "Ação/Aventura", anoLancamento: 2019, preco: 219.95, descricao: "Um jogo de ação sobrenatural com física impressionante e mistério." },
-  { nome: "Detroit: Become Human", desenvolvedor: "Quantic Dream", genero: "Narrativo", anoLancamento: 2018, preco: 274.95, descricao: "Uma narrativa interativa sobre escolhas e consciência artificial." },
-  { nome: "Ghost of Tsushima", desenvolvedor: "Sucker Punch", genero: "Ação-Aventura", anoLancamento: 2020, preco: 329.95, descricao: "Um samurai luta pela honra e pela liberdade do Japão." },
-  { nome: "Doom Eternal", desenvolvedor: "id Software", genero: "FPS", anoLancamento: 2020, preco: 219.95, descricao: "A sequência rápida e brutal do reboot de Doom." },
-  { nome: "Ori and the Will of the Wisps", desenvolvedor: "Moon Studios", genero: "Metroidvania", anoLancamento: 2020, preco: 164.95, descricao: "Um metroidvania visualmente deslumbrante e emocional." },
-  { nome: "Forza Horizon 5", desenvolvedor: "Playground Games", genero: "Corrida de Mundo Aberto", anoLancamento: 2021, preco: 329.95, descricao: "A mais nova entrada na aclamada série Horizon, ambientada no México." },
-  { nome: "Call of Duty: Warzone", desenvolvedor: "Infinity Ward, Raven Software", genero: "Battle Royale/FPS", anoLancamento: 2020, preco: 0.00, descricao: "O popular Battle Royale dentro da franquia Call of Duty." },
-  { nome: "The Legend of Zelda: Tears of the Kingdom", desenvolvedor: "Nintendo", genero: "Ação-Aventura", anoLancamento: 2023, preco: 384.95, descricao: "A sequência direta de Breath of the Wild, com foco na construção e exploração aérea." },
-  { nome: "Death Stranding", desenvolvedor: "Kojima Productions", genero: "Ação-Aventura", anoLancamento: 2019, preco: 219.95, descricao: "O primeiro jogo de Hideo Kojima após a saída da Konami, focado em conectar pessoas." },
-  { nome: "Ratchet & Clank: Rift Apart", desenvolvedor: "Insomniac Games", genero: "Plataforma/Tiro", anoLancamento: 2021, preco: 274.95, descricao: "Um show de tecnologia com transições instantâneas entre dimensões." },
-  { nome: "Spider-Man: Miles Morales", desenvolvedor: "Insomniac Games", genero: "Ação-Aventura", anoLancamento: 2020, preco: 219.95, descricao: "Expansão standalone do aclamado Spider-Man, focada em Miles Morales." },
-  { nome: "Resident Evil 7: Biohazard", desenvolvedor: "Capcom", genero: "Survival Horror", anoLancamento: 2017, preco: 164.95, descricao: "Reboot da série, com câmera em primeira pessoa e foco no terror de sobrevivência." },
-  { nome: "Devil May Cry 5", desenvolvedor: "Capcom", genero: "Ação Hack and Slash", anoLancamento: 2019, preco: 164.95, descricao: "O retorno triunfal da série, aclamado por seu combate estiloso." },
-  { nome: "Far Cry 6", desenvolvedor: "Ubisoft", genero: "Ação/Tiro", anoLancamento: 2021, preco: 274.95, descricao: "Lidere uma revolução contra um ditador em uma ilha tropical." },
-  { nome: "Hitman 3", desenvolvedor: "IO Interactive", genero: "Stealth", anoLancamento: 2021, preco: 274.95, descricao: "Fechamento brilhante da trilogia World of Assassination." },
-  { nome: "Cyber Shadow", desenvolvedor: "Mechanical Head Games", genero: "Plataforma/Ação", anoLancamento: 2021, preco: 54.95, descricao: "Um tributo moderno aos clássicos de 8 bits." },
-  { nome: "Monster Hunter: World", desenvolvedor: "Capcom", genero: "Ação/RPG", anoLancamento: 2018, preco: 219.95, descricao: "Caça criaturas colossais em um ecossistema dinâmico." },
-  { nome: "Bayonetta 3", desenvolvedor: "PlatinumGames", genero: "Hack and Slash", anoLancamento: 2022, preco: 329.95, descricao: "A bruxa mais estilosa retorna em batalhas espetaculares." },
-  { nome: "Alan Wake 2", desenvolvedor: "Remedy", genero: "Terror/Narrativo", anoLancamento: 2023, preco: 329.95, descricao: "Uma sequência sombria e psicológica que mistura realidade e ficção." },
-  { nome: "Metroid Dread", desenvolvedor: "Nintendo", genero: "Ação/Exploração", anoLancamento: 2021, preco: 274.95, descricao: "O retorno triunfal da série Metroid em 2D após quase duas décadas." },
-  { nome: "Return to Monkey Island", desenvolvedor: "Terrible Toybox", genero: "Aventura Point and Click", anoLancamento: 2022, preco: 109.95, descricao: "O clássico jogo de aventura retorna com humor e nostalgia." },
-  { nome: "Sonic Frontiers", desenvolvedor: "Sega", genero: "Plataforma/Ação", anoLancamento: 2022, preco: 274.95, descricao: "O ouriço azul corre por vastos mundos abertos." },
-  { nome: "FIFA 23", desenvolvedor: "EA Sports", genero: "Esporte/Futebol", anoLancamento: 2022, preco: 329.95, descricao: "O último jogo da série com a marca FIFA, trazendo realismo e tecnologia HyperMotion." },
-  { nome: "Tekken 8", desenvolvedor: "Bandai Namco", genero: "Luta", anoLancamento: 2024, preco: 329.95, descricao: "A nova geração da lendária franquia de luta com gráficos impressionantes." },
-  { nome: "Street Fighter 6", desenvolvedor: "Capcom", genero: "Luta", anoLancamento: 2023, preco: 329.95, descricao: "O retorno triunfal com mecânicas modernas e modo mundo aberto." },
-  { nome: "Starfield", desenvolvedor: "Bethesda", genero: "RPG/Espaço", anoLancamento: 2023, preco: 384.95, descricao: "Um épico espacial da Bethesda com exploração de galáxias inteiras." },
-  { nome: "Final Fantasy XVI", desenvolvedor: "Square Enix", genero: "RPG de Ação", anoLancamento: 2023, preco: 384.95, descricao: "Uma nova era sombria e cinematográfica para a icônica franquia." },
-  { nome: "Spider-Man 2", desenvolvedor: "Insomniac Games", genero: "Ação-Aventura", anoLancamento: 2023, preco: 384.95, descricao: "Peter Parker e Miles Morales enfrentam Venom em uma aventura épica." },
-  { nome: "Super Meat Boy", desenvolvedor: "Team Meat", genero: "Plataforma", anoLancamento: 2010, preco: 54.95, descricao: "Um plataforma hardcore com desafios rápidos e precisos." },
-  { nome: "Bastion", desenvolvedor: "Supergiant Games", genero: "Action RPG", anoLancamento: 2011, preco: 54.95, descricao: "RPG de ação com narrativa única e trilha sonora impecável." },
-  { nome: "Transistor", desenvolvedor: "Supergiant Games", genero: "RPG de Ação", anoLancamento: 2014, preco: 54.95, descricao: "Combate estratégico com estilo artístico futurista e história envolvente." },
-  { nome: "The Binding of Isaac: Rebirth", desenvolvedor: "Nicalis", genero: "Roguelike", anoLancamento: 2014, preco: 54.95, descricao: "Roguelike com geração procedural de fases e enorme replayability." },
-  { nome: "Katana Zero", desenvolvedor: "Askiisoft", genero: "Ação/Plataforma", anoLancamento: 2019, preco: 54.95, descricao: "Ação rápida com mecânicas de corte e manipulação do tempo." },
-  { nome: "Oxenfree", desenvolvedor: "Night School Studio", genero: "Aventura/Narrativa", anoLancamento: 2016, preco: 54.95, descricao: "Aventura narrativa com diálogo dinâmico e suspense sobrenatural." },
-  { nome: "Inside My Radio", desenvolvedor: "Seaven Studio", genero: "Ritmo/Plataforma", anoLancamento: 2015, preco: 54.95, descricao: "Mistura de plataforma e música, onde cada ação segue o ritmo da trilha sonora." },
-  { nome: "Dead Cells", desenvolvedor: "Motion Twin", genero: "Roguelike/Metroidvania", anoLancamento: 2018, preco: 64.95, descricao: "Um roguelike com combate fluido e mapas procedurais em constante mudança." },
-  { nome: "Journey to the Savage Planet", desenvolvedor: "Typhoon Studios", genero: "Aventura/Exploração", anoLancamento: 2020, preco: 64.95, descricao: "Exploração de planeta alienígena com humor e design colorido." },
-  { nome: "The Outer Worlds", desenvolvedor: "Obsidian Entertainment", genero: "RPG de Ação", anoLancamento: 2019, preco: 164.95, descricao: "RPG de ação espacial com escolhas morais e narrativa divertida." },
-  { nome: "Outer Wilds", desenvolvedor: "Mobius Digital", genero: "Exploração/Espaço", anoLancamento: 2019, preco: 164.95, descricao: "Exploração espacial e descoberta de mistérios em um sistema solar em loop temporal." },
-  { nome: "Control", desenvolvedor: "Remedy Entertainment", genero: "Ação/Aventura", anoLancamento: 2019, preco: 219.95, descricao: "Aventura sobrenatural com poderes telecinéticos e ambientação intrigante." },
+ { nome: "Super Mario Bros.", desenvolvedor: "Nintendo", genero: "Plataforma", anoLancamento: 1985, preco: 109.95, descricao: "O jogo que salvou a indústria e definiu o gênero plataforma." },
+ { nome: "The Legend of Zelda: Ocarina of Time", desenvolvedor: "Nintendo", genero: "Ação-Aventura", anoLancamento: 1998, preco: 274.95, descricao: "Considerado por muitos o melhor jogo de todos os tempos. Revolucionou o 3D." },
+ { nome: "Tetris", desenvolvedor: "Alexey Pajitnov", genero: "Quebra-Cabeça", anoLancamento: 1984, preco: 27.45, descricao: "O clássico viciante de encaixar blocos." },
+ { nome: "Doom", desenvolvedor: "id Software", genero: "FPS", anoLancamento: 1993, preco: 54.95, descricao: "Popularizou o gênero FPS e o multiplayer em rede." },
+ { nome: "Pac-Man", desenvolvedor: "Namco", genero: "Arcade/Labirinto", anoLancamento: 1980, preco: 27.45, descricao: "Um dos jogos de arcade mais famosos de todos os tempos." },
+ { nome: "Final Fantasy VII", desenvolvedor: "Square", genero: "JRPG", anoLancamento: 1997, preco: 219.95, descricao: "Elevou o JRPG a um novo patamar de popularidade e narrativa cinematográfica." },
+ { nome: "Half-Life 2", desenvolvedor: "Valve", genero: "FPS", anoLancamento: 2004, preco: 109.95, descricao: "Um marco em física e narrativa nos jogos de tiro em primeira pessoa." },
+ { nome: "Minecraft", desenvolvedor: "Mojang", genero: "Sandbox/Sobrevivência", anoLancamento: 2011, preco: 164.95, descricao: "Um fenômeno global que permite construir e explorar mundos infinitos de blocos." },
+ { nome: "World of Warcraft", desenvolvedor: "Blizzard Entertainment", genero: "MMORPG", anoLancamento: 2004, preco: 82.50, descricao: "O MMORPG mais influente e duradouro da história." },
+ { nome: "Grand Theft Auto V", desenvolvedor: "Rockstar Games", genero: "Ação-Aventura", anoLancamento: 2013, preco: 329.95, descricao: "Um sucesso de vendas e crítica com um vasto mundo aberto em Los Santos." },
+ { nome: "The Witcher 3: Wild Hunt", desenvolvedor: "CD Projekt Red", genero: "RPG", anoLancamento: 2015, preco: 164.95, descricao: "Um RPG de mundo aberto com narrativa profunda e personagens marcantes." },
+ { nome: "Red Dead Redemption 2", desenvolvedor: "Rockstar Games", genero: "Ação-Aventura", anoLancamento: 2018, preco: 329.95, descricao: "Um épico faroeste com atenção impecável aos detalhes." },
+ { nome: "God of War", desenvolvedor: "Santa Monica Studio", genero: "Ação", anoLancamento: 2018, preco: 274.95, descricao: "Kratos retorna com seu filho Atreus em uma jornada nórdica emocionante." },
+ { nome: "The Last of Us", desenvolvedor: "Naughty Dog", genero: "Ação-Aventura", anoLancamento: 2013, preco: 219.95, descricao: "Uma história tocante de sobrevivência e laços humanos em um mundo devastado." },
+ { nome: "Dark Souls", desenvolvedor: "FromSoftware", genero: "RPG de Ação", anoLancamento: 2011, preco: 164.95, descricao: "Desafiador, recompensador e revolucionário em design de mundos interconectados." },
+ { nome: "Overwatch", desenvolvedor: "Blizzard Entertainment", genero: "FPS", anoLancamento: 2016, preco: 164.95, descricao: "Um shooter em equipe vibrante que redefiniu o gênero." },
+ { nome: "Fortnite", desenvolvedor: "Epic Games", genero: "Battle Royale", anoLancamento: 2017, preco: 0.00, descricao: "Um fenômeno cultural gratuito com milhões de jogadores." },
+ { nome: "Among Us", desenvolvedor: "InnerSloth", genero: "Party/Social Deduction", anoLancamento: 2018, preco: 16.45, descricao: "Descubra o impostor em partidas divertidas e caóticas." },
+ { nome: "Cyberpunk 2077", desenvolvedor: "CD Projekt Red", genero: "RPG de Ação", anoLancamento: 2020, preco: 274.95, descricao: "Um RPG futurista em mundo aberto com narrativa intensa." },
+ { nome: "The Legend of Zelda: Breath of the Wild", desenvolvedor: "Nintendo", genero: "Ação-Aventura", anoLancamento: 2017, preco: 329.95, descricao: "Exploração e liberdade redefinem a franquia Zelda." },
+ { nome: "Hades", desenvolvedor: "Supergiant Games", genero: "Roguelike", anoLancamento: 2020, preco: 109.95, descricao: "Um roguelike aclamado pela crítica com narrativa dinâmica e gameplay viciante." },
+ { nome: "Elden Ring", desenvolvedor: "FromSoftware", genero: "RPG de Ação", anoLancamento: 2022, preco: 329.95, descricao: "Um vasto mundo aberto criado por Hidetaka Miyazaki e George R. R. Martin." },
+ { nome: "Persona 5", desenvolvedor: "Atlus", genero: "JRPG", anoLancamento: 2016, preco: 219.95, descricao: "Um RPG estiloso e profundo sobre rebeldia e identidade." },
+ { nome: "Metal Gear Solid", desenvolvedor: "Konami", genero: "Stealth/Ação", anoLancamento: 1998, preco: 164.95, descricao: "O título que popularizou o gênero stealth nos videogames." },
+ { nome: "Street Fighter II", desenvolvedor: "Capcom", genero: "Luta", anoLancamento: 1991, preco: 54.95, descricao: "Revolucionou os jogos de luta e criou ícones como Ryu e Chun-Li." },
+ { nome: "Resident Evil 4", desenvolvedor: "Capcom", genero: "Survival Horror", anoLancamento: 2005, preco: 164.95, descricao: "Mistura perfeita de ação e terror, reinventando a franquia." },
+ { nome: "Skyrim", desenvolvedor: "Bethesda", genero: "RPG", anoLancamento: 2011, preco: 164.95, descricao: "Um dos RPGs mais jogados e modificados de todos os tempos." },
+ { nome: "Halo: Combat Evolved", desenvolvedor: "Bungie", genero: "FPS", anoLancamento: 2001, preco: 109.95, descricao: "O título que definiu o padrão de FPS em consoles." },
+ { nome: "Portal 2", desenvolvedor: "Valve", genero: "Puzzle/Plataforma", anoLancamento: 2011, preco: 109.95, descricao: "Um dos jogos de quebra-cabeça mais criativos e engraçados já feitos." },
+ { nome: "Assassin’s Creed II", desenvolvedor: "Ubisoft", genero: "Ação-Aventura", anoLancamento: 2009, preco: 109.95, descricao: "A continuação que consolidou a série e apresentou Ezio Auditore." },
+ { nome: "Uncharted 4: A Thief’s End", desenvolvedor: "Naughty Dog", genero: "Ação-Aventura", anoLancamento: 2016, preco: 274.95, descricao: "O encerramento épico da história de Nathan Drake." },
+ { nome: "The Sims 4", desenvolvedor: "Maxis", genero: "Simulação", anoLancamento: 2014, preco: 164.95, descricao: "Simule a vida e crie histórias no famoso simulador social." },
+ { nome: "League of Legends", desenvolvedor: "Riot Games", genero: "MOBA", anoLancamento: 2009, preco: 0.00, descricao: "Um dos maiores eSports do mundo." },
+ { nome: "Valorant", desenvolvedor: "Riot Games", genero: "FPS Tático", anoLancamento: 2020, preco: 0.00, descricao: "Combina precisão de tiro e habilidades únicas em partidas 5x5." },
+ { nome: "Apex Legends", desenvolvedor: "Respawn Entertainment", genero: "Battle Royale", anoLancamento: 2019, preco: 0.00, descricao: "Um battle royale rápido e estratégico no universo Titanfall." },
+ { nome: "Genshin Impact", desenvolvedor: "HoYoverse", genero: "RPG de Ação", anoLancamento: 2020, preco: 0.00, descricao: "Um RPG de mundo aberto gratuito com belos visuais e narrativa envolvente." },
+ { nome: "Pokémon Red/Blue", desenvolvedor: "Game Freak", genero: "RPG", anoLancamento: 1996, preco: 109.95, descricao: "Os jogos que iniciaram a febre Pokémon mundial." },
+ { nome: "Animal Crossing: New Horizons", desenvolvedor: "Nintendo", genero: "Simulação", anoLancamento: 2020, preco: 274.95, descricao: "Construa sua ilha paradisíaca com amigos e vizinhos animais." },
+ { nome: "Super Smash Bros. Ultimate", desenvolvedor: "Nintendo", genero: "Luta/Party", anoLancamento: 2018, preco: 329.95, descricao: "O crossover definitivo com personagens icônicos dos games." },
+ { nome: "Cuphead", desenvolvedor: "Studio MDHR", genero: "Plataforma/Tiro", anoLancamento: 2017, preco: 109.95, descricao: "Desafiante e estilizado com arte inspirada em desenhos dos anos 30." },
+ { nome: "Hollow Knight", desenvolvedor: "Team Cherry", genero: "Metroidvania", anoLancamento: 2017, preco: 82.45, descricao: "Uma obra-prima indie de exploração e combate refinado." },
+ { nome: "Celeste", desenvolvedor: "Maddy Makes Games", genero: "Plataforma", anoLancamento: 2018, preco: 54.95, descricao: "Um jogo sobre superação e precisão, com narrativa tocante." },
+ { nome: "Undertale", desenvolvedor: "Toby Fox", genero: "RPG", anoLancamento: 2015, preco: 27.45, descricao: "Um RPG que quebra convenções com humor e escolhas significativas." },
+ { nome: "Terraria", desenvolvedor: "Re-Logic", genero: "Aventura/Sandbox", anoLancamento: 2011, preco: 54.95, descricao: "Explore, construa e lute em um mundo 2D cheio de possibilidades." },
+ { nome: "Baldur’s Gate 3", desenvolvedor: "Larian Studios", genero: "RPG", anoLancamento: 2023, preco: 329.95, descricao: "Um RPG profundo baseado em Dungeons & Dragons com escolhas impactantes." },
+ { nome: "Dead Cells", desenvolvedor: "Motion Twin", genero: "Roguelike", anoLancamento: 2018, preco: 82.45, descricao: "Combate fluido e desafiador com elementos de metroidvania." },
+ { nome: "Stardew Valley", desenvolvedor: "ConcernedApe", genero: "Simulação/RPG", anoLancamento: 2016, preco: 54.95, descricao: "Cultive, explore e viva uma vida tranquila no campo." },
+ { nome: "Mass Effect 2", desenvolvedor: "BioWare", genero: "RPG de Ação", anoLancamento: 2010, preco: 164.95, descricao: "Um épico espacial centrado em narrativa e decisões morais." },
+ { nome: "The Elder Scrolls IV: Oblivion", desenvolvedor: "Bethesda", genero: "RPG", anoLancamento: 2006, preco: 164.95, descricao: "O antecessor de Skyrim, expandindo o conceito de mundo aberto." },
+ { nome: "Left 4 Dead 2", desenvolvedor: "Valve", genero: "Tiro Cooperativo", anoLancamento: 2009, preco: 82.45, descricao: "Sobreviva a hordas de zumbis em equipe neste clássico cooperativo." },
+ { nome: "BioShock", desenvolvedor: "2K Games", genero: "FPS", anoLancamento: 2007, preco: 109.95, descricao: "Um FPS filosófico ambientado na cidade subaquática de Rapture." },
+ { nome: "The Stanley Parable", desenvolvedor: "Galactic Cafe", genero: "Exploração/Narrativo", anoLancamento: 2013, preco: 54.95, descricao: "Uma sátira inteligente sobre escolhas e liberdade nos jogos." },
+ { nome: "Outer Wilds", desenvolvedor: "Mobius Digital", genero: "Exploração", anoLancamento: 2019, preco: 109.95, descricao: "Explore um sistema solar em loop temporal para desvendar seus mistérios." },
+ { nome: "Journey", desenvolvedor: "Thatgamecompany", genero: "Aventura/Arte", anoLancamento: 2012, preco: 82.45, descricao: "Uma experiência contemplativa sobre jornada e conexão." },
+ { nome: "Inside", desenvolvedor: "Playdead", genero: "Plataforma/Puzzle", anoLancamento: 2016, preco: 82.45, descricao: "Sombrio, artístico e inesquecível." },
+ { nome: "No Man’s Sky", desenvolvedor: "Hello Games", genero: "Exploração/Espaço", anoLancamento: 2016, preco: 164.95, descricao: "Explore um universo procedural praticamente infinito." },
+ { nome: "Horizon Zero Dawn", desenvolvedor: "Guerrilla Games", genero: "Ação/RPG", anoLancamento: 2017, preco: 274.95, descricao: "Uma caçadora enfrenta máquinas em um futuro pós-apocalíptico." },
+ { nome: "Sekiro: Shadows Die Twice", desenvolvedor: "FromSoftware", genero: "Ação", anoLancamento: 2019, preco: 274.95, descricao: "Combate técnico e precisão em um Japão feudal brutal." },
+ { nome: "Returnal", desenvolvedor: "Housemarque", genero: "Roguelike/Sci-Fi", anoLancamento: 2021, preco: 329.95, descricao: "Um shooter roguelike com narrativa psicológica intensa." },
+ { nome: "It Takes Two", desenvolvedor: "Hazelight Studios", genero: "Coop/Aventura", anoLancamento: 2021, preco: 219.95, descricao: "Uma aventura cooperativa inovadora sobre amor e reconciliação." },
+ { nome: "Control", desenvolvedor: "Remedy", genero: "Ação/Aventura", anoLancamento: 2019, preco: 219.95, descricao: "Um jogo de ação sobrenatural com física impressionante e mistério." },
+ { nome: "Detroit: Become Human", desenvolvedor: "Quantic Dream", genero: "Narrativo", anoLancamento: 2018, preco: 274.95, descricao: "Uma narrativa interativa sobre escolhas e consciência artificial." },
+ { nome: "Ghost of Tsushima", desenvolvedor: "Sucker Punch", genero: "Ação-Aventura", anoLancamento: 2020, preco: 329.95, descricao: "Um samurai luta pela honra e pela liberdade do Japão." },
+ { nome: "Doom Eternal", desenvolvedor: "id Software", genero: "FPS", anoLancamento: 2020, preco: 219.95, descricao: "A sequência rápida e brutal do reboot de Doom." },
+ { nome: "Ori and the Will of the Wisps", desenvolvedor: "Moon Studios", genero: "Metroidvania", anoLancamento: 2020, preco: 164.95, descricao: "Um metroidvania visualmente deslumbrante e emocional." },
+ { nome: "Forza Horizon 5", desenvolvedor: "Playground Games", genero: "Corrida de Mundo Aberto", anoLancamento: 2021, preco: 329.95, descricao: "A mais nova entrada na aclamada série Horizon, ambientada no México." },
+ { nome: "Call of Duty: Warzone", desenvolvedor: "Infinity Ward, Raven Software", genero: "Battle Royale/FPS", anoLancamento: 2020, preco: 0.00, descricao: "O popular Battle Royale dentro da franquia Call of Duty." },
+ { nome: "The Legend of Zelda: Tears of the Kingdom", desenvolvedor: "Nintendo", genero: "Ação-Aventura", anoLancamento: 2023, preco: 384.95, descricao: "A sequência direta de Breath of the Wild, com foco na construção e exploração aérea." },
+ { nome: "Death Stranding", desenvolvedor: "Kojima Productions", genero: "Ação-Aventura", anoLancamento: 2019, preco: 219.95, descricao: "O primeiro jogo de Hideo Kojima após a saída da Konami, focado em conectar pessoas." },
+ { nome: "Ratchet & Clank: Rift Apart", desenvolvedor: "Insomniac Games", genero: "Plataforma/Tiro", anoLancamento: 2021, preco: 274.95, descricao: "Um show de tecnologia com transições instantâneas entre dimensões." },
+ { nome: "Spider-Man: Miles Morales", desenvolvedor: "Insomniac Games", genero: "Ação-Aventura", anoLancamento: 2020, preco: 219.95, descricao: "Expansão standalone do aclamado Spider-Man, focada em Miles Morales." },
+ { nome: "Resident Evil 7: Biohazard", desenvolvedor: "Capcom", genero: "Survival Horror", anoLancamento: 2017, preco: 164.95, descricao: "Reboot da série, com câmera em primeira pessoa e foco no terror de sobrevivência." },
+ { nome: "Devil May Cry 5", desenvolvedor: "Capcom", genero: "Ação Hack and Slash", anoLancamento: 2019, preco: 164.95, descricao: "O retorno triunfal da série, aclamado por seu combate estiloso." },
+ { nome: "Far Cry 6", desenvolvedor: "Ubisoft", genero: "Ação/Tiro", anoLancamento: 2021, preco: 274.95, descricao: "Lidere uma revolução contra um ditador em uma ilha tropical." },
+ { nome: "Hitman 3", desenvolvedor: "IO Interactive", genero: "Stealth", anoLancamento: 2021, preco: 274.95, descricao: "Fechamento brilhante da trilogia World of Assassination." },
+ { nome: "Cyber Shadow", desenvolvedor: "Mechanical Head Games", genero: "Plataforma/Ação", anoLancamento: 2021, preco: 54.95, descricao: "Um tributo moderno aos clássicos de 8 bits." },
+ { nome: "Monster Hunter: World", desenvolvedor: "Capcom", genero: "Ação/RPG", anoLancamento: 2018, preco: 219.95, descricao: "Caça criaturas colossais em um ecossistema dinâmico." },
+ { nome: "Bayonetta 3", desenvolvedor: "PlatinumGames", genero: "Hack and Slash", anoLancamento: 2022, preco: 329.95, descricao: "A bruxa mais estilosa retorna em batalhas espetaculares." },
+ { nome: "Alan Wake 2", desenvolvedor: "Remedy", genero: "Terror/Narrativo", anoLancamento: 2023, preco: 329.95, descricao: "Uma sequência sombria e psicológica que mistura realidade e ficção." },
+ { nome: "Metroid Dread", desenvolvedor: "Nintendo", genero: "Ação/Exploração", anoLancamento: 2021, preco: 274.95, descricao: "O retorno triunfal da série Metroid em 2D após quase duas décadas." },
+ { nome: "Return to Monkey Island", desenvolvedor: "Terrible Toybox", genero: "Aventura Point and Click", anoLancamento: 2022, preco: 109.95, descricao: "O clássico jogo de aventura retorna com humor e nostalgia." },
+ { nome: "Sonic Frontiers", desenvolvedor: "Sega", genero: "Plataforma/Ação", anoLancamento: 2022, preco: 274.95, descricao: "O ouriço azul corre por vastos mundos abertos." },
+ { nome: "FIFA 23", desenvolvedor: "EA Sports", genero: "Esporte/Futebol", anoLancamento: 2022, preco: 329.95, descricao: "O último jogo da série com a marca FIFA, trazendo realismo e tecnologia HyperMotion." },
+ { nome: "Tekken 8", desenvolvedor: "Bandai Namco", genero: "Luta", anoLancamento: 2024, preco: 329.95, descricao: "A nova geração da lendária franquia de luta com gráficos impressionantes." },
+ { nome: "Street Fighter 6", desenvolvedor: "Capcom", genero: "Luta", anoLancamento: 2023, preco: 329.95, descricao: "O retorno triunfal com mecânicas modernas e modo mundo aberto." },
+ { nome: "Starfield", desenvolvedor: "Bethesda", genero: "RPG/Espaço", anoLancamento: 2023, preco: 384.95, descricao: "Um épico espacial da Bethesda com exploração de galáxias inteiras." },
+ { nome: "Final Fantasy XVI", desenvolvedor: "Square Enix", genero: "RPG de Ação", anoLancamento: 2023, preco: 384.95, descricao: "Uma nova era sombria e cinematográfica para a icônica franquia." },
+ { nome: "Spider-Man 2", desenvolvedor: "Insomniac Games", genero: "Ação-Aventura", anoLancamento: 2023, preco: 384.95, descricao: "Peter Parker e Miles Morales enfrentam Venom em uma aventura épica." },
+ { nome: "Super Meat Boy", desenvolvedor: "Team Meat", genero: "Plataforma", anoLancamento: 2010, preco: 54.95, descricao: "Um plataforma hardcore com desafios rápidos e precisos." },
+ { nome: "Bastion", desenvolvedor: "Supergiant Games", genero: "Action RPG", anoLancamento: 2011, preco: 54.95, descricao: "RPG de ação com narrativa única e trilha sonora impecável." },
+ { nome: "Transistor", desenvolvedor: "Supergiant Games", genero: "RPG de Ação", anoLancamento: 2014, preco: 54.95, descricao: "Combate estratégico com estilo artístico futurista e história envolvente." },
+ { nome: "The Binding of Isaac: Rebirth", desenvolvedor: "Nicalis", genero: "Roguelike", anoLancamento: 2014, preco: 54.95, descricao: "Roguelike com geração procedural de fases e enorme replayability." },
+ { nome: "Katana Zero", desenvolvedor: "Askiisoft", genero: "Ação/Plataforma", anoLancamento: 2019, preco: 54.95, descricao: "Ação rápida com mecânicas de corte e manipulação do tempo." },
+ { nome: "Oxenfree", desenvolvedor: "Night School Studio", genero: "Aventura/Narrativa", anoLancamento: 2016, preco: 54.95, descricao: "Aventura narrativa com diálogo dinâmico e suspense sobrenatural." },
+ { nome: "Inside My Radio", desenvolvedor: "Seaven Studio", genero: "Ritmo/Plataforma", anoLancamento: 2015, preco: 54.95, descricao: "Mistura de plataforma e música, onde cada ação segue o ritmo da trilha sonora." },
+ { nome: "Dead Cells", desenvolvedor: "Motion Twin", genero: "Roguelike/Metroidvania", anoLancamento: 2018, preco: 64.95, descricao: "Um roguelike com combate fluido e mapas procedurais em constante mudança." },
+ { nome: "Journey to the Savage Planet", desenvolvedor: "Typhoon Studios", genero: "Aventura/Exploração", anoLancamento: 2020, preco: 64.95, descricao: "Exploração de planeta alienígena com humor e design colorido." },
+ { nome: "The Outer Worlds", desenvolvedor: "Obsidian Entertainment", genero: "RPG de Ação", anoLancamento: 2019, preco: 164.95, descricao: "RPG de ação espacial com escolhas morais e narrativa divertida." },
+ { nome: "Outer Wilds", desenvolvedor: "Mobius Digital", genero: "Exploração/Espaço", anoLancamento: 2019, preco: 164.95, descricao: "Exploração espacial e descoberta de mistérios em um sistema solar em loop temporal." },
+ { nome: "Control", desenvolvedor: "Remedy Entertainment", genero: "Ação/Aventura", anoLancamento: 2019, preco: 219.95, descricao: "Aventura sobrenatural com poderes telecinéticos e ambientação intrigante." },
 ];
 
+/**
+ * Função de seeding para a tabela 'jogo'.
+ * É exportada para ser chamada por um script mestre.
+ * @param {PrismaClient} prisma - A instância do cliente Prisma.
+ * @returns {number} O número de registros criados.
+ */
+export async function seedJogos(prisma) {
+    console.log("🌎 Iniciando o seed com 100 jogos (valores em reais)...");
+
+    // 1. Mapear e converter os dados (PREÇO para String)
+    const dataToInsert = famousGames.map((jogo) => ({
+        nome: jogo.nome,
+        desenvolvedor: jogo.desenvolvedor,
+        genero: jogo.genero,
+        anoLancamento: jogo.anoLancamento,
+        // *** CORREÇÃO: Conversão para String para o tipo Decimal/Float do Prisma ***
+        preco: String(jogo.preco),
+        // --------------------------------------------------------------------------
+        descricao: jogo.descricao.substring(0, 500), // Garante o limite do campo
+    }));
+
+    // 2. Inserção em Lote (createMany)
+    const { count } = await prisma.jogo.createMany({
+        data: dataToInsert,
+        skipDuplicates: true,
+    });
+
+    console.log(`✅ Seed concluído. ${count} jogos criados/verificados na tabela 'jogo'.`);
+    return count;
+}
+
+// O BLOCO DE EXECUÇÃO main().catch().finally() FOI REMOVIDO DAQUI
+// para evitar o erro de declaração duplicada ('Identifier 'main' has already been declared')
+// quando este arquivo é importado por um script mestre (seed.mjs).
+// Se quiser rodar este arquivo sozinho, descomente o bloco abaixo.
+/*
 async function main() {
-  console.log("🌎 Iniciando o seed com 100 jogos (valores em reais)...");
-
-  const { count } = await prisma.jogo.createMany({
-    data: famousGames.map((jogo) => ({
-      nome: jogo.nome,
-      desenvolvedor: jogo.desenvolvedor,
-      genero: jogo.genero,
-      anoLancamento: jogo.anoLancamento,
-      preco: jogo.preco,
-      descricao: jogo.descricao.substring(0, 500),
-    })),
-    skipDuplicates: true,
-  });
-
-  console.log(`✅ Seed concluído. ${count} jogos criados/verificados.`);
+    await seedJogos(prisma);
 }
 
 main()
-  .catch((e) => {
-    console.error(e);
-    process.exit(1);
-  })
-  .finally(async () => {
-    await prisma.$disconnect();
-  });
+    .catch((e) => {
+        console.error("❌ ERRO ao rodar o seed de jogos:", e);
+        process.exit(1);
+    })
+    .finally(async () => {
+        await prisma.$disconnect();
+    });
+*/
