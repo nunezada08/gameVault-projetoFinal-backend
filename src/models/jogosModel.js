@@ -12,3 +12,33 @@ export const findById = async (id) => {
         where: { id: Number(id)}
     })
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+export const deleteJogo = async (id) => {
+    return await prisma.jogo.delete({
+        where: { id: Number(id)}
+    });
+}

@@ -51,3 +51,84 @@ export const listarUm = async (req,res) => {
         })
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+export const apagar = async (req, res) => {
+    try {
+        const id = parseInt(req.params.id);
+
+        const jogoExiste = await jogosModel.findById(id);
+
+        if (!jogoExiste) {
+            return res.status(404).json({
+                erro: 'Jogo não encontrado.',
+                mensagem: "Verifique se o ID do jogo existe.",
+                id: id,
+            })
+        }
+
+        await jogosModel.deleteJogo(id);
+
+        res.status(200).json({
+            mensagem: "Jogo apagado com sucesso.",
+            jogoRemovido: jogoExiste
+        })
+
+    } catch (error) {
+        res.status(500).json({
+            erro: 'Erro ao apagar o jogo.',
+            detalhes: error.message
+        })
+    }
+}
