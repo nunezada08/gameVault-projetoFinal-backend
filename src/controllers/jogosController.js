@@ -52,50 +52,44 @@ export const listarUm = async (req,res) => {
     }
 }
 
+export const criarJogo = async (req, res) => {
+    try {
+        const { nome, desenvolvedor, genero, anoLancamento, preco, descricao } = req.body;
 
+        const dado = req.body;
 
+        const camposObrigatorios = ['nome', 'desenvolvedor', 'genero', 'anoLancamento', 'preco', 'descricao'];
 
+        const faltando = camposObrigatorios.filter(campo => !dado[campo]);
 
+        if (faltando.length > 0) {
+            return res.status(400).json({
+                erro: `Os seguintes campos são obrigatórios: ${faltando.join(', ')}.`
+            });
+        }
 
+        const generosValidos = ['Ação', 'Soulslike', 'FPS', 'RPG', 'Aventura', 'Realidade virtual', 'Mapa berto', 'Luta', 'Terror', 'Indie'];
+        if (!generosValidos.includes(genero)) {
+            return res.status(400).json({
+                erro: `Genero inválido.`,
+                generosValidos
+            })
+        }
 
+        const novoJogo = await jogosModel.create(dado);
 
+    res.status(201).json({
+        mensagem: 'Novo jogo criado com sucesso.',
+        jogo: novoJogo
+    })
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    } catch (error) {
+        res.status(500).json({
+            erro: 'Erro ao criar novo jogo.',
+            detalhes: error.message
+        })
+    }
+}
 
 
 

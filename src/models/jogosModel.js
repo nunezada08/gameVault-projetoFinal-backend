@@ -13,28 +13,19 @@ export const findById = async (id) => {
     })
 }
 
+export const create = async (data) => {
+    return await prisma.jogo.create({
+        data: {
+            nome:data.nome,
+            desenvolvedor:data.desenvolvedor,
+            genero:data.genero,
+            anoLancamento:data.anoLancamento,
+            preco:data.preco,
+            descricao:data.descricao 
+        }
+    })
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 export const deleteJogo = async (id) => {
