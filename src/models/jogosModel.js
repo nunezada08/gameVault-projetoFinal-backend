@@ -26,6 +26,20 @@ export const create = async (data) => {
     })
 
 }
+export const updatejogo = async (id, dados) => {
+    return await prisma.jogo.update({
+        where: { id: Number (id) },
+        data: {
+          ...(dados.nome && { nome: dados.nome }),
+          ...(dados.desenvolvedor && { desenvolvedor: dados.desenvolvedor }),
+          ...(dados.genero && { genero: dados.genero }),
+          ...(dados.anoLancamento && { anoLancamento: dados.anoLancamento }),
+          ...(dados.preco && { preco: dados.preco }),
+          ...(dados.descricao && { descricao: dados.descricao }),
+        }
+    });
+  }
+
 
 
 export const deleteJogo = async (id) => {
