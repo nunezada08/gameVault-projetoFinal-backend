@@ -7,5 +7,6 @@ router.get("/", jogosController.listarTodosJogos);
 router.get("/:id", jogosController.listarUm);
 router.post("/", jogosController.criarJogo);
 router.delete("/:id", jogosController.apagar);
+router.put("/:id", jogosController.atualizarJogo);
 
 export default router;

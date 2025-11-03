@@ -91,11 +91,48 @@ export const criarJogo = async (req, res) => {
     }
 }
 
+export const atualizarJogo = async (req, res) => {
+    try {
+
+        const id = parseInt(req.params.id);
+        const dados = req.body;
+
+        const jogoExiste = await jogosModel.findById(id);
+
+        if (!jogoExiste) {
+            return res.status(404).json({
+                erro: 'jogo não encontrado.',
+                mensagem: "Verifique se o ID do jogo existe.",
+                id: id,
+            })
+        }
+
+        if (dados.genero) {
+            const generosValidos = [ "Ação", "Soulslike", "FPS", "RPG", "Aventura", "Realidade virtual", "Mapa aberto", "Luta", "Terror", "Indie" ];
+            if (!generosValidos.includes(dados.genero)) {
+                return res.status(400).json({
+                    erro: `jogo inválido.`,
+                    generosValidos
+            })
+        }
+    }
+
+        const jogoAtualizado = await jogosModel.updatejogo(id, dados);
+
+        res.status(200).json({
+            mensagem: 'jogo atualizado com sucesso.',
+            jogo: jogoAtualizado
+        })
 
 
-
-
-
+    } catch (error) {
+        res.status(500).json({
+            erro: 'Erro ao atualizar o jogo.',
+            detalhes: error.message
+        })
+        
+    }
+}
 
 
 export const apagar = async (req, res) => {
