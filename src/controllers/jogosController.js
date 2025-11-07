@@ -3,20 +3,35 @@ import * as jogosModel from '../models/jogosModel.js';
 export const listarTodosJogos = async (req, res) => {
     try {
         const jogos = await jogosModel.findALL();
+        const {nome,desenvolvedor,genero,anoLancamento,preco} = req.query
 
-        if (!jogos || jogos.length === 0) {
-            res.status(404).json({
-                total: jogos.length,
-                mensagem: 'Nenhum jogo encontrado.',
-                jogos
-            })
-            
+        let resultado = jogos;
+
+        if(nome){
+            resultado=resultado.filter((jogo) => jogo.nome.toLowerCase().includes(nome.toLowerCase()))
+        }
+        if(desenvolvedor){
+            resultado=resultado.filter((jogo) => jogo.desenvolvedor.toLowerCase().includes(desenvolvedor.toLowerCase()))
+        }
+        if(genero){
+            resultado=resultado.filter((jogo) => jogo.genero.toLowerCase().includes(genero.toLowerCase()))
+        }
+        if(anoLancamento){
+            resultado=resultado.filter((jogo) => jogo.anoLancamento === parseInt(anoLancamento))
         }
 
-        res.status(200).json({
-            total: jogos.length,
+        if (!resultado || resultado.length === 0) {
+            return res.status(404).json({
+                total: resultado.length,
+                mensagem: 'Nenhum jogo encontrado.',
+                jogos: resultado
+            });
+        }
+
+        return res.status(200).json({
+            total: resultado.length,
             mensagem: 'Lista de jogos encontrada com sucesso.',
-            jogos
+            jogos: resultado
         });
         
     } catch (error) {
@@ -27,7 +42,6 @@ export const listarTodosJogos = async (req, res) => {
         });
     }
 }
-
 export const listarUm = async (req,res) => {
     try{
         const id = req.params.id;
@@ -51,7 +65,6 @@ export const listarUm = async (req,res) => {
         })
     }
 }
-
 export const criarJogo = async (req, res) => {
     try {
         const { nome, desenvolvedor, genero, anoLancamento, preco, descricao } = req.body;
@@ -90,7 +103,6 @@ export const criarJogo = async (req, res) => {
         })
     }
 }
-
 export const atualizarJogo = async (req, res) => {
     try {
 
@@ -133,8 +145,6 @@ export const atualizarJogo = async (req, res) => {
         
     }
 }
-
-
 export const apagar = async (req, res) => {
     try {
         const id = parseInt(req.params.id);

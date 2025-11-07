@@ -5,16 +5,16 @@ import { seedJogos } from './seedJogos.js'
 const prisma = new PrismaClient()
 
 async function main() {
-  console.log("\n🚀 Executando Seed Mestre (Consoles + Jogos)...")
+  console.log("\n🚀 Executando Seed Principal (Consoles + Jogos)...")
 
   try {
     const consoleCount = await seedConsoles(prisma)
-    console.log(`[MASTER] Consoles seeded: ${consoleCount}`)
+    console.log(`[MAIN] Consoles seeded: ${consoleCount}`)
 
     const jogosCount = await seedJogos(prisma)
-    console.log(`[MASTER] Jogos seeded: ${jogosCount}`)
+    console.log(`[MAIN] Jogos seeded: ${jogosCount}`)
 
-    console.log("\n✨ Seed Mestre Finalizado com Sucesso!")
+    console.log("\n✨ Seed Principal Finalizado com Sucesso!")
   } catch (e) {
     throw e
   }
@@ -22,7 +22,7 @@ async function main() {
 
 main()
   .catch((e) => {
-    console.error("❌ ERRO FATAL no Seed Mestre:", e)
+    console.error("❌ ERRO FATAL no Seed Principal:", e)
     process.exit(1)
   })
   .finally(async () => {
