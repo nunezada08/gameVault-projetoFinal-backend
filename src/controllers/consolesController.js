@@ -3,8 +3,17 @@ import * as consolesModel from './../models/consolesModel.js'
 export const listarTodosConsoles = async (req, res) => {
   try {
     const consoles = await consolesModel.findAll()
+    const { nome, anoLancamento} = req.query
+    let resultado = consoles
 
-    if (!consoles || consoles.length === 0) {
+    if (nome) {
+      resultado = resultado.filter((console) => console.nome.toLowerCase().includes(nome.toLowerCase()))
+    }
+    if (anoLancamento) {
+      resultado = resultado.filter((console) => console.anoLancamento === parseInt(anoLancamento))
+    }
+
+    if (!resultado || resultado.length === 0) {
       return res.status(404).json({
         total: 0,
         mensagem: 'Não há consoles na lista',
@@ -13,9 +22,9 @@ export const listarTodosConsoles = async (req, res) => {
     }
 
     res.status(200).json({
-      total: consoles.length,
+      total: resultado.length,
       mensagem: 'Lista de consoles',
-      consoles,
+      consoles: resultado,
     })
   } catch (error) {
     res.status(500).json({
