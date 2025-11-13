@@ -1,6 +1,7 @@
 import { PrismaClient } from '@prisma/client'
 import { seedConsoles } from './seedConsoles.js'
 import { seedJogos } from './seedJogos.js'
+import { seedAvaliacoes } from './seedAvaliacoes.js'
 
 const prisma = new PrismaClient()
 
@@ -13,6 +14,9 @@ async function main() {
 
     const jogosCount = await seedJogos(prisma)
     console.log(`[MAIN] Jogos seeded: ${jogosCount}`)
+
+    const avaliacoesCount = await seedAvaliacoes(prisma)
+    console.log(`[MAIN] Jogos seeded: ${avaliacoesCount}`)
 
     console.log("\n✨ Seed Principal Finalizado com Sucesso!")
   } catch (e) {

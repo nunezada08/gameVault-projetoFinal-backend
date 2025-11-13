@@ -38,3 +38,11 @@ model Console {
 
   @@map("consoles")       
 }
+model Avaliacao {
+  id         Int     @id @default(autoincrement())
+  usuario    String
+  comentario String
+  nota       Decimal @db.Decimal(10, 2)
+
+  @@map("avaliacoes")
+}
