@@ -1,5 +1,6 @@
 import express from "express";
 import dotenv from "dotenv";
+import cors from "cors";
 import jogosRoute from './src/routes/jogosRoute.js';
 import consolesRoute from './src/routes/consolesRoute.js'
 import avaliacoesRoute from './src/routes/avaliacoesRoute.js'
@@ -7,9 +8,10 @@ import avaliacoesRoute from './src/routes/avaliacoesRoute.js'
 
 const app = express();
 app.use(express.json());
+app.use(cors());
 
 dotenv.config();
-const serverPort = process.env.PORT || 3001;
+const serverPort = process.env.PORT || 3002;
 
 app.get("/", (req, res) => {
     res.send("🚀 Servidor funcionando...");
