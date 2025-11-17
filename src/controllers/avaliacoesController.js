@@ -4,7 +4,7 @@ export const listarTodasAvaliacoes = async (req, res) => {
   try {
     const avaliacoes = await avaliacoesModel.findAll();
     const { nome, comentario} = req.query;
-    let resultado = avaliacao;
+    let resultado = avaliacoes;
 
     if (nome) {
         resultado = resultado.filter((avaliacao) =>

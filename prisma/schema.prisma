@@ -1,48 +1,104 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
-// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
-// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
-
 generator client {
   provider = "prisma-client-js"
 }
+
 datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
 
-model Jogo {
-  id              Int   @id   @default(autoincrement())
-  nome            String
-  desenvolvedor   String
-  genero          String
-  anoLancamento   Int
-  preco           Decimal @db.Decimal(10, 2)
-  descricao       String
-  crestedAt       DateTime    @default(now())
-  updatedAt       DateTime    @updatedAt
+model Usuario {
+  id                 Int              @id @default(autoincrement())
+  nome               String
+  email              String           @unique
+  senha              String
+  jogosAdquiridos    UsuarioJogo[]
+  consolesAdquiridos UsuarioConsole[]
+  avaliacoes         Avaliacao[]
 
-  @@map("jogos")       
+  @@map("usuarios")
+}
+
+model Jogo {
+  id            Int      @id @default(autoincrement())
+  nome          String
+  desenvolvedor String
+  genero        String
+  anoLancamento Int
+  preco         Decimal  @db.Decimal(10, 2)
+  descricao     String
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  consolesRelacionados JogoConsole[]
+  avaliacoes           Avaliacao[]
+  usuariosQuePossuem   UsuarioJogo[]
+
+  @@map("jogos")
 }
 
 model Console {
-  id              Int   @id   @default(autoincrement())
-  nome            String
-  nota            Decimal @db.Decimal(10,2)
-  anoLancamento   Int
-  preco           Decimal @db.Decimal(10, 2)
-  descricao       String
-  crestedAt       DateTime    @default(now())
-  updatedAt       DateTime    @updatedAt
+  id            Int      @id @default(autoincrement())
+  nome          String
+  nota          Decimal  @db.Decimal(10, 2)
+  anoLancamento Int
+  preco         Decimal  @db.Decimal(10, 2)
+  descricao     String
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
 
-  @@map("consoles")       
+  jogosRelacionados  JogoConsole[]
+  avaliacoes         Avaliacao[]
+  usuariosQuePossuem UsuarioConsole[]
+
+  @@map("consoles")
 }
+
 model Avaliacao {
   id         Int     @id @default(autoincrement())
-  usuario    String
   comentario String
   nota       Decimal @db.Decimal(10, 2)
 
+  jogoId    Int?
+  consoleId Int?
+  usuarioId Int
+
+  jogo    Jogo?    @relation(fields: [jogoId], references: [id])
+  console Console? @relation(fields: [consoleId], references: [id])
+  usuario Usuario  @relation(fields: [usuarioId], references: [id])
+
   @@map("avaliacoes")
+}
+
+model JogoConsole {
+  jogoId    Int
+  consoleId Int
+
+  jogo    Jogo    @relation(fields: [jogoId], references: [id])
+  console Console @relation(fields: [consoleId], references: [id])
+
+  @@id([jogoId, consoleId])
+  @@map("jogo_console")
+}
+
+model UsuarioJogo {
+  usuarioId Int
+  jogoId    Int
+
+  usuario Usuario @relation(fields: [usuarioId], references: [id])
+  jogo    Jogo    @relation(fields: [jogoId], references: [id])
+
+  @@id([usuarioId, jogoId])
+  @@map("usuario_jogo")
+}
+
+model UsuarioConsole {
+  usuarioId Int
+  consoleId Int
+
+  usuario Usuario @relation(fields: [usuarioId], references: [id])
+  console Console @relation(fields: [consoleId], references: [id])
+
+  @@id([usuarioId, consoleId])
+  @@map("usuario_console")
 }
