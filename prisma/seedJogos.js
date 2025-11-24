@@ -273,7 +273,7 @@ const famousGames = [
     anoLancamento: 2023,
     preco: 329.95,
     descricao: "Sequência direta de BOTW com foco em criatividade e física.",
-    imagem: "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co5vmg.jpg"
+    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSROTd9ngvsbV0Eb8pJP1tyuZ0M3vuXZmQv1Q&s"
   },
   //jogo-30
   {
@@ -283,7 +283,7 @@ const famousGames = [
     anoLancamento: 1985,
     preco: 109.95,
     descricao: "O jogo que definiu o gênero plataforma 2D.",
-    imagem: "super_mario_bros.jpg"
+    imagem: "https://upload.wikimedia.org/wikipedia/en/0/03/Super_Mario_Bros._box.png"
   },
   {
     nome: "Super Mario 64",
@@ -292,7 +292,7 @@ const famousGames = [
     anoLancamento: 1996,
     preco: 164.95,
     descricao: "Definiu o padrão para jogos de plataforma 3D.",
-    imagem: "super_mario_64.jpg"
+    imagem: "https://upload.wikimedia.org/wikipedia/pt/7/7b/Super_Mario_64_front.jpg"
   },
   {
     nome: "Super Mario Odyssey",
@@ -302,7 +302,7 @@ const famousGames = [
     preco: 274.95,
     descricao:
       "Uma aventura criativa em vários mundos abertos com a mecânica Cappy.",
-    imagem: "super_mario_odyssey.jpg"
+    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3FqAPExRaY0RFOGfuS7E-l89vq8zyWXKITA&s"
   },
   {
     nome: "Sonic The Hedgehog (1991)",
@@ -311,7 +311,7 @@ const famousGames = [
     anoLancamento: 1991,
     preco: 54.95,
     descricao: "O ouriço azul em sua estreia de alta velocidade.",
-    imagem: "sonic_the_hedgehog_1991.jpg"
+    imagem: "https://i.pinimg.com/736x/18/bc/2a/18bc2a2b0b7b1eef9fcbf01edb9c1d5a.jpg"
   },
   {
     nome: "Sonic Adventure",
@@ -321,7 +321,7 @@ const famousGames = [
     preco: 109.95,
     descricao:
       "O primeiro grande jogo 3D do Sonic, com foco em aventura e velocidade.",
-    imagem: "sonic_adventure.jpg"
+    imagem: "https://upload.wikimedia.org/wikipedia/en/6/60/Sonic_Adventure.PNG"
   },
   {
     nome: "The Last of Us Part I",
@@ -330,7 +330,7 @@ const famousGames = [
     anoLancamento: 2013,
     preco: 219.95,
     descricao: "Uma jornada emocional de sobrevivência em um mundo devastado.",
-    imagem: "the_last_of_us_part_i.jpg"
+    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyhsmtczq1oC0O70PQDDAb4qYs99lAPnGDhw&s"
   },
   {
     nome: "Returnal",
@@ -339,7 +339,7 @@ const famousGames = [
     anoLancamento: 2021,
     preco: 274.95,
     descricao: "Ação frenética em terceira pessoa com estrutura roguelike.",
-    imagem: "returnal.jpg"
+    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6SFcw6Dzh8Io0cvNap8RMdXRVbWLlsH6wIg&s"
   },
   {
     nome: "Death Stranding 2: On The Beach",
@@ -348,7 +348,7 @@ const famousGames = [
     anoLancamento: 2025,
     preco: 329.95,
     descricao: "O próximo épico de Hideo Kojima sobre conexão.",
-    imagem: "death_stranding_2.jpg"
+    imagem: "https://upload.wikimedia.org/wikipedia/en/e/e0/Death_Stranding_2_Icon.jpg"
   },
   {
     nome: "Red Dead Redemption 2",
@@ -357,7 +357,7 @@ const famousGames = [
     anoLancamento: 2018,
     preco: 329.95,
     descricao: "Um épico faroeste com detalhes impecáveis e mundo aberto.",
-    imagem: "red_dead_redemption_2.jpg"
+    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6Zw3ba8igTlqTD-rCWWQgpjA1dFwTv0DV3w&s"
   },
   {
     nome: "Grand Theft Auto V",
@@ -366,7 +366,7 @@ const famousGames = [
     anoLancamento: 2013,
     preco: 329.95,
     descricao: "O sucesso de vendas em Los Santos.",
-    imagem: "gta_v.jpg"
+    imagem: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1gXhYBTiv8whMqlcgbtSi-iegWR0IECT6VdLZo8wFfARvvZR0g52pBqiAOeMcN_9Age0BHzav1MrMpYI2o0ZuJ-6Fjfq7DZLf8ju53IrOTxD4jJb0XRqFJ_2aLxWASjhoEhHgBZU0ZbjE/s1600/capa2.jpg"
   },
   {
     nome: "Ghost of Tsushima",
@@ -375,7 +375,7 @@ const famousGames = [
     anoLancamento: 2020,
     preco: 274.95,
     descricao: "Épico samurai visualmente deslumbrante em mundo aberto.",
-    imagem: "ghost_of_tsushima.jpg"
+    imagem: "https://upload.wikimedia.org/wikipedia/en/b/b6/Ghost_of_Tsushima.jpg"
   },
   {
     nome: "Days Gone",
@@ -384,7 +384,7 @@ const famousGames = [
     anoLancamento: 2019,
     preco: 274.95,
     descricao: "Sobrevivência de motoqueiro contra hordas de Freakers.",
-    imagem: "days_gone.jpg"
+    imagem: "https://upload.wikimedia.org/wikipedia/pt/1/16/Days_Gone_cover_art.jpg"
   },
   {
     nome: "Detroit: Become Human",
@@ -394,7 +394,7 @@ const famousGames = [
     preco: 219.95,
     descricao:
       "Thriller cinemático focado em escolhas sobre a revolução dos andróides.",
-    imagem: "detroit_become_human.jpg"
+    imagem: "https://upload.wikimedia.org/wikipedia/en/thumb/e/ee/Detroit_Become_Human.jpg/250px-Detroit_Become_Human.jpg"
   },
   {
     nome: "Shadow of the Colossus",
@@ -403,7 +403,7 @@ const famousGames = [
     anoLancamento: 2005,
     preco: 164.95,
     descricao: "Uma jornada artística e melancólica de combate a gigantes.",
-    imagem: "shadow_of_the_colossus.jpg"
+    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuUuyV7LdlGWkUT144IfjjrY0s2GcLQgQ0vg&s"
   },
   {
     nome: "Until Dawn",
