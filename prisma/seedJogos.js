@@ -1,6 +1,4 @@
-import { PrismaClient } from "@prisma/client";
-
-const prisma = new PrismaClient();
+// O `prisma` é passado pelo `seed.mjs` — não instanciamos aqui para evitar múltiplas conexões.
 
 const famousGames = [
   {
@@ -604,8 +602,14 @@ export async function seedJogos(prisma) {
     genero: jogo.genero,
     anoLancamento: jogo.anoLancamento,
     preco: String(jogo.preco),
-    descricao: jogo.descricao.substring(0, 500),
-    imagens: jogo.imagens,
+    descricao: jogo.descricao ? jogo.descricao.substring(0, 500) : '',
+    // Algumas entradas usam `imagem` (string) e outras `imagens` (array).
+    // Garantimos um array para o campo `imagens` esperado pelo schema.
+    imagens: jogo.imagens
+      ? jogo.imagens
+      : jogo.imagem
+      ? [jogo.imagem]
+      : [],
   }));
 
   const { count } = await prisma.jogo.createMany({
