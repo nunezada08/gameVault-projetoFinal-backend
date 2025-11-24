@@ -275,7 +275,6 @@ const famousGames = [
     descricao: "Sequência direta de BOTW com foco em criatividade e física.",
     imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSROTd9ngvsbV0Eb8pJP1tyuZ0M3vuXZmQv1Q&s"
   },
-  //jogo-30
   {
     nome: "Super Mario Bros.",
     desenvolvedor: "Nintendo",
@@ -588,6 +587,258 @@ const famousGames = [
     preco: 54.95,
     descricao: "Um jogo indie de exploração focado em escalada e narrativa.",
     imagem: "https://assets-prd.ignimgs.com/2025/06/23/peak-1750699534248.jpg?crop=1%3A1%2Csmart&format=jpg&auto=webp&quality=80"
+  },
+  {
+    nome: "Roblox",
+    desenvolvedor: "Roblox Corporation",
+    genero: "Aventura",
+    anoLancamento: 2006,
+    preco: 0.0
+  },
+  {
+    nome: "Minecraft",
+    desenvolvedor: "Mojang Studios",
+    genero: "Aventura",
+    anoLancamento: 2011,
+    preco: 99.95
+  },
+  {
+    nome: "Hytale",
+    desenvolvedor: "Hypixel Studios",
+    genero: "RPG",
+    anoLancamento: 2025,
+    preco: 110.00
+  },
+  {
+    nome: "Batman: Arkham VR",
+    desenvolvedor: "Rocksteady Studios",
+    genero: "Realidade virtual",
+    anoLancamento: 2016,
+    preco: 109.95
+  },
+  {
+    nome: "Five Nights at Freddy's",
+    desenvolvedor: "Scott Cawthon",
+    genero: "Terror",
+    anoLancamento: 2014,
+    preco: 54.95
+  },
+  {
+    nome: "Bendy and the Ink Machine",
+    desenvolvedor: "Joey Drew Studios",
+    genero: "Terror",
+    anoLancamento: 2017,
+    preco: 82.50
+  },
+  {
+    nome: "Grand Theft Auto VI",
+    desenvolvedor: "Rockstar Games",
+    genero: "Mapa Aberto",
+    anoLancamento: 2025,
+    preco: 399.95
+  },
+  {
+    nome: "The Witcher 3: Wild Hunt",
+    desenvolvedor: "CD Projekt Red",
+    genero: "Mapa Aberto",
+    anoLancamento: 2015,
+    preco: 164.95
+  },
+  {
+    nome: "Cyberpunk 2077",
+    desenvolvedor: "CD Projekt Red",
+    genero: "RPG",
+    anoLancamento: 2020,
+    preco: 274.95
+  },
+  {
+    nome: "Starfield",
+    desenvolvedor: "Bethesda Game Studios",
+    genero: "Mapa Aberto",
+    anoLancamento: 2023,
+    preco: 329.95
+  },
+  {
+    nome: "Final Fantasy XVI",
+    desenvolvedor: "Square Enix",
+    genero: "Ação",
+    anoLancamento: 2023,
+    preco: 329.95
+  },
+  {
+    nome: "Diablo IV",
+    desenvolvedor: "Blizzard Entertainment",
+    genero: "Ação",
+    anoLancamento: 2023,
+    preco: 349.95
+  },
+  {
+    nome: "Baldur's Gate 3",
+    desenvolvedor: "Larian Studios",
+    genero: "RPG",
+    anoLancamento: 2023,
+    preco: 274.95
+  },
+  {
+    nome: "Marvel's Midnight Suns",
+    desenvolvedor: "Firaxis Games",
+    genero: "RPG",
+    anoLancamento: 2022,
+    preco: 219.95
+  },
+  {
+    nome: "DOOM Eternal",
+    desenvolvedor: "id Software",
+    genero: "FPS",
+    anoLancamento: 2020,
+    preco: 219.95
+  },
+  {
+    nome: "Halo Infinite",
+    desenvolvedor: "343 Industries",
+    genero: "FPS",
+    anoLancamento: 2021,
+    preco: 274.95
+  },
+  {
+    nome: "Apex Legends",
+    desenvolvedor: "Respawn Entertainment",
+    genero: "FPS",
+    anoLancamento: 2019,
+    preco: 0.0
+  },
+  {
+    nome: "Valorant",
+    desenvolvedor: "Riot Games",
+    genero: "FPS",
+    anoLancamento: 2020,
+    preco: 0.0
+  },
+  {
+    nome: "Call of Duty: Modern Warfare III",
+    desenvolvedor: "Sledgehammer Games",
+    genero: "FPS",
+    anoLancamento: 2023,
+    preco: 349.95
+  },
+  {
+    nome: "Counter-Strike 2",
+    desenvolvedor: "Valve",
+    genero: "FPS",
+    anoLancamento: 2023,
+    preco: 0.0
+  },
+  {
+    nome: "Lies of P",
+    desenvolvedor: "Round8 Studio",
+    genero: "Soulslike",
+    anoLancamento: 2023,
+    preco: 274.95
+  },
+  {
+    nome: "Stellaris",
+    desenvolvedor: "Paradox Interactive",
+    genero: "Aventura",
+    anoLancamento: 2016,
+    preco: 109.95
+  },
+  {
+    nome: "Civilization VI",
+    desenvolvedor: "Firaxis Games",
+    genero: "Aventura",
+    anoLancamento: 2016,
+    preco: 164.95
+  },
+  {
+    nome: "Among Us",
+    desenvolvedor: "Innersloth",
+    genero: "Indie",
+    anoLancamento: 2018,
+    preco: 27.50
+  },
+  {
+    nome: "Fall Guys",
+    desenvolvedor: "Mediatonic",
+    genero: "Ação",
+    anoLancamento: 2020,
+    preco: 0.0
+  },
+  {
+    nome: "Fortnite",
+    desenvolvedor: "Epic Games",
+    genero: "Ação",
+    anoLancamento: 2017,
+    preco: 0.0
+  },
+  {
+    nome: "League of Legends",
+    desenvolvedor: "Riot Games",
+    genero: "Ação",
+    anoLancamento: 2009,
+    preco: 0.0
+  },
+  {
+    nome: "Dota 2",
+    desenvolvedor: "Valve",
+    genero: "Ação",
+    anoLancamento: 2013,
+    preco: 0.0
+  },
+  {
+    nome: "Genshin Impact",
+    desenvolvedor: "miHoYo",
+    genero: "RPG",
+    anoLancamento: 2020,
+    preco: 0.0
+  },
+  {
+    nome: "Honkai: Star Rail",
+    desenvolvedor: "miHoYo",
+    genero: "RPG",
+    anoLancamento: 2023,
+    preco: 0.0
+  },
+  {
+    nome: "Sea of Thieves",
+    desenvolvedor: "Rare",
+    genero: "Aventura",
+    anoLancamento: 2018,
+    preco: 219.95
+  },
+  {
+    nome: "Hades",
+    desenvolvedor: "Supergiant Games",
+    genero: "Ação",
+    anoLancamento: 2020,
+    preco: 109.95
+  },
+  {
+    nome: "Disco Elysium",
+    desenvolvedor: "ZA/UM",
+    genero: "RPG",
+    anoLancamento: 2019,
+    preco: 109.95
+  },
+  {
+    nome: "Deathloop",
+    desenvolvedor: "Arkane Lyon",
+    genero: "FPS",
+    anoLancamento: 2021,
+    preco: 274.95
+  },
+  {
+    nome: "Sifu",
+    desenvolvedor: "Sloclap",
+    genero: "Luta",
+    anoLancamento: 2022,
+    preco: 219.95
+  },
+  {
+    nome: "Stray",
+    desenvolvedor: "BlueTwelve Studio",
+    genero: "Aventura",
+    anoLancamento: 2022,
+    preco: 109.95
   }
 ];
 
