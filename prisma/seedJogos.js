@@ -412,7 +412,7 @@ const famousGames = [
     anoLancamento: 2015,
     preco: 164.95,
     descricao: "Drama de terror adolescente com muitas escolhas e mortes.",
-    imagem: "until_dawn.jpg"
+    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPZGBVz1ezIcDfttlSzsWFtshLHnPeDUUT2Q&s"
   },
   {
     nome: "Uncharted 4: A Thief’s End",
@@ -421,7 +421,7 @@ const famousGames = [
     anoLancamento: 2016,
     preco: 274.95,
     descricao: "O final emocionante da saga de Nathan Drake.",
-    imagem: "uncharted_4.jpg"
+    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm0snNlNaY4pMltVnfXr36jQ-QnBWfDB5LmA&s"
   },
   {
     nome: "Metal Gear Solid 3: Snake Eater",
@@ -430,7 +430,7 @@ const famousGames = [
     anoLancamento: 2004,
     preco: 164.95,
     descricao: "O mestre do stealth focado em sobrevivência na selva.",
-    imagem: "metal_gear_solid_3.jpg"
+    imagem: "https://upload.wikimedia.org/wikipedia/pt/7/75/Metal_Gear_Solid_3_Subsistence_-_North-american_cover.jpg"
   },
   {
     nome: "Assassin’s Creed II",
@@ -439,7 +439,7 @@ const famousGames = [
     anoLancamento: 2009,
     preco: 109.95,
     descricao: "A aventura de Ezio Auditore no Renascimento.",
-    imagem: "assassins_creed_ii.jpg"
+    imagem: "https://upload.wikimedia.org/wikipedia/pt/a/ac/Assassins_Creed_2_capa.png"
   },
   {
     nome: "Horizon Zero Dawn",
@@ -448,7 +448,7 @@ const famousGames = [
     anoLancamento: 2017,
     preco: 274.95,
     descricao: "Aloy em um mundo pós-apocalíptico com máquinas animais.",
-    imagem: "horizon_zero_dawn.jpg"
+    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDFmU7vmHYCcaqaxUEpyxmtj8A6SK-cO0aaA&s"
   },
   {
     nome: "Horizon Forbidden West",
@@ -457,7 +457,7 @@ const famousGames = [
     anoLancamento: 2022,
     preco: 329.95,
     descricao: "A continuação da jornada de Aloy no Oeste Proibido.",
-    imagem: "horizon_forbidden_west.jpg"
+    imagem: "https://upload.wikimedia.org/wikipedia/pt/e/e5/Horizon_Forbidden_West.jpg"
   },
   {
     nome: "Fallout 4",
@@ -466,7 +466,7 @@ const famousGames = [
     anoLancamento: 2015,
     preco: 164.95,
     descricao: "Sobrevivência e construção no Commonwealth pós-apocalíptico.",
-    imagem: "fallout_4.jpg"
+    imagem: "https://upload.wikimedia.org/wikipedia/pt/7/70/Fallout_4_cover_art.jpg"
   },
   {
     nome: "Astrobot Rescue Mission",
@@ -475,7 +475,7 @@ const famousGames = [
     anoLancamento: 2018,
     preco: 164.95,
     descricao: "O aclamado jogo de plataforma exclusivo de PS VR.",
-    imagem: "astrobot_rescue_mission.jpg"
+    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7rVO0lYe_iXtniPexb4wJj2txAcbSlBR_ag&s"
   },
   {
     nome: "Marvel's Spider-Man 2",
@@ -484,7 +484,7 @@ const famousGames = [
     anoLancamento: 2023,
     preco: 349.95,
     descricao: "Peter Parker e Miles Morales enfrentam Venom e Kraven.",
-    imagem: "marvels_spider_man_2.jpg"
+    imagem: "https://upload.wikimedia.org/wikipedia/pt/6/64/Spider-Man_2_2023_capa.jpg"
   },
   {
     nome: "Marvel's Wolverine",
@@ -493,7 +493,7 @@ const famousGames = [
     anoLancamento: 2025,
     preco: 349.95,
     descricao: "O próximo grande jogo de super-heróis da Insomniac Games.",
-    imagem: "marvels_wolverine.jpg"
+    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpTh6Oj-Do4Vsiatfeco0SI-0RgSveCAfQVQ&s"
   },
   {
     nome: "Stellar Blade",
@@ -503,7 +503,7 @@ const famousGames = [
     preco: 329.95,
     descricao:
       "Ação intensa focada no combate e na estética de ficção científica.",
-    imagem: "stellar_blade.jpg"
+    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp4kA0xkIYLy9RM6lDBkCq9fkyDFKCOOTnjg&s"
   },
   {
     nome: "Yakuza 6: The Song of Life",
@@ -512,7 +512,7 @@ const famousGames = [
     anoLancamento: 2016,
     preco: 164.95,
     descricao: "O final da história de Kazuma Kiryu.",
-    imagem: "yakuza_6.jpg"
+    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNM1pfasYvt458WDSDElam8PVNLemBnRFu3w&s"
   },
   {
     nome: "Gran Turismo 7",
@@ -522,7 +522,7 @@ const famousGames = [
     preco: 274.95,
     descricao:
       "O simulador de corrida que celebra a história do automobilismo.",
-    imagem: "gran_turismo_7.jpg"
+    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv_q2zXerc_ClXNmThOS6rImCExJjr5LhuSQ&s"
   },
   {
     nome: "Need for Speed Underground",
@@ -531,7 +531,7 @@ const famousGames = [
     anoLancamento: 2003,
     preco: 54.95,
     descricao: "Popularizou as corridas de rua e a customização de carros.",
-    imagem: "need_for_speed_underground.jpg"
+    imagem: "https://upload.wikimedia.org/wikipedia/en/5/52/Need_for_Speed_Underground_cover.jpg"
   },
   {
     nome: "Doom: The Dark Ages",
@@ -540,7 +540,7 @@ const famousGames = [
     anoLancamento: 2025,
     preco: 329.95,
     descricao: "O prelúdio épico da saga Doom, focado em combate medieval.",
-    imagem: "doom_the_dark_ages.jpg"
+    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7CjHB7iZ4vMUMnNy8BP215mVrp5MdTgBqpw&s"
   },
   {
     nome: "Battlefield 6 (2042)",
@@ -550,7 +550,7 @@ const famousGames = [
     preco: 274.95,
     descricao:
       "FPS multiplayer de larga escala focado em guerra total e futurista.",
-    imagem: "battlefield_6.jpg"
+    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiK80Hw7IyGja2DZg7_qvUdazKil7PUsP0jg&s"
   },
   {
     nome: "Call of Duty: Black Ops",
@@ -559,7 +559,7 @@ const famousGames = [
     anoLancamento: 2010,
     preco: 164.95,
     descricao: "FPS com foco em operações secretas da Guerra Fria.",
-    imagem: "call_of_duty_black_ops.jpg"
+    imagem: "https://upload.wikimedia.org/wikipedia/pt/5/54/Call-of-Duty---Black-Ops---Cover-.jpg"
   },
   {
     nome: "Black",
@@ -569,7 +569,7 @@ const famousGames = [
     preco: 82.5,
     descricao:
       "Clássico de FPS para PS2 conhecido por sua ação cinematográfica e destrutiva.",
-    imagem: "black_fps_ps2.jpg"
+    imagem: "https://upload.wikimedia.org/wikipedia/en/a/ad/Black_cover_art.jpg"
   },
   {
     nome: "Hollow Knight: Silksong",
@@ -578,7 +578,7 @@ const famousGames = [
     anoLancamento: 2025,
     preco: 109.95,
     descricao: "A esperada sequência do 'metroidvania' aclamado pela crítica.",
-    imagem: "hollow_knight_silksong.jpg"
+    imagem: "https://pbs.twimg.com/media/GniOTj6WcAA_0O2.jpg"
   },
   {
     nome: "Peak",
@@ -587,7 +587,7 @@ const famousGames = [
     anoLancamento: 2024,
     preco: 54.95,
     descricao: "Um jogo indie de exploração focado em escalada e narrativa.",
-    imagem: "peak.jpg"
+    imagem: "https://assets-prd.ignimgs.com/2025/06/23/peak-1750699534248.jpg?crop=1%3A1%2Csmart&format=jpg&auto=webp&quality=80"
   }
 ];
 
