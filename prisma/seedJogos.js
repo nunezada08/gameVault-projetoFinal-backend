@@ -8,7 +8,7 @@ const famousGames = [
     anoLancamento: 2020,
     preco: 329.95,
     descricao: "O pioneiro da série, refeito para a nova geração.",
-    imagem: "https://image.api.playstation.com/vulcan/img/rnd/202011/1717/GemRaOZaCMhGxQ9dRhnQQyT5.png"
+    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLCoFCC9LuBW-Aff4I6n5-AyD1fP3-6NdOMA&s"
   },
   {
     nome: "Dark Souls",
@@ -17,7 +17,7 @@ const famousGames = [
     anoLancamento: 2011,
     preco: 164.95,
     descricao: "O RPG de Ação desafiador que popularizou o gênero.",
-    imagem: "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/570940/capsule_616x353.jpg"
+    imagem: "https://m.media-amazon.com/images/I/71Moqa6XZlL._AC_UF1000,1000_QL80_.jpg"
   },
   {
     nome: "Bloodborne",
@@ -26,7 +26,7 @@ const famousGames = [
     anoLancamento: 2015,
     preco: 219.95,
     descricao: "Caça gótica Lovecraftiana com foco em combate rápido.",
-    imagem: "https://image.api.playstation.com/vulcan/img/rnd/202010/2614/Sy5e8DmeKIJVjlAGraPAJYkT.png"
+    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk62h2PTD0r1rB9MFnK_eWPArp8FriPJp9cw&s"
   },
   {
     nome: "Elden Ring",
@@ -35,7 +35,7 @@ const famousGames = [
     anoLancamento: 2022,
     preco: 329.95,
     descricao:"O vasto mundo aberto Soulslike criado por Miyazaki e G.R.R. Martin.",
-    imagem: "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1245620/header.jpg"
+    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU_cspEzfgMdenwt0VS7QHBJCOdWaVkrXyvA&s"
   },
   {
     nome: "Resident Evil 1 (1996)",
@@ -53,7 +53,7 @@ const famousGames = [
     anoLancamento: 2019,
     preco: 164.95,
     descricao: "O remake aterrorizante da experiência de Raccoon City.",
-    imagem: "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/883710/header.jpg"
+    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZZxPlqR8F_VrvILKygK1cfHt_RBzIDtmGOg&s"
   },
   {
     nome: "Resident Evil 3 Remake",
@@ -62,7 +62,7 @@ const famousGames = [
     anoLancamento: 2020,
     preco: 164.95,
     descricao: "Jill Valentine e a perseguição implacável de Nemesis.",
-    imagem: "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/952060/header.jpg"
+    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi0YYUF_c2t9gzvLAVAcrdpEfz-KfpBIxAkQ&s"
   },
   {
     nome: "Resident Evil 4 (2004)",
@@ -80,7 +80,7 @@ const famousGames = [
     anoLancamento: 2009,
     preco: 54.95,
     descricao: "Foco total na ação cooperativa e na África.",
-    imagem: "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/21690/header.jpg"
+    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcI1IHTDyATH7gaE3g6V0hptj4EqI8YldA4g&s"
   },
   {
     nome: "Resident Evil 6",
@@ -89,7 +89,7 @@ const famousGames = [
     anoLancamento: 2012,
     preco: 54.95,
     descricao: "O jogo mais focado em ação da série, com múltiplas campanhas.",
-    imagem: "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/221040/header.jpg"
+    imagem: "https://upload.wikimedia.org/wikipedia/pt/7/73/Resident_evil_6.jpg"
   },
   {
     nome: "Resident Evil 7: Biohazard",
@@ -98,26 +98,26 @@ const famousGames = [
     anoLancamento: 2017,
     preco: 109.95,
     descricao: "Retorno às raízes do horror em primeira pessoa.",
-    imagem: "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/418370/header.jpg"
+    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6tAmNF8GByl-jAhJL23YiCD59ELR_axdMNg&s"
   },
   {
-    nome: "Resident Evil Village (8)",
+    nome: "Resident Evil Village",
     desenvolvedor: "Capcom",
     genero: "Terror",
     anoLancamento: 2021,
     preco: 274.95,
     descricao: "A aventura de Ethan Winters na vila sombria.",
-    imagem: "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1196590/header.jpg"
+    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfBkJY9wY8UHr-_S-cZFuEwKbVdzZsYiWh-Q&s"
   },
   {
-    nome: "Resident Evil 9 (Projetado)",
+    nome: "Resident Evil requiem",
     desenvolvedor: "Capcom",
     genero: "Terror",
     anoLancamento: 2025,
     preco: 329.95,
     descricao:
       "O próximo grande título da série, focado no terror de sobrevivência.",
-    imagem: "https://egw.news/uploads/news/1/17/1742245448094_1742245448094.webp"
+    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2Jqi5z1KdRrCGDj_f9UiclrEU5bhIZVg0pQ&s"
   },
   {
     nome: "God of War (Original 2005)",
@@ -153,7 +153,7 @@ const famousGames = [
     anoLancamento: 2018,
     preco: 274.95,
     descricao: "A reinvenção nórdica de Kratos e Atreus.",
-    imagem: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1593500/header.jpg?t=1763059412"
+    imagem: "https://i0.wp.com/cloud.estacaonerd.com/wp-content/uploads/2021/10/20132551/god-of-war.jpg?fit=1920%2C1080&ssl=1"
   },
   {
     nome: "God of War: Ragnarok",
@@ -171,7 +171,7 @@ const famousGames = [
     anoLancamento: 2001,
     preco: 109.95,
     descricao: "O nascimento do combate estiloso com Dante.",
-    imagem: "https://cdn.mobygames.com/b336c098-ab77-11ed-a218-02420a00019e.webp"
+    imagem: "https://upload.wikimedia.org/wikipedia/en/1/1e/DMC1FrontCover.jpg"
   },
   {
     nome: "Devil May Cry 5",
@@ -181,7 +181,7 @@ const famousGames = [
     preco: 164.95,
     descricao:
       "O ápice da ação 'hack and slash' com três personagens jogáveis.",
-    imagem: "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/601150/header.jpg"
+    imagem: "https://upload.wikimedia.org/wikipedia/pt/thumb/c/cb/Devil_May_Cry_5.jpg/270px-Devil_May_Cry_5.jpg"
   },
   {
     nome: "Darksiders",
@@ -190,7 +190,7 @@ const famousGames = [
     anoLancamento: 2010,
     preco: 109.95,
     descricao: "Guerra, o Cavaleiro do Apocalipse, em sua jornada.",
-    imagem: "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/462780/header.jpg"
+    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3OuigEUEkTJveRwSZSGCyDTfd6KPdE23EMQ&s"
   },
   {
     nome: "Darksiders II",
@@ -200,7 +200,7 @@ const famousGames = [
     preco: 109.95,
     descricao:
       "Morte, o Cavaleiro do Apocalipse, em uma aventura maior e com elementos RPG.",
-    imagem: "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/388410/header.jpg"
+    imagem: "https://upload.wikimedia.org/wikipedia/pt/d/d2/DarksidersII_capa.jpg"
   },
   {
     nome: "Darksiders III",
@@ -209,7 +209,7 @@ const famousGames = [
     anoLancamento: 2018,
     preco: 164.95,
     descricao: "Fúria, a Cavaleira, focada em combate ágil e quebra-cabeças.",
-    imagem: "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/606280/header.jpg"
+    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmmYMbbNAdUfM2mioifJvgzC26kl9eMRMpmQ&s"
   },
   {
     nome: "Tomb Raider (1996)",
@@ -227,16 +227,16 @@ const famousGames = [
     anoLancamento: 2013,
     preco: 109.95,
     descricao: "O reboot moderno de Lara Croft, focado em sobrevivência.",
-    imagem: "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/203160/header.jpg"
+    imagem: "https://upload.wikimedia.org/wikipedia/pt/0/03/Tr2012cover.jpg"
   },
   {
-    nome: "Pokémon Red/Blue/Yellow",
+    nome: "Pokémon Red/Blue/Yellow/green",
     desenvolvedor: "Game Freak",
     genero: "RPG",
     anoLancamento: 1996,
     preco: 82.5,
     descricao: "O início da aventura de caça e treinamento de Pokémon.",
-    imagem: "https://www.nintendo.com/eu/media/images/10_share_images/games_15/game_boy_4/H2x1_GB_PokemonRed_enGB_image1600w.jpg"
+    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6zJNgcbySMVfBycuYDDGeunR7IvWUp8i28w&s"
   },
   {
     nome: "Pokémon Scarlet/Violet",
@@ -255,7 +255,7 @@ const famousGames = [
     anoLancamento: 1998,
     preco: 274.95,
     descricao: "Revolucionou o 3D e o gênero Ação-Aventura.",
-    imagem: "https://cdn.mobygames.com/covers/4756691-the-legend-of-zelda-ocarina-of-time-nintendo-64-front-cover.jpg"
+    imagem: "https://upload.wikimedia.org/wikipedia/pt/thumb/1/17/The_Legend_of_Zelda_Ocarina_of_Time_capa.png/330px-The_Legend_of_Zelda_Ocarina_of_Time_capa.png"
   },
   {
     nome: "The Legend of Zelda: Breath of the Wild",
