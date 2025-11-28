@@ -32,3 +32,8 @@ main()
   .finally(async () => {
     await prisma.$disconnect()
   })
+
+
+  /* 
+  A seed.mjs foi feita para que eu pudesse rodar todas as seeds que foram feitas separadamente, para isso exportamos as seeds e importamos para essa seed principal, preferimos usar as seeds desta maneira pois é melhor para que consigamos achar o erro mais facilmente, já que o erro aparece em uma das seeds especificas.
+   */

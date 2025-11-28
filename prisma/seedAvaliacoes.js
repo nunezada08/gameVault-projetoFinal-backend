@@ -179,3 +179,14 @@ export async function seedAvaliacoes(prisma) {
 
     console.log(`✅ ${count} avaliações inseridas/verificadas com sucesso!`);
 }
+
+/*
+O generateTemporaryUserData cria usuários temporários para associar às avaliações. Os usuários são necessários para manter a integridade referencial ao inserir avaliações que dependem de usuários existentes no banco de dados.
+  nome: item.usuario, (O nome do novo usuário será o mesmo valor contido no campo usuario da avaliação)
+        email: `${item.usuario}@temp.com`, (O email do novo usuário será o valor do campo usuario da avaliação com o sufixo @temp.com)
+        senha: `$2b$10$temporary.hashed.password.for.seed`, (A senha do novo usuário é um hash temporário fixo usado apenas para o processo de seed. foi feito para simular a existencia de uma senha sem expor senhas reais, como se estivesse criptografada).
+
+A função fetchExistingIds recupera os IDs existentes de jogos, consoles e usuários do banco de dados. Esses IDs são usados para associar aleatoriamente avaliações a jogos ou consoles, garantindo que as avaliações sejam vinculadas a entidades válidas no banco de dados.
+
+A função seedAvaliacoes orquestra o processo de criação de usuários temporários, recuperação de IDs existentes e inserção das avaliações no banco de dados, garantindo que cada avaliação esteja corretamente associada a um usuário e, quando possível, a um jogo ou console.
+*/
