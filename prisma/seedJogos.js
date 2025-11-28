@@ -593,254 +593,327 @@ const famousGames = [
     desenvolvedor: "Roblox Corporation",
     genero: "Aventura",
     anoLancamento: 2006,
-    preco: 0.0
+    preco: 0.0,
+    descricao: "Plataforma de criação de jogos onde usuários desenvolvem e jogam experiências feitas pela comunidade.",
+    imagem:"https://m.media-amazon.com/images/I/81YoKLnmDTL._AC_UF1000,1000_QL80_.jpg"
   },
   {
     nome: "Minecraft",
     desenvolvedor: "Mojang Studios",
     genero: "Aventura",
     anoLancamento: 2011,
-    preco: 99.95
+    preco: 99.95,
+    descricao: "Jogo de sobrevivência e construção em mundo aberto com blocos totalmente modificáveis.",
+    imagem:"https://cdn.sistemawbuy.com.br/arquivos/c30f3cdb5ede193830560f4c44f96b28/produtos/641bdb2392c6a/gift-card-minecraft-java-641bdb24085f4.jpg"
   },
   {
     nome: "Hytale",
     desenvolvedor: "Hypixel Studios",
     genero: "RPG",
     anoLancamento: 2025,
-    preco: 110.00
+    preco: 110.00,
+    descricao: "RPG de aventura com criação de mundos, exploração e combate inspirado por Minecraft.",
+    imagem:"https://sm.ign.com/t/ign_pt/cover/h/hytale/hytale_fpdy.1200.jpg"
   },
   {
     nome: "Batman: Arkham VR",
     desenvolvedor: "Rocksteady Studios",
     genero: "Realidade virtual",
     anoLancamento: 2016,
-    preco: 109.95
+    preco: 109.95,
+    descricao: "Experiência imersiva em VR que coloca o jogador no papel do Batman investigando um mistério.",
+    imagem:"https://m.media-amazon.com/images/I/71JO-prEujL._AC_UF1000,1000_QL80_.jpg"
   },
   {
     nome: "Five Nights at Freddy's",
     desenvolvedor: "Scott Cawthon",
     genero: "Terror",
     anoLancamento: 2014,
-    preco: 54.95
+    preco: 54.95,
+    descricao: "Jogo de terror onde o jogador deve sobreviver à noite monitorando animatrônicos assustadores.",
+    imagem:"https://m.media-amazon.com/images/M/MV5BZmQ3NmIxNTgtYjFiNS00NzliLWI0YzAtZDkxY2E0YWIxZDEwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
   },
   {
     nome: "Bendy and the Ink Machine",
     desenvolvedor: "Joey Drew Studios",
     genero: "Terror",
     anoLancamento: 2017,
-    preco: 82.50
+    preco: 82.50,
+    descricao: "Aventura de terror em estilo cartoon envolvendo mistérios em um estúdio de animação.",
+    imagem:"https://sm.ign.com/t/ign_pt/cover/b/bendy-and-/bendy-and-the-ink-machine_a9hz.600.jpg"
   },
   {
     nome: "Grand Theft Auto VI",
     desenvolvedor: "Rockstar Games",
     genero: "Mapa Aberto",
-    anoLancamento: 2025,
-    preco: 399.95
+    anoLancamento: 2030,
+    preco: 399.95,
+    descricao: "Nova entrada da série GTA com mundo aberto expansivo e narrativa cinematográfica.",
+    imagem:"https://www.europanet.com.br/upload/id_produto/60_____/6001702g.jpg"
   },
   {
     nome: "The Witcher 3: Wild Hunt",
     desenvolvedor: "CD Projekt Red",
     genero: "Mapa Aberto",
     anoLancamento: 2015,
-    preco: 164.95
+    preco: 164.95,
+    descricao: "RPG de mundo aberto onde Geralt busca sua filha adotiva enquanto enfrenta monstros.",
+    imagem:"https://upload.wikimedia.org/wikipedia/pt/0/06/TW3_Wild_Hunt.png"
   },
   {
     nome: "Cyberpunk 2077",
     desenvolvedor: "CD Projekt Red",
     genero: "RPG",
     anoLancamento: 2020,
-    preco: 274.95
+    preco: 274.95,
+    descricao: "RPG futurista em mundo aberto ambientado na metrópole tecnológica Night City.",
+    imagem:"https://upload.wikimedia.org/wikipedia/pt/f/f7/Cyberpunk_2077_capa.png"
   },
   {
     nome: "Starfield",
     desenvolvedor: "Bethesda Game Studios",
     genero: "Mapa Aberto",
     anoLancamento: 2023,
-    preco: 329.95
+    preco: 329.95,
+    descricao: "RPG espacial focado em exploração de planetas, combate e narrativa.",
+    imagem:"https://store-images.s-microsoft.com/image/apps.35187.13567343664224659.1eb6fdf9-8a0b-4344-a135-ab17dfa3c609.c83b6d6a-56c3-4c3f-8b31-456cfb21c3b7"
   },
   {
     nome: "Final Fantasy XVI",
     desenvolvedor: "Square Enix",
     genero: "Ação",
     anoLancamento: 2023,
-    preco: 329.95
+    preco: 329.95,
+    descricao: "Ação e fantasia sombria com combates rápidos e foco na história de Clive Rosfield.",
+    imagem:"https://m.media-amazon.com/images/I/81dmAhOA4pL._AC_UF1000,1000_QL80_.jpg"
   },
   {
     nome: "Diablo IV",
     desenvolvedor: "Blizzard Entertainment",
     genero: "Ação",
     anoLancamento: 2023,
-    preco: 349.95
+    preco: 349.95,
+    descricao: "RPG de ação sombrio com exploração, combate rápido e loot abundante.",
+    imagem:"https://m.media-amazon.com/images/I/61LtU8b5p9L._AC_UF1000,1000_QL80_.jpg"
   },
   {
     nome: "Baldur's Gate 3",
     desenvolvedor: "Larian Studios",
     genero: "RPG",
     anoLancamento: 2023,
-    preco: 274.95
+    preco: 274.95,
+    descricao: "RPG estratégico baseado em D&D com escolhas profundas e narrativa ramificada.",
+    imagem:"https://m.media-amazon.com/images/M/MV5BN2I0N2Y3MWUtNjJiNy00NjRjLWE4ZTctOTQ2YWVhM2VhMTM4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
   },
   {
     nome: "Marvel's Midnight Suns",
     desenvolvedor: "Firaxis Games",
     genero: "RPG",
     anoLancamento: 2022,
-    preco: 219.95
+    preco: 219.95,
+    descricao: "RPG tático com heróis da Marvel usando cartas de habilidades em batalhas estratégicas.",
+    imagem:"https://m.media-amazon.com/images/I/81gdMzWvONL._AC_UF1000,1000_QL80_.jpg"
   },
   {
     nome: "DOOM Eternal",
     desenvolvedor: "id Software",
     genero: "FPS",
     anoLancamento: 2020,
-    preco: 219.95
+    preco: 219.95,
+    descricao: "FPS frenético com combates intensos contra hordas demoníacas.",
+    imagem:"https://m.media-amazon.com/images/I/71cMlBdT7gL._AC_UF1000,1000_QL80_.jpg"
   },
   {
     nome: "Halo Infinite",
     desenvolvedor: "343 Industries",
     genero: "FPS",
     anoLancamento: 2021,
-    preco: 274.95
+    preco: 274.95,
+    descricao: "Nova aventura de Master Chief com campanha aberta e multiplayer competitivo.",
+    imagem:"https://m.media-amazon.com/images/I/61aD5rcWynL._AC_UF1000,1000_QL80_.jpg"
   },
   {
     nome: "Apex Legends",
     desenvolvedor: "Respawn Entertainment",
     genero: "FPS",
     anoLancamento: 2019,
-    preco: 0.0
+    preco: 0.0,
+    descricao: "Battle royale baseado em heróis com habilidades únicas e jogabilidade dinâmica.",
+    imagem:"https://m.media-amazon.com/images/I/91Nqbl71UkL._AC_UF1000,1000_QL80_.jpg"
   },
   {
     nome: "Valorant",
     desenvolvedor: "Riot Games",
     genero: "FPS",
     anoLancamento: 2020,
-    preco: 0.0
+    preco: 0.0,
+    descricao: "FPS tático competitivo focado em precisão e habilidades especiais dos agentes.",
+    imagem:"https://store-images.s-microsoft.com/image/apps.21507.13663857844271189.4c1de202-3961-4c40-a0aa-7f4f1388775a.20ed7782-0eda-4f9d-b421-4cc47492edc6"
   },
   {
     nome: "Call of Duty: Modern Warfare III",
     desenvolvedor: "Sledgehammer Games",
     genero: "FPS",
     anoLancamento: 2023,
-    preco: 349.95
+    preco: 349.95,
+    descricao: "FPS com campanha de guerra moderna e multiplayer frenético.",
+    imagem:"https://m.media-amazon.com/images/I/81gC+0ed-nL._AC_UF1000,1000_QL80_.jpg"
   },
   {
     nome: "Counter-Strike 2",
     desenvolvedor: "Valve",
     genero: "FPS",
     anoLancamento: 2023,
-    preco: 0.0
+    preco: 0.0,
+    descricao: "FPS competitivo focado em estratégia e precisão em partidas 5v5.",
+    imagem:"https://m.media-amazon.com/images/I/61xQi94LmuL._AC_UF894,1000_QL80_.jpg"
   },
   {
     nome: "Lies of P",
     desenvolvedor: "Round8 Studio",
     genero: "Soulslike",
     anoLancamento: 2023,
-    preco: 274.95
+    preco: 274.95,
+    descricao: "Soulslike inspirado em Pinóquio com combate desafiador e atmosfera sombria.",
+    imagem:"https://m.media-amazon.com/images/I/81kRvsTMbDL._AC_UF1000,1000_QL80_.jpg"
   },
   {
     nome: "Stellaris",
     desenvolvedor: "Paradox Interactive",
     genero: "Aventura",
     anoLancamento: 2016,
-    preco: 109.95
+    preco: 109.95,
+    descricao: "Jogo de estratégia espacial com exploração, diplomacia e grandes impérios.",
+    imagem:"https://m.media-amazon.com/images/I/81TR-hOIA+L._AC_UF1000,1000_QL80_.jpg"
   },
   {
     nome: "Civilization VI",
     desenvolvedor: "Firaxis Games",
     genero: "Aventura",
     anoLancamento: 2016,
-    preco: 164.95
+    preco: 164.95,
+    descricao: "Estratégia por turnos onde você desenvolve uma civilização através dos séculos.",
+    imagem:"https://m.media-amazon.com/images/I/A1BceoX-6nL._AC_UF1000,1000_QL80_.jpg"
   },
   {
     nome: "Among Us",
     desenvolvedor: "Innersloth",
     genero: "Indie",
     anoLancamento: 2018,
-    preco: 27.50
+    preco: 27.50,
+    descricao: "Jogo social onde jogadores tentam descobrir impostores em uma nave.",
+    imagem:"https://cdn1.epicgames.com/salesEvent/salesEvent/amogusportrait_1200x1600-66ad0e4d363e1c92f9f8aae67a96dd31"
   },
   {
     nome: "Fall Guys",
     desenvolvedor: "Mediatonic",
     genero: "Ação",
     anoLancamento: 2020,
-    preco: 0.0
+    preco: 0.0,
+    descricao: "Battle royale de provas malucas com personagens coloridos e divertidos.",
+    imagem:"https://m.media-amazon.com/images/I/71DUE93s4RL._AC_UF1000,1000_QL80_.jpg"
   },
   {
     nome: "Fortnite",
     desenvolvedor: "Epic Games",
     genero: "Ação",
     anoLancamento: 2017,
-    preco: 0.0
+    preco: 0.0,
+    descricao: "Battle royale com construção, eventos ao vivo e constante atualização.",
+    imagem:"https://m.media-amazon.com/images/I/917JLu3S8DL._AC_UF1000,1000_QL80_.jpg"
   },
   {
     nome: "League of Legends",
     desenvolvedor: "Riot Games",
     genero: "Ação",
     anoLancamento: 2009,
-    preco: 0.0
+    preco: 0.0,
+    descricao: "MOBA competitivo com dezenas de campeões e estratégia em equipe.",
+    imagem:"https://i.pinimg.com/736x/20/54/b6/2054b617ac11f24e23d62e05f85303d4.jpg"
   },
   {
     nome: "Dota 2",
     desenvolvedor: "Valve",
     genero: "Ação",
     anoLancamento: 2013,
-    preco: 0.0
+    preco: 0.0,
+    descricao: "MOBA profundo com grande variedade de heróis e partidas intensas.",
+    imagem:"https://i.pinimg.com/1200x/09/1d/37/091d371866ebbc9b858ac76fe6d1c2f7.jpg"
   },
   {
     nome: "Genshin Impact",
     desenvolvedor: "miHoYo",
     genero: "RPG",
     anoLancamento: 2020,
-    preco: 0.0
+    preco: 0.0,
+    descricao: "RPG de mundo aberto com combates elementais e personagens colecionáveis.",
+    imagem:"https://i.pinimg.com/1200x/9b/86/7a/9b867ad05f18784ec8d042e9a2384b0c.jpg"
   },
   {
     nome: "Honkai: Star Rail",
     desenvolvedor: "miHoYo",
     genero: "RPG",
     anoLancamento: 2023,
-    preco: 0.0
+    preco: 0.0,
+    descricao: "RPG por turnos com história espacial e personagens estilizados.",
+    imagem:"https://i.pinimg.com/736x/d4/27/88/d4278882675eb693d7c9d84e3ed310bf.jpg"
   },
   {
     nome: "Sea of Thieves",
     desenvolvedor: "Rare",
     genero: "Aventura",
     anoLancamento: 2018,
-    preco: 219.95
+    preco: 219.95,
+    descricao: "Aventura pirata cooperativa em mundo aberto cheio de exploração e batalhas navais.",
+    imagem:"https://i.pinimg.com/1200x/ea/14/78/ea1478c29344f7254cf702787a88523c.jpg"
   },
   {
     nome: "Hades",
     desenvolvedor: "Supergiant Games",
     genero: "Ação",
     anoLancamento: 2020,
-    preco: 109.95
+    preco: 109.95,
+    descricao: "Roguelike de ação rápida onde você tenta escapar do Submundo.",
+    imagem:"https://i.pinimg.com/1200x/bd/b8/ec/bdb8eca07de123c1c9f6e0801c817e6a.jpg"
   },
   {
     nome: "Disco Elysium",
     desenvolvedor: "ZA/UM",
     genero: "RPG",
     anoLancamento: 2019,
-    preco: 109.95
+    preco: 109.95,
+    descricao: "RPG narrativo focado em investigação e escolhas profundas.",
+    imagem:"https://i.pinimg.com/736x/4b/d9/60/4bd96072e6668e3a99af7318b4d03296.jpg"
   },
   {
     nome: "Deathloop",
     desenvolvedor: "Arkane Lyon",
     genero: "FPS",
     anoLancamento: 2021,
-    preco: 274.95
+    preco: 274.95,
+    descricao: "FPS em que o jogador fica preso em um looping temporal e deve eliminar alvos.",
+    imagem:"https://i.pinimg.com/736x/f2/de/f5/f2def5d61c3ad01087af0bb01a649373.jpg"
   },
   {
     nome: "Sifu",
     desenvolvedor: "Sloclap",
     genero: "Luta",
     anoLancamento: 2022,
-    preco: 219.95
+    preco: 219.95,
+    descricao: "Jogo de luta com foco em artes marciais e sistema de envelhecimento do personagem.",
+    imagem:"https://i.pinimg.com/736x/1f/42/d4/1f42d45de726a110384e3ff3c2bf36fe.jpg"
   },
   {
     nome: "Stray",
     desenvolvedor: "BlueTwelve Studio",
     genero: "Aventura",
     anoLancamento: 2022,
-    preco: 109.95
+    preco: 109.95,
+    descricao: "Aventura onde você controla um gato explorando uma cidade futurista habitada por robôs.",
+    imagem:"https://i.pinimg.com/736x/35/c2/97/35c297898eb3caa546fb15f714959e06.jpg"
   }
 ];
+
 
 export async function seedJogos(prisma) {
   console.log(
