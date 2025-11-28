@@ -171,7 +171,7 @@ const famousGames = [
     anoLancamento: 2001,
     preco: 109.95,
     descricao: "O nascimento do combate estiloso com Dante.",
-    imagem: "https://upload.wikimedia.org/wikipedia/en/1/1e/DMC1FrontCover.jpg"
+    imagem: "https://i.pinimg.com/736x/84/e7/04/84e704f9ab2e4edcd507e8741709ece3.jpg"
   },
   {
     nome: "Devil May Cry 5",
@@ -190,7 +190,7 @@ const famousGames = [
     anoLancamento: 2010,
     preco: 109.95,
     descricao: "Guerra, o Cavaleiro do Apocalipse, em sua jornada.",
-    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3OuigEUEkTJveRwSZSGCyDTfd6KPdE23EMQ&s"
+    imagem: "https://i.pinimg.com/736x/35/a5/59/35a5591085fe9f404fd3fc5b8ecf4a25.jpg"
   },
   {
     nome: "Darksiders II",
@@ -200,7 +200,7 @@ const famousGames = [
     preco: 109.95,
     descricao:
       "Morte, o Cavaleiro do Apocalipse, em uma aventura maior e com elementos RPG.",
-    imagem: "https://upload.wikimedia.org/wikipedia/pt/d/d2/DarksidersII_capa.jpg"
+    imagem: "https://i.pinimg.com/1200x/2b/ff/32/2bff32cd320f3587b1cdf88a8464ac0e.jpg"
   },
   {
     nome: "Darksiders III",
@@ -209,7 +209,7 @@ const famousGames = [
     anoLancamento: 2018,
     preco: 164.95,
     descricao: "Fúria, a Cavaleira, focada em combate ágil e quebra-cabeças.",
-    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmmYMbbNAdUfM2mioifJvgzC26kl9eMRMpmQ&s"
+    imagem: "https://i.pinimg.com/736x/92/b1/a3/92b1a396e0d12a1bbfb9cd15354eb1f8.jpg"
   },
   {
     nome: "Tomb Raider (1996)",
@@ -264,7 +264,7 @@ const famousGames = [
     anoLancamento: 2017,
     preco: 329.95,
     descricao: "Um mundo aberto massivo que redefiniu a série Zelda.",
-    imagem: "https://www.oficinadanet.com.br/imagens/post/18127/capa-zelda.jpg"
+    imagem: "https://i.pinimg.com/1200x/31/59/2d/31592dd53c1d4976a8d5cadfd3fd07c5.jpg"
   },
   {
     nome: "The Legend of Zelda: Tears of the Kingdom",
@@ -474,7 +474,7 @@ const famousGames = [
     anoLancamento: 2018,
     preco: 164.95,
     descricao: "O aclamado jogo de plataforma exclusivo de PS VR.",
-    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7rVO0lYe_iXtniPexb4wJj2txAcbSlBR_ag&s"
+    imagem: "https://i.pinimg.com/736x/70/7f/fd/707ffd32ef8e75396621237f7bfa904d.jpg"
   },
   {
     nome: "Marvel's Spider-Man 2",
@@ -539,7 +539,7 @@ const famousGames = [
     anoLancamento: 2025,
     preco: 329.95,
     descricao: "O prelúdio épico da saga Doom, focado em combate medieval.",
-    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7CjHB7iZ4vMUMnNy8BP215mVrp5MdTgBqpw&s"
+    imagem: "https://i.pinimg.com/1200x/24/b0/ad/24b0ad706221d6bc7ed68c2cf4e97493.jpg"
   },
   {
     nome: "Battlefield 6 (2042)",
@@ -549,7 +549,7 @@ const famousGames = [
     preco: 274.95,
     descricao:
       "FPS multiplayer de larga escala focado em guerra total e futurista.",
-    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiK80Hw7IyGja2DZg7_qvUdazKil7PUsP0jg&s"
+    imagem: "https://i.pinimg.com/1200x/84/7f/c1/847fc1a7d49ac3d5f5d093c8c668b7ee.jpg"
   },
   {
     nome: "Call of Duty: Black Ops",
@@ -757,7 +757,7 @@ const famousGames = [
     anoLancamento: 2023,
     preco: 349.95,
     descricao: "FPS com campanha de guerra moderna e multiplayer frenético.",
-    imagem:"https://m.media-amazon.com/images/I/81gC+0ed-nL._AC_UF1000,1000_QL80_.jpg"
+    imagem:"https://i.pinimg.com/1200x/0a/a6/7b/0aa67b11d1cd4a12e2ce6ca720fe045f.jpg"
   },
   {
     nome: "Counter-Strike 2",
