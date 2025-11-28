@@ -20,16 +20,16 @@ model Usuario {
 }
 
 model Jogo {
-  id              Int   @id   @default(autoincrement())
-  nome            String
-  desenvolvedor   String
-  genero          String
-  anoLancamento   Int
-  preco           Decimal @db.Decimal(10, 2)
-  descricao       String
-  imagens         String[] @default([])
-  crestedAt       DateTime    @default(now())
-  updatedAt       DateTime    @updatedAt
+  id            Int      @id @default(autoincrement())
+  nome          String
+  desenvolvedor String
+  genero        String
+  anoLancamento Int
+  preco         Decimal  @db.Decimal(10, 2)
+  descricao     String
+  imagens       String[] @default([])
+  crestedAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
 
   consolesRelacionados JogoConsole[]
   avaliacoes           Avaliacao[]
@@ -45,6 +45,7 @@ model Console {
   anoLancamento Int
   preco         Decimal  @db.Decimal(10, 2)
   descricao     String
+  imagens       String[] @default([])
   createdAt     DateTime @default(now())
   updatedAt     DateTime @updatedAt
 
