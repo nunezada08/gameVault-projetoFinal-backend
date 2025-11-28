@@ -171,7 +171,7 @@ const famousGames = [
     anoLancamento: 2001,
     preco: 109.95,
     descricao: "O nascimento do combate estiloso com Dante.",
-    imagem: "https://upload.wikimedia.org/wikipedia/en/1/1e/DMC1FrontCover.jpg"
+    imagem: "https://i.pinimg.com/736x/84/e7/04/84e704f9ab2e4edcd507e8741709ece3.jpg"
   },
   {
     nome: "Devil May Cry 5",
@@ -181,7 +181,7 @@ const famousGames = [
     preco: 164.95,
     descricao:
       "O ápice da ação 'hack and slash' com três personagens jogáveis.",
-    imagem: "https://upload.wikimedia.org/wikipedia/pt/thumb/c/cb/Devil_May_Cry_5.jpg/270px-Devil_May_Cry_5.jpg"
+    imagem: "https://i.pinimg.com/736x/84/25/0b/84250b333f9d66307323f4b07a12e582.jpg"
   },
   {
     nome: "Darksiders",
@@ -190,7 +190,7 @@ const famousGames = [
     anoLancamento: 2010,
     preco: 109.95,
     descricao: "Guerra, o Cavaleiro do Apocalipse, em sua jornada.",
-    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3OuigEUEkTJveRwSZSGCyDTfd6KPdE23EMQ&s"
+    imagem: "https://i.pinimg.com/736x/35/a5/59/35a5591085fe9f404fd3fc5b8ecf4a25.jpg"
   },
   {
     nome: "Darksiders II",
@@ -200,7 +200,7 @@ const famousGames = [
     preco: 109.95,
     descricao:
       "Morte, o Cavaleiro do Apocalipse, em uma aventura maior e com elementos RPG.",
-    imagem: "https://upload.wikimedia.org/wikipedia/pt/d/d2/DarksidersII_capa.jpg"
+    imagem: "https://i.pinimg.com/1200x/6b/b5/af/6bb5af7537a315b2732d1bbdde6bd77a.jpg"
   },
   {
     nome: "Darksiders III",
@@ -209,7 +209,7 @@ const famousGames = [
     anoLancamento: 2018,
     preco: 164.95,
     descricao: "Fúria, a Cavaleira, focada em combate ágil e quebra-cabeças.",
-    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmmYMbbNAdUfM2mioifJvgzC26kl9eMRMpmQ&s"
+    imagem: "https://i.pinimg.com/736x/92/b1/a3/92b1a396e0d12a1bbfb9cd15354eb1f8.jpg"
   },
   {
     nome: "Tomb Raider (1996)",
@@ -218,7 +218,7 @@ const famousGames = [
     anoLancamento: 1996,
     preco: 82.5,
     descricao: "A aventura original de Lara Croft.",
-    imagem: "https://upload.wikimedia.org/wikipedia/pt/5/55/Tomb_Raider_1996_capa.png"
+    imagem: "https://i.pinimg.com/736x/48/79/d0/4879d0204101ef565d87e06d38130230.jpg"
   },
   {
     nome: "Tomb Raider (Reboot 2013)",
@@ -227,7 +227,7 @@ const famousGames = [
     anoLancamento: 2013,
     preco: 109.95,
     descricao: "O reboot moderno de Lara Croft, focado em sobrevivência.",
-    imagem: "https://upload.wikimedia.org/wikipedia/pt/0/03/Tr2012cover.jpg"
+    imagem: "https://i.pinimg.com/1200x/9d/15/fd/9d15fdc0d0580a3aba708690a99ac7c2.jpg"
   },
   {
     nome: "Pokémon Red/Blue/Yellow/green",
@@ -273,7 +273,7 @@ const famousGames = [
     anoLancamento: 2023,
     preco: 329.95,
     descricao: "Sequência direta de BOTW com foco em criatividade e física.",
-    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSROTd9ngvsbV0Eb8pJP1tyuZ0M3vuXZmQv1Q&s"
+    imagem: "https://i.pinimg.com/736x/86/0a/28/860a287a31ec709f6db30e122ff39627.jpg"
   },
   {
     nome: "Super Mario Bros.",
@@ -393,7 +393,7 @@ const famousGames = [
     preco: 219.95,
     descricao:
       "Thriller cinemático focado em escolhas sobre a revolução dos andróides.",
-    imagem: "https://upload.wikimedia.org/wikipedia/en/thumb/e/ee/Detroit_Become_Human.jpg/250px-Detroit_Become_Human.jpg"
+    imagem: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQkUbrHi53C3hasmUFxNtSJFeo4R0M-Prx9n4sRN9Sj4illTqaaxl1s3COQ634fuB8zcDZcIWBg"
   },
   {
     nome: "Shadow of the Colossus",
@@ -549,7 +549,7 @@ const famousGames = [
     preco: 274.95,
     descricao:
       "FPS multiplayer de larga escala focado em guerra total e futurista.",
-    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiK80Hw7IyGja2DZg7_qvUdazKil7PUsP0jg&s"
+    imagem: "https://i.pinimg.com/1200x/84/7f/c1/847fc1a7d49ac3d5f5d093c8c668b7ee.jpg"
   },
   {
     nome: "Call of Duty: Black Ops",
@@ -730,7 +730,7 @@ const famousGames = [
     anoLancamento: 2021,
     preco: 274.95,
     descricao: "Nova aventura de Master Chief com campanha aberta e multiplayer competitivo.",
-    imagem:"https://m.media-amazon.com/images/I/61aD5rcWynL._AC_UF1000,1000_QL80_.jpg"
+    imagem:"https://i.pinimg.com/736x/9b/87/d3/9b87d3529bbe702fb0ec2c04aa72472d.jpg"
   },
   {
     nome: "Apex Legends",
@@ -757,7 +757,7 @@ const famousGames = [
     anoLancamento: 2023,
     preco: 349.95,
     descricao: "FPS com campanha de guerra moderna e multiplayer frenético.",
-    imagem:"https://m.media-amazon.com/images/I/81gC+0ed-nL._AC_UF1000,1000_QL80_.jpg"
+    imagem:"https://i.pinimg.com/1200x/0a/a6/7b/0aa67b11d1cd4a12e2ce6ca720fe045f.jpg"
   },
   {
     nome: "Counter-Strike 2",
@@ -775,7 +775,7 @@ const famousGames = [
     anoLancamento: 2023,
     preco: 274.95,
     descricao: "Soulslike inspirado em Pinóquio com combate desafiador e atmosfera sombria.",
-    imagem:"https://m.media-amazon.com/images/I/81kRvsTMbDL._AC_UF1000,1000_QL80_.jpg"
+    imagem:"https://i.pinimg.com/736x/bd/d2/b2/bdd2b243c0455a7e17eb61360275b441.jpg"
   },
   {
     nome: "Stellaris",
@@ -820,7 +820,7 @@ const famousGames = [
     anoLancamento: 2017,
     preco: 0.0,
     descricao: "Battle royale com construção, eventos ao vivo e constante atualização.",
-    imagem:"https://m.media-amazon.com/images/I/917JLu3S8DL._AC_UF1000,1000_QL80_.jpg"
+    imagem:"https://i.pinimg.com/736x/7e/e8/c4/7ee8c4361736ed806711ae99f7d6762c.jpg"
   },
   {
     nome: "League of Legends",
