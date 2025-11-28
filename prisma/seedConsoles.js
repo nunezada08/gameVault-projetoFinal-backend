@@ -1,7 +1,3 @@
-import { PrismaClient } from '@prisma/client';
-
-const prisma = new PrismaClient();
-
 const consolesDataExpandida = [
     {
         nome: "Nintendo Entertainment System (NES)",
@@ -9,7 +5,7 @@ const consolesDataExpandida = [
         anoLancamento: 1985,
         preco: 650.00,
         descricao: "Revitalizou o mercado de videogames na Terceira Geração (Nintendinho).",
-        imagem: "https://cdn.awsli.com.br/600x1000/53/53761/produto/174950759/0de4eaa599.jpg"
+        imagens: ["https://cdn.awsli.com.br/600x1000/53/53761/produto/174950759/0de4eaa599.jpg"]
     },
     {
         nome: "Game Boy",
@@ -17,7 +13,7 @@ const consolesDataExpandida = [
         anoLancamento: 1989,
         preco: 400.00,
         descricao: "O console portátil que definiu a indústria, graças ao Tetris.",
-        imagem: "https://cdn.awsli.com.br/800x800/17/17021/produto/37233930/e8eb32c4e5.jpg"
+        imagens: ["https://cdn.awsli.com.br/800x800/17/17021/produto/37233930/e8eb32c4e5.jpg"]
     },
     {
         nome: "Super Nintendo (SNES)",
@@ -25,7 +21,7 @@ const consolesDataExpandida = [
         anoLancamento: 1991,
         preco: 850.00,
         descricao: "Console de 16-bits, líder da Quarta Geração no Brasil e América.",
-        imagem: "https://i.pinimg.com/736x/dd/fd/30/ddfd309f7a09992accd513e3f73cb9dc.jpg"
+        imagens: ["https://i.pinimg.com/736x/dd/fd/30/ddfd309f7a09992accd513e3f73cb9dc.jpg"]
     },
     {
         nome: "Virtual Boy",
@@ -33,7 +29,7 @@ const consolesDataExpandida = [
         anoLancamento: 1995,
         preco: 100.00,
         descricao: "Primeira tentativa de console de realidade virtual da Nintendo (fracasso comercial).",
-        imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpMiOW9m6b7AywyFC-UKbpq3Yf0Oe278FLhA&s"
+        imagens: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpMiOW9m6b7AywyFC-UKbpq3Yf0Oe278FLhA&s"]
     },
     {
         nome: "Nintendo 64 (N64)",
@@ -41,7 +37,7 @@ const consolesDataExpandida = [
         anoLancamento: 1996,
         preco: 1100.00,
         descricao: "Consagrou os gráficos 3D e o uso do stick analógico.",
-        imagem: "https://http2.mlstatic.com/D_NQ_NP_865723-MLB81558925114_012025-O.webp"
+        imagens: ["https://http2.mlstatic.com/D_NQ_NP_865723-MLB81558925114_012025-O.webp"]
     },
     {
         nome: "Game Boy Color",
@@ -49,7 +45,7 @@ const consolesDataExpandida = [
         anoLancamento: 1998,
         preco: 300.00,
         descricao: "Primeira versão colorida do portátil Game Boy.",
-        imagem: "https://http2.mlstatic.com/D_NQ_NP_950482-MLB52371312667_112022-O.webp"
+        imagens: ["https://http2.mlstatic.com/D_NQ_NP_950482-MLB52371312667_112022-O.webp"]
     },
     {
         nome: "Nintendo GameCube",
@@ -57,7 +53,7 @@ const consolesDataExpandida = [
         anoLancamento: 2001,
         preco: 1300.00,
         descricao: "Console da Sexta Geração, focado em jogos exclusivos de alta qualidade.",
-        imagem: "https://http2.mlstatic.com/D_NQ_NP_680221-MLB77120677639_062024-O.webp"
+        imagens: ["https://http2.mlstatic.com/D_NQ_NP_680221-MLB77120677639_062024-O.webp"]
     },
     {
         nome: "Game Boy Advance (GBA)",
@@ -65,7 +61,7 @@ const consolesDataExpandida = [
         anoLancamento: 2001,
         preco: 400.00,
         descricao: "Portátil de 32-bits que trouxe qualidade de SNES para o formato móvel.",
-        imagem: "https://cdn.awsli.com.br/2500x2500/17/17021/produto/37233862/58ac1fb316.jpg"
+        imagens: ["https://cdn.awsli.com.br/2500x2500/17/17021/produto/37233862/58ac1fb316.jpg"]
     },
     {
         nome: "Nintendo DS",
@@ -73,7 +69,7 @@ const consolesDataExpandida = [
         anoLancamento: 2004,
         preco: 700.00,
         descricao: "Portátil com tela dupla e touchscreen, sucesso estrondoso.",
-        imagem: "https://i.pinimg.com/1200x/54/53/57/545357ff2723c63f8c2adc4b519a1f62.jpg"
+        imagens: ["https://i.pinimg.com/1200x/54/53/57/545357ff2723c63f8c2adc4b519a1f62.jpg"]
     },
     {
         nome: "Wii",
@@ -81,7 +77,7 @@ const consolesDataExpandida = [
         anoLancamento: 2006,
         preco: 1500.00,
         descricao: "Inovou com controle de movimento (Wii Remote), atraindo público casual.",
-        imagem: "https://images.tcdn.com.br/img/img_prod/615179/nintendo_wii_branco_caixa_original_usado_3889_1_28ba594f9bd4647aded8e78d7da1a74a.jpg"
+        imagens: ["https://images.tcdn.com.br/img/img_prod/615179/nintendo_wii_branco_caixa_original_usado_3889_1_28ba594f9bd4647aded8e78d7da1a74a.jpg"]
     },
     {
         nome: "Nintendo 3DS (Família)",
@@ -89,7 +85,7 @@ const consolesDataExpandida = [
         anoLancamento: 2011,
         preco: 900.00,
         descricao: "Portátil com tela 3D estereoscópica sem a necessidade de óculos.",
-        imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVbmQIb6NNFNVS3fyaO8zQla6NA51yPEEDQQ&s"
+        imagens: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVbmQIb6NNFNVS3fyaO8zQla6NA51yPEEDQQ&s"]
     },
     {
         nome: "Wii U",
@@ -97,7 +93,7 @@ const consolesDataExpandida = [
         anoLancamento: 2012,
         preco: 1200.00,
         descricao: "Console da Oitava Geração, com um controle com tela (Gamepad).",
-        imagem: "https://m.media-amazon.com/images/I/51c27gmD8jL.jpg"
+        imagens: ["https://m.media-amazon.com/images/I/51c27gmD8jL.jpg"]
     },
     {
         nome: "Nintendo Switch (Família)",
@@ -105,7 +101,7 @@ const consolesDataExpandida = [
         anoLancamento: 2017,
         preco: 2800.00,
         descricao: "Console híbrido (portátil e de mesa) de grande sucesso atual.",
-        imagem: "https://images.kabum.com.br/produtos/fotos/sync_mirakl/690409/xlarge/Console-Nintendo-Switch-32gb-Standard-Preto-Cinza_1742855432.png"
+        imagens: ["https://images.kabum.com.br/produtos/fotos/sync_mirakl/690409/xlarge/Console-Nintendo-Switch-32gb-Standard-Preto-Cinza_1742855432.png"]
     },
     {
         nome: "PlayStation (PS1)",
@@ -113,7 +109,7 @@ const consolesDataExpandida = [
         anoLancamento: 1995,
         preco: 1200.00,
         descricao: "Primeiro console da Sony, popularizou os jogos em CD.",
-        imagem: "https://stargamesparaguay.com/wp-content/uploads/2021/06/CONSOLE-PLAYSTATION-1-PSONE-CLASSIC-MINI-1.jpg"
+        imagens: ["https://stargamesparaguay.com/wp-content/uploads/2021/06/CONSOLE-PLAYSTATION-1-PSONE-CLASSIC-MINI-1.jpg"]
     },
     {
         nome: "PlayStation 2 (PS2)",
@@ -121,7 +117,7 @@ const consolesDataExpandida = [
         anoLancamento: 2000,
         preco: 1500.00,
         descricao: "O console mais vendido da história, compatível com DVD.",
-        imagem: "https://http2.mlstatic.com/D_762395-MLB75210377895_032024-C.jpg"
+        imagens: ["https://http2.mlstatic.com/D_762395-MLB75210377895_032024-C.jpg"]
     },
     {
         nome: "PlayStation Portable (PSP)",
@@ -129,7 +125,7 @@ const consolesDataExpandida = [
         anoLancamento: 2004,
         preco: 700.00,
         descricao: "Portátil da Sony, com foco em mídia e jogos com qualidade de PS2.",
-        imagem: "https://pt.static.webuy.com/product_images/Jogos/PSP%20Consolas/SPSP3000A_l.jpg"
+        imagens: ["https://pt.static.webuy.com/product_images/Jogos/PSP%20Consolas/SPSP3000A_l.jpg"]
     },
     {
         nome: "PlayStation 3 (PS3)",
@@ -137,7 +133,7 @@ const consolesDataExpandida = [
         anoLancamento: 2006,
         preco: 1800.00,
         descricao: "Console da Sétima Geração com leitor Blu-ray.",
-        imagem: "https://stargamesparaguay.com/wp-content/uploads/2021/06/71ANin97l9L._SX600_-e1539275570600.jpg"
+        imagens: ["https://stargamesparaguay.com/wp-content/uploads/2021/06/71ANin97l9L._SX600_-e1539275570600.jpg"]
     },
     {
         nome: "PlayStation Vita (PS Vita)",
@@ -145,7 +141,7 @@ const consolesDataExpandida = [
         anoLancamento: 2011,
         preco: 900.00,
         descricao: "Portátil da Sony, sucessor do PSP.",
-        imagem: "https://http2.mlstatic.com/D_NQ_NP_14792-MLB20090295219_052014-O.webp"
+        imagens: ["https://http2.mlstatic.com/D_NQ_NP_14792-MLB20090295219_052014-O.webp"]
     },
     {
         nome: "PlayStation 4 (PS4)",
@@ -153,7 +149,7 @@ const consolesDataExpandida = [
         anoLancamento: 2013,
         preco: 2500.00,
         descricao: "Oito geração, forte foco em jogos AAA e comunidade online.",
-        imagem: "https://acdn-us.mitiendanube.com/stores/004/334/292/products/500gb-normal-405d2c4d8ebbd462e617116512535397-1024-1024.webp"
+        imagens: ["https://acdn-us.mitiendanube.com/stores/004/334/292/products/500gb-normal-405d2c4d8ebbd462e617116512535397-1024-1024.webp"]
     },
     {
         nome: "PlayStation VR (PS VR)",
@@ -161,7 +157,7 @@ const consolesDataExpandida = [
         anoLancamento: 2016,
         preco: 1900.00,
         descricao: "Acessório de Realidade Virtual lançado para o PlayStation 4. Popularizou a VR nos consoles.",
-        imagem: "https://cdn.awsli.com.br/2500x2500/53/53761/produto/45286550/a41b93604a.jpg"
+        imagens: ["https://cdn.awsli.com.br/2500x2500/53/53761/produto/45286550/a41b93604a.jpg"]
     },
     {
         nome: "PlayStation 5 (PS5)",
@@ -169,7 +165,7 @@ const consolesDataExpandida = [
         anoLancamento: 2020,
         preco: 4999.00,
         descricao: "Nona Geração, com carregamento SSD ultrarrápido e controle DualSense.",
-        imagem: "https://stargamesparaguay.com/wp-content/uploads/2021/06/CX-PS5.jpg"
+        imagens: ["https://stargamesparaguay.com/wp-content/uploads/2021/06/CX-PS5.jpg"]
     },
     {
         nome: "PlayStation VR2 (PS VR2)",
@@ -177,7 +173,7 @@ const consolesDataExpandida = [
         anoLancamento: 2023,
         preco: 3500.00,
         descricao: "A segunda geração do sistema de Realidade Virtual da Sony, exclusivo para o PlayStation 5.",
-        imagem: "https://m.media-amazon.com/images/I/61KecCIiU3L.jpg"
+        imagens: ["https://m.media-amazon.com/images/I/61KecCIiU3L.jpg"]
     },
     {
         nome: "Xbox (Original)",
@@ -185,7 +181,7 @@ const consolesDataExpandida = [
         anoLancamento: 2001,
         preco: 1400.00,
         descricao: "Primeiro console da Microsoft, introduziu o Xbox Live e tinha um hardware potente.",
-        imagem: "https://http2.mlstatic.com/D_NQ_NP_873098-MLB77187990052_072024-O.webp"
+        imagens: ["https://http2.mlstatic.com/D_NQ_NP_873098-MLB77187990052_072024-O.webp"]
     },
     {
         nome: "Xbox 360",
@@ -193,7 +189,7 @@ const consolesDataExpandida = [
         anoLancamento: 2005,
         preco: 1700.00,
         descricao: "Sucesso da Sétima Geração, notável pelo serviço Xbox Live.",
-        imagem: "https://cdn.awsli.com.br/600x700/17/17021/produto/59776844/22b1dfb527.jpg"
+        imagens: ["https://cdn.awsli.com.br/600x700/17/17021/produto/59776844/22b1dfb527.jpg"]
     },
     {
         nome: "Xbox One",
@@ -201,7 +197,7 @@ const consolesDataExpandida = [
         anoLancamento: 2013,
         preco: 2400.00,
         descricao: "Console da Oitava Geração, focado em ser um centro de entretenimento.",
-        imagem: "https://stargamesparaguay.com/wp-content/uploads/2021/06/61x26DNGgAL._SL1200_.jpg"
+        imagens: ["https://stargamesparaguay.com/wp-content/uploads/2021/06/61x26DNGgAL._SL1200_.jpg"]
     },
     {
         nome: "Xbox Series X",
@@ -209,7 +205,7 @@ const consolesDataExpandida = [
         anoLancamento: 2020,
         preco: 4599.00,
         descricao: "O console mais poderoso da Nona Geração, focado em 4K e serviço Xbox Game Pass.",
-        imagem: "https://m.media-amazon.com/images/I/71jrlQ2m7BS._AC_UF350,350_QL50_.jpg"
+        imagens: ["https://m.media-amazon.com/images/I/71jrlQ2m7BS._AC_UF350,350_QL50_.jpg"]
     },
     {
         nome: "Xbox Series S",
@@ -217,7 +213,7 @@ const consolesDataExpandida = [
         anoLancamento: 2020,
         preco: 2800.00,
         descricao: "Modelo de entrada da Nona Geração, totalmente digital e menor que o Series X.",
-        imagem: "https://www.adrenaline.com.br/wp-content/uploads/2023/03/xbox-series-s-caixa.jpg"
+        imagens: ["https://www.adrenaline.com.br/wp-content/uploads/2023/03/xbox-series-s-caixa.jpg"]
     },
     {
         nome: "Steam (Plataforma Digital)",
@@ -225,7 +221,7 @@ const consolesDataExpandida = [
         anoLancamento: 2003,
         preco: 0.00,
         descricao: "A maior plataforma de distribuição digital de jogos para PC. (Representa o ecossistema Steam/PC Gaming)",
-        imagem: "https://i.pinimg.com/736x/37/1f/3a/371f3a9ab78f4a28c1f803b817ae8081.jpg"
+        imagens: ["https://i.pinimg.com/736x/37/1f/3a/371f3a9ab78f4a28c1f803b817ae8081.jpg"]
     },
     {
         nome: "Steam Machine",
@@ -233,7 +229,7 @@ const consolesDataExpandida = [
         anoLancamento: 2015,
         preco: 3000.00,
         descricao: "Tentativa da Valve de lançar PCs pré-configurados para a sala de estar, rodando o SteamOS.",
-        imagem: "https://files.tecnoblog.net/wp-content/uploads/2016/06/steam_machine_alienware-1060x596.jpg"
+        imagens: ["https://files.tecnoblog.net/wp-content/uploads/2016/06/steam_machine_alienware-1060x596.jpg"]
     },
     {
         nome: "Steam Deck (Portátil)",
@@ -241,7 +237,7 @@ const consolesDataExpandida = [
         anoLancamento: 2022,
         preco: 4200.00,
         descricao: "PC portátil da Valve, sucesso em levar a biblioteca Steam para a mobilidade.",
-        imagem: "https://a-static.mlcdn.com.br/800x800/steam-deck-64gb-jogos-portateis-de-alta-qualidade-valve/olistplus/o2es0d4gqtwkost3/4dc89293e99ea1569601f936736e27fd.jpeg"
+        imagens: ["https://a-static.mlcdn.com.br/800x800/steam-deck-64gb-jogos-portateis-de-alta-qualidade-valve/olistplus/o2es0d4gqtwkost3/4dc89293e99ea1569601f936736e27fd.jpeg"]
     },
 ];
 
