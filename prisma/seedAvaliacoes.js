@@ -1,5 +1,3 @@
-import { PrismaClient } from '@prisma/client';
-
 const avaliacoesOriginais = [
     { usuario: "rogergames2000", comentario: "Excelente serviço, recomendo muito!", nota: 9.5 },
     { usuario: "spiderghost7", comentario: "Atendimento rápido e eficiente.", nota: 8.7 },
