@@ -229,7 +229,7 @@ const famousGames = [
     anoLancamento: 2013,
     preco: 109.95,
     descricao: "O reboot moderno de Lara Croft, focado em sobrevivência.",
-    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGUgNxA0ZQ_D4Vsu8gsgDkWJASX2a_YJz5Nw&s",
+    imagem: "https://images6.alphacoders.com/423/thumb-1920-423181.jpg",
     plataforma: ["PlayStation", "Xbox", "PC"]
   },
   {
@@ -308,7 +308,7 @@ const famousGames = [
     preco: 274.95,
     descricao:
       "Uma aventura criativa em vários mundos abertos com a mecânica Cappy.",
-    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUYVXS4mA87OIe3W2LhOxH19fdVGOe8CTSjw&s",
+    imagem: "https://cloudfront-us-east-1.images.arcpublishing.com/estadao/4GDQSODGUJLGPBUTFQFHO3JTAU.jpg",
     plataforma: ["nintendo", "PC"]
   },
   {
@@ -459,7 +459,8 @@ const famousGames = [
     anoLancamento: 2017,
     preco: 274.95,
     descricao: "Aloy em um mundo pós-apocalíptico com máquinas animais.",
-    imagem: "https://wallpapers.com/images/hd/horizon-forbidden-west-4kqph3igk5yeucps.jpg"
+    imagem: "https://wallpapers.com/images/hd/horizon-forbidden-west-4kqph3igk5yeucps.jpg",
+     plataforma: ["Playstation"]
   },
   {
     nome: "Horizon Forbidden West",
@@ -524,7 +525,7 @@ const famousGames = [
     anoLancamento: 2016,
     preco: 164.95,
     descricao: "O final da história de Kazuma Kiryu.",
-    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNM1pfasYvt458WDSDElam8PVNLemBnRFu3w&s",
+    imagem: "https://images3.alphacoders.com/990/990473.jpg",
     plataforma: ["PlayStation", "PC"]
   },
   {
