@@ -22,6 +22,8 @@ export const listarTodosJogos = async (req, res) => {
 
         if (!resultado || resultado.length === 0) {
             return res.status(404).json({
+                status:404,
+                sucess:false,
                 total: resultado.length,
                 mensagem: 'Nenhum jogo encontrado.',
                 jogos: resultado
@@ -29,6 +31,8 @@ export const listarTodosJogos = async (req, res) => {
         }
 
         return res.status(200).json({
+            status:200,
+            sucess:true,
             total: resultado.length,
             mensagem: 'Lista de jogos encontrada com sucesso.',
             jogos: resultado
@@ -38,7 +42,8 @@ export const listarTodosJogos = async (req, res) => {
         res.status(500).json({
             erro: 'Erro interno no servidor.',
             datalhes: error.message,
-            status: 500
+            status: 500,
+            sucess:false
         });
     }
 }
@@ -49,17 +54,23 @@ export const listarUm = async (req,res) => {
 
         if (!jogo) {
             return res.status(404).json({
+                status:404,
+                sucess:false,
                 erro: 'Jogo não encontrado!',
                 mensagem: 'Verifique se o id do jogo existe',
                 id:id
             })
         }
         res.status(200).json({
+            status:200,
+            sucess:true,
             mensagem: 'Jogo encontrado',
             jogo
         })
     }catch (error) {
         res.status(500).json({
+            status:500,
+            sucess:false,
             erro: 'Erro ao buscar jogo por id',
             detalhes: error.message
         })
@@ -77,6 +88,8 @@ export const criarJogo = async (req, res) => {
 
         if (faltando.length > 0) {
             return res.status(400).json({
+                status:400,
+                sucess:false,
                 erro: `Os seguintes campos são obrigatórios: ${faltando.join(', ')}.`
             });
         }
@@ -84,6 +97,8 @@ export const criarJogo = async (req, res) => {
         const generosValidos = ['Ação', 'Soulslike', 'FPS', 'RPG', 'Aventura', 'Realidade virtual', 'Mapa berto', 'Luta', 'Terror', 'Indie'];
         if (!generosValidos.includes(genero)) {
             return res.status(400).json({
+                status:400,
+                sucess:false,
                 erro: `Genero inválido.`,
                 generosValidos
             })
@@ -92,12 +107,16 @@ export const criarJogo = async (req, res) => {
         const novoJogo = await jogosModel.create(dado);
 
     res.status(201).json({
+        status:201,
+        sucess:true,
         mensagem: 'Novo jogo criado com sucesso.',
         jogo: novoJogo
     })
 
     } catch (error) {
         res.status(500).json({
+            status:500,
+            sucess:false,
             erro: 'Erro ao criar novo jogo.',
             detalhes: error.message
         })
@@ -113,6 +132,8 @@ export const atualizarJogo = async (req, res) => {
 
         if (!jogoExiste) {
             return res.status(404).json({
+                status:404,
+                sucess:false,
                 erro: 'jogo não encontrado.',
                 mensagem: "Verifique se o ID do jogo existe.",
                 id: id,
@@ -123,6 +144,8 @@ export const atualizarJogo = async (req, res) => {
             const generosValidos = [ "Ação", "Soulslike", "FPS", "RPG", "Aventura", "Realidade virtual", "Mapa aberto", "Luta", "Terror", "Indie" ];
             if (!generosValidos.includes(dados.genero)) {
                 return res.status(400).json({
+                    status:400,
+                    sucess:false,
                     erro: `jogo inválido.`,
                     generosValidos
             })
@@ -132,6 +155,8 @@ export const atualizarJogo = async (req, res) => {
         const jogoAtualizado = await jogosModel.updatejogo(id, dados);
 
         res.status(200).json({
+            status:200,
+            sucess:true,
             mensagem: 'jogo atualizado com sucesso.',
             jogo: jogoAtualizado
         })
@@ -139,6 +164,8 @@ export const atualizarJogo = async (req, res) => {
 
     } catch (error) {
         res.status(500).json({
+            status:500,
+            sucess:false,
             erro: 'Erro ao atualizar o jogo.',
             detalhes: error.message
         })
@@ -153,6 +180,8 @@ export const apagar = async (req, res) => {
 
         if (!jogoExiste) {
             return res.status(404).json({
+                status:404,
+                sucess:false,
                 erro: 'Jogo não encontrado.',
                 mensagem: "Verifique se o ID do jogo existe.",
                 id: id,
@@ -162,12 +191,16 @@ export const apagar = async (req, res) => {
         await jogosModel.deleteJogo(id);
 
         res.status(200).json({
+            status:200,
+            sucess:true,
             mensagem: "Jogo apagado com sucesso.",
             jogoRemovido: jogoExiste
         })
 
     } catch (error) {
         res.status(500).json({
+            status:500,
+            sucess:false,
             erro: 'Erro ao apagar o jogo.',
             detalhes: error.message
         })

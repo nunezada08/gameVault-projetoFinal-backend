@@ -15,6 +15,8 @@ export const listarTodosConsoles = async (req, res) => {
 
     if (!resultado || resultado.length === 0) {
       return res.status(404).json({
+        status:404,
+        sucess:false,
         total: 0,
         mensagem: 'Não há consoles na lista',
         consoles: [],
@@ -22,12 +24,16 @@ export const listarTodosConsoles = async (req, res) => {
     }
 
     res.status(200).json({
+      status:200,
+      sucess:true,
       total: resultado.length,
       mensagem: 'Lista de consoles',
       consoles: resultado,
     })
   } catch (error) {
     res.status(500).json({
+      status:500,
+      sucess:false,
       erro: 'Erro interno de servidor',
       detalhes: error.message,
       status: 500,
@@ -42,6 +48,8 @@ export const ConsoleById = async (req, res) => {
 
     if (!console) {
       return res.status(404).json({
+        status:404,
+        sucess:false,
         erro: 'Console não encontrado!',
         mensagem: 'Verifique se o id do console existe',
         id: id,
@@ -49,11 +57,15 @@ export const ConsoleById = async (req, res) => {
     }
 
     res.status(200).json({
+      status:200,
+      sucess:true,
       mensagem: 'Console encontrado',
       console,
     })
   } catch (error) {
     res.status(500).json({
+      status:500,
+      sucess:false,
       erro: 'Erro ao buscar console por id',
       detalhes: error.message,
     })
@@ -70,6 +82,8 @@ export const criarConsole = async (req, res) => {
 
     if (faltando.length > 0) {
       return res.status(400).json({
+        status:400,
+        sucess:false,
         erro: `Os seguintes campos são obrigatórios: ${faltando.join(', ')}.`,
       })
     }
@@ -77,11 +91,15 @@ export const criarConsole = async (req, res) => {
     const novoConsole = await consolesModel.create(dado)
 
     res.status(201).json({
+      status:201,
+      sucess:true,
       mensagem: 'Novo console criado com sucesso.',
       console: novoConsole,
     })
   } catch (error) {
     res.status(500).json({
+      status:500,
+      sucess:false,
       erro: 'Erro ao criar novo console.',
       detalhes: error.message,
     })
@@ -95,6 +113,8 @@ export const apagar = async (req, res) => {
 
     if (!consoleExiste) {
       return res.status(404).json({
+        status:404,
+        sucess:false,
         erro: 'Console não encontrado.',
         mensagem: 'Verifique se o ID do console existe.',
         id: id,
@@ -104,11 +124,15 @@ export const apagar = async (req, res) => {
     await consolesModel.deleteConsole(id)
 
     res.status(200).json({
+      status:200,
+      sucess:true,
       mensagem: 'Console apagado com sucesso.',
       consoleRemovido: consoleExiste,
     })
   } catch (error) {
     res.status(500).json({
+      status:500,
+      sucess:false,
       erro: 'Erro ao apagar o console.',
       detalhes: error.message,
     })
@@ -124,6 +148,8 @@ export const atualizarConsole = async (req, res) => {
 
         if (!consoleExiste) {
             return res.status(404).json({
+                status:404,
+                sucess:false,
                 erro: 'console não encontrado com esse id',
                 id: id
             })
@@ -132,12 +158,16 @@ export const atualizarConsole = async (req, res) => {
         const consoleAtualizado = await consolesModel.update(id, dados);
 
         res.status(200).json({
+          status:200,
+          sucess:true,
             mensagem: 'console atualizado com sucesso',
             console: consoleAtualizado
         })
 
     } catch (error) {
         res.status(500).json({
+            status:500,
+            sucess:false,
             erro: 'Erro ao atualizar consoles',
             detalhes: error.message
         })
