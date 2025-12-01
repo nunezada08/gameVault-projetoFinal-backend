@@ -1017,7 +1017,7 @@ const famousGames = [
 
 export async function seedJogos(prisma) {
   console.log(
-    "🌎 Iniciando o seed com 57 jogos consolidados e filtrados (valores em reais)..."
+    "🌎 Iniciando o seed com 100 jogos consolidados e filtrados (valores em reais)..."
   );
 
   const dataToInsert = famousGames.map((jogo) => ({
@@ -1027,13 +1027,12 @@ export async function seedJogos(prisma) {
     anoLancamento: jogo.anoLancamento,
     preco: String(jogo.preco),
     descricao: jogo.descricao ? jogo.descricao.substring(0, 500) : '',
-    // Algumas entradas usam `imagem` (string) e outras `imagens` (array).
-    // Garantimos um array para o campo `imagens` esperado pelo schema.
     imagens: jogo.imagens
       ? jogo.imagens
       : jogo.imagem
       ? [jogo.imagem]
       : [],
+    plataforma: jogo.plataforma, 
   }));
 
   const { count } = await prisma.jogo.createMany({
