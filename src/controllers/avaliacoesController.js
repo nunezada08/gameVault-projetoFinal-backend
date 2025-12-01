@@ -18,6 +18,8 @@ export const listarTodasAvaliacoes = async (req, res) => {
     }
     if (!avaliacoes || avaliacoes.length === 0) {
       return res.status(404).json({
+        status:404,
+        sucess:false,
         total: 0,
         mensagem: "Não há avaliações na lista",
         avaliacoes: [],
@@ -26,6 +28,8 @@ export const listarTodasAvaliacoes = async (req, res) => {
 
     // caso exista conteúdo:
     return res.status(200).json({
+      status:200,
+      sucess:true,
       total: avaliacoes.length,
       mensagem: "Lista de avaliações",
       avaliacoes,
@@ -35,6 +39,7 @@ export const listarTodasAvaliacoes = async (req, res) => {
       erro: "Erro interno de servidor",
       detalhes: error.message,
       status: 500,
+      sucess:false,
     });
   }
 };
@@ -46,6 +51,8 @@ export const avaliacaoById = async (req, res) => {
 
     if (!avaliacao) {
       return res.status(404).json({
+        status:404,
+        sucess:false,
         erro: "avaliação não encontrado!",
         mensagem: "Verifique se o id da avaliação existe",
         id: id,
@@ -53,11 +60,15 @@ export const avaliacaoById = async (req, res) => {
     }
 
     res.status(200).json({
+      status:200,
+      sucess:true,
       mensagem: "avaliação encontrada",
       avaliacao,
     });
   } catch (error) {
     res.status(500).json({
+      status:500,
+      sucess:false,
       erro: "Erro ao buscar avaliação por id",
       detalhes: error.message,
     });
