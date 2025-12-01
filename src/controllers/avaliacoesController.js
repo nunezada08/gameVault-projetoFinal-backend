@@ -74,3 +74,111 @@ export const avaliacaoById = async (req, res) => {
     });
   }
 };
+export const criarAvaliacao = async (req, res) => {
+    try {
+const { nome, comentario} = req.body;
+
+        const dado = req.body;
+
+        const camposObrigatorios = ['nome', 'comentario'];
+
+        const faltando = camposObrigatorios.filter(campo => !dado[campo]);
+
+        if (faltando.length > 0) {
+            return res.status(400).json({
+                status:400,
+                sucess:false,
+                erro: `Os seguintes campos são obrigatórios: ${faltando.join(', ')}.`
+            });
+        }
+
+        const novaAvaliacao = await avaliacoesModel.create(dado);
+
+    res.status(201).json({
+        status:201,
+        sucess:true,
+        mensagem: 'Nova avaliação criada com sucesso.',
+        avaliacao: novaAvaliacao
+    })
+
+    } catch (error) {
+        res.status(500).json({
+            status:500,
+            sucess:false,
+            erro: 'Erro ao criar nova avaliação.',
+            detalhes: error.message
+        })
+    }
+}
+export const atualizarAvaliacao = async (req, res) => {
+    try {
+
+        const id = parseInt(req.params.id);
+        const dados = req.body;
+
+        const avaliacaoExiste = await avaliacoesModel.findById(id);
+
+        if (!avaliacaoExiste) {
+            return res.status(404).json({
+                status:404,
+                sucess:false,
+                erro: 'avalição não encontrado.',
+                mensagem: "Verifique se o ID da avalição.",
+                id: id,
+            })
+        }
+
+        const avaliacaoAtualizada = await avaliacoesModel.updateAvaliacao(id, dados);
+
+        res.status(200).json({
+            status:200,
+            sucess:true,
+            mensagem: 'avaliação atualizado com sucesso.',
+            avaliacao: avaliacaoAtualizada
+        })
+
+
+    } catch (error) {
+        res.status(500).json({
+            status:500,
+            sucess:false,
+            erro: 'Erro ao atualizar o jogo.',
+            detalhes: error.message
+        })
+        
+    }
+}
+export const apagarAvaliacao = async (req, res) => {
+    try {
+        const id = parseInt(req.params.id);
+
+        const avaliacaoExiste = await avaliacoesModel.findById(id);
+
+        if (!avaliacaoExiste) {
+            return res.status(404).json({
+                status:404,
+                sucess:false,
+                erro: 'Avaliação não encontrada.',
+                mensagem: "Verifique se o ID da avaliação existe.",
+                id: id,
+            })
+        }
+
+        await avaliacoesModel.deleteAvaliacao(id);
+
+        res.status(200).json({
+            status:200,
+            sucess:true,
+            mensagem: "Avaliacao apagado com sucesso.",
+            AvaliacaoRemovido: avaliacaoExiste
+        })
+
+    } catch (error) {
+        res.status(500).json({
+            status:500,
+            sucess:false,
+            erro: 'Erro ao apagar Avaliacao.',
+            detalhes: error.message
+        })
+    }
+}
