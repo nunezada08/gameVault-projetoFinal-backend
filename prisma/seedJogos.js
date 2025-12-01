@@ -8,9 +8,7 @@ const famousGames = [
     anoLancamento: 2020,
     preco: 329.95,
     descricao: "O pioneiro da série, refeito para a nova geração.",
-    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLCoFCC9LuBW-Aff4I6n5-AyD1fP3-6NdOMA&s",
-    plataforma: ["PlayStation", "Xbox", "Nintendo", "PC"]
-
+    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLCoFCC9LuBW-Aff4I6n5-AyD1fP3-6NdOMA&s"
   },
   {
     nome: "Dark Souls",
@@ -19,8 +17,7 @@ const famousGames = [
     anoLancamento: 2011,
     preco: 164.95,
     descricao: "O RPG de Ação desafiador que popularizou o gênero.",
-    imagem: "https://m.media-amazon.com/images/I/71Moqa6XZlL._AC_UF1000,1000_QL80_.jpg",
-    plataforma: ["PlayStation", "Xbox", "Nintendo", "PC"]
+    imagem: "https://m.media-amazon.com/images/I/71Moqa6XZlL._AC_UF1000,1000_QL80_.jpg"
   },
   {
     nome: "Bloodborne",
@@ -29,8 +26,7 @@ const famousGames = [
     anoLancamento: 2015,
     preco: 219.95,
     descricao: "Caça gótica Lovecraftiana com foco em combate rápido.",
-    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk62h2PTD0r1rB9MFnK_eWPArp8FriPJp9cw&s",
-    plataforma: ["PlayStation"]
+    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk62h2PTD0r1rB9MFnK_eWPArp8FriPJp9cw&s"
   },
   {
     nome: "Elden Ring",
@@ -39,8 +35,7 @@ const famousGames = [
     anoLancamento: 2022,
     preco: 329.95,
     descricao:"O vasto mundo aberto Soulslike criado por Miyazaki e G.R.R. Martin.",
-    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU_cspEzfgMdenwt0VS7QHBJCOdWaVkrXyvA&s",
-    plataforma: ["PlayStation", "Xbox", "PC"]
+    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU_cspEzfgMdenwt0VS7QHBJCOdWaVkrXyvA&s"
   },
   {
     nome: "Resident Evil 1 (1996)",
@@ -49,8 +44,7 @@ const famousGames = [
     anoLancamento: 1996,
     preco: 82.5,
     descricao: "O início do survival horror e da mansão assombrada.",
-    imagem: "https://upload.wikimedia.org/wikipedia/pt/0/04/Resident_Evil_capa.png",
-    plataforma: ["PlayStation", "PC"]
+    imagem: "https://upload.wikimedia.org/wikipedia/pt/0/04/Resident_Evil_capa.png"
   },
   {
     nome: "Resident Evil 2 Remake",
@@ -59,8 +53,7 @@ const famousGames = [
     anoLancamento: 2019,
     preco: 164.95,
     descricao: "O remake aterrorizante da experiência de Raccoon City.",
-    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZZxPlqR8F_VrvILKygK1cfHt_RBzIDtmGOg&s",
-    plataforma: ["PlayStation", "Xbox", "PC"]
+    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZZxPlqR8F_VrvILKygK1cfHt_RBzIDtmGOg&s"
   },
   {
     nome: "Resident Evil 3 Remake",
@@ -69,18 +62,16 @@ const famousGames = [
     anoLancamento: 2020,
     preco: 164.95,
     descricao: "Jill Valentine e a perseguição implacável de Nemesis.",
-    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi0YYUF_c2t9gzvLAVAcrdpEfz-KfpBIxAkQ&s",
-    plataforma: ["PlayStation", "Xbox", "PC"]
+    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi0YYUF_c2t9gzvLAVAcrdpEfz-KfpBIxAkQ&s"
   },
   {
-    nome: "Resident Evil 4 (2004)",
+    nome: "Resident Evil 4",
     desenvolvedor: "Capcom",
     genero: "Terror",
     anoLancamento: 2005,
     preco: 109.95,
     descricao:"O clássico que mudou o survival horror para uma câmera sobre o ombro.",
-    imagem: "https://upload.wikimedia.org/wikipedia/pt/9/91/Resident_Evil_4_-_North-american_cover.jpg",
-    plataforma: ["PlayStation", "Xbox", "PC"]
+    imagem: "https://upload.wikimedia.org/wikipedia/pt/9/91/Resident_Evil_4_-_North-american_cover.jpg"
   },
   {
     nome: "Resident Evil 5",
@@ -89,8 +80,7 @@ const famousGames = [
     anoLancamento: 2009,
     preco: 54.95,
     descricao: "Foco total na ação cooperativa e na África.",
-    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcI1IHTDyATH7gaE3g6V0hptj4EqI8YldA4g&s",
-    plataforma: ["PlayStation", "Xbox", "PC"]
+    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcI1IHTDyATH7gaE3g6V0hptj4EqI8YldA4g&s"
   },
   {
     nome: "Resident Evil 6",
@@ -99,8 +89,7 @@ const famousGames = [
     anoLancamento: 2012,
     preco: 54.95,
     descricao: "O jogo mais focado em ação da série, com múltiplas campanhas.",
-    imagem: "https://upload.wikimedia.org/wikipedia/pt/7/73/Resident_evil_6.jpg",
-    plataforma: ["PlayStation", "Xbox", "PC"]
+    imagem: "https://upload.wikimedia.org/wikipedia/pt/7/73/Resident_evil_6.jpg"
   },
   {
     nome: "Resident Evil 7: Biohazard",
@@ -109,8 +98,7 @@ const famousGames = [
     anoLancamento: 2017,
     preco: 109.95,
     descricao: "Retorno às raízes do horror em primeira pessoa.",
-    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6tAmNF8GByl-jAhJL23YiCD59ELR_axdMNg&s",
-    plataforma: ["PlayStation", "Xbox", "PC"]
+    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6tAmNF8GByl-jAhJL23YiCD59ELR_axdMNg&s"
   },
   {
     nome: "Resident Evil Village",
@@ -119,8 +107,7 @@ const famousGames = [
     anoLancamento: 2021,
     preco: 274.95,
     descricao: "A aventura de Ethan Winters na vila sombria.",
-    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfBkJY9wY8UHr-_S-cZFuEwKbVdzZsYiWh-Q&s",
-    plataforma: ["PlayStation", "Xbox", "PC"]
+    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfBkJY9wY8UHr-_S-cZFuEwKbVdzZsYiWh-Q&s"
   },
   {
     nome: "Resident Evil requiem",
@@ -130,8 +117,7 @@ const famousGames = [
     preco: 329.95,
     descricao:
       "O próximo grande título da série, focado no terror de sobrevivência.",
-    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2Jqi5z1KdRrCGDj_f9UiclrEU5bhIZVg0pQ&s", 
-    plataforma: ["PlayStation", "Xbox", "PC"]
+    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2Jqi5z1KdRrCGDj_f9UiclrEU5bhIZVg0pQ&s"
   },
   {
     nome: "God of War (Original 2005)",
@@ -140,8 +126,7 @@ const famousGames = [
     anoLancamento: 2005,
     preco: 54.95,
     descricao: "A fúria de Kratos na Grécia Antiga.",
-    imagem: "https://upload.wikimedia.org/wikipedia/pt/5/53/God_of_War_2005_capa.png",
-    plataforma: ["PlayStation"]
+    imagem: "https://upload.wikimedia.org/wikipedia/pt/5/53/God_of_War_2005_capa.png"
   },
   {
     nome: "God of War II",
@@ -150,8 +135,7 @@ const famousGames = [
     anoLancamento: 2007,
     preco: 54.95,
     descricao: "Considerado o ápice da franquia original de Kratos no PS2.",
-    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC_rHm-wTcyReenjEAhWV4vfVH8Uwnjps5zA&s",
-    plataforma: ["PlayStation"]
+    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC_rHm-wTcyReenjEAhWV4vfVH8Uwnjps5zA&s"
   },
   {
     nome: "God of War III",
@@ -160,8 +144,7 @@ const famousGames = [
     anoLancamento: 2010,
     preco: 109.95,
     descricao: "O final épico da trilogia grega.",
-    imagem: "https://cdn.awsli.com.br/800x800/53/53761/produto/13244966/d8b15e12f6.jpg",
-    plataforma: ["PlayStation"]
+    imagem: "https://cdn.awsli.com.br/800x800/53/53761/produto/13244966/d8b15e12f6.jpg"
   },
   {
     nome: "God of War (2018)",
@@ -180,8 +163,7 @@ const famousGames = [
     anoLancamento: 2022,
     preco: 329.95,
     descricao: "O épico final da saga nórdica.",
-    imagem: "https://m.media-amazon.com/images/I/81gC318-4KL._UF1000,1000_QL80_.jpg",
-    plataforma: ["PlayStation"]
+    imagem: "https://m.media-amazon.com/images/I/81gC318-4KL._UF1000,1000_QL80_.jpg"
   },
   {
     nome: "Devil May Cry (2001)",
@@ -190,8 +172,7 @@ const famousGames = [
     anoLancamento: 2001,
     preco: 109.95,
     descricao: "O nascimento do combate estiloso com Dante.",
-    imagem: "https://i.pinimg.com/736x/84/e7/04/84e704f9ab2e4edcd507e8741709ece3.jpg",
-    plataforma: ["PlayStation", "Xbox", "PC"]
+    imagem: "https://i.pinimg.com/736x/84/e7/04/84e704f9ab2e4edcd507e8741709ece3.jpg"
   },
   {
     nome: "Devil May Cry 5",
@@ -201,8 +182,7 @@ const famousGames = [
     preco: 164.95,
     descricao:
       "O ápice da ação 'hack and slash' com três personagens jogáveis.",
-    imagem: "https://i.pinimg.com/736x/84/25/0b/84250b333f9d66307323f4b07a12e582.jpg",
-    plataforma: ["PlayStation", "Xbox", "PC"]
+    imagem: "https://i.pinimg.com/736x/84/25/0b/84250b333f9d66307323f4b07a12e582.jpg"
   },
   {
     nome: "Darksiders",
@@ -211,8 +191,7 @@ const famousGames = [
     anoLancamento: 2010,
     preco: 109.95,
     descricao: "Guerra, o Cavaleiro do Apocalipse, em sua jornada.",
-    imagem: "https://i.pinimg.com/736x/35/a5/59/35a5591085fe9f404fd3fc5b8ecf4a25.jpg",
-    plataforma: ["PlayStation", "Xbox", "PC"]
+    imagem: "https://i.pinimg.com/736x/35/a5/59/35a5591085fe9f404fd3fc5b8ecf4a25.jpg"
   },
   {
     nome: "Darksiders II",
@@ -222,8 +201,7 @@ const famousGames = [
     preco: 109.95,
     descricao:
       "Morte, o Cavaleiro do Apocalipse, em uma aventura maior e com elementos RPG.",
-    imagem: "https://i.pinimg.com/1200x/6b/b5/af/6bb5af7537a315b2732d1bbdde6bd77a.jpg",
-    plataforma: ["PlayStation", "Xbox", "PC"]
+    imagem: "https://i.pinimg.com/1200x/6b/b5/af/6bb5af7537a315b2732d1bbdde6bd77a.jpg"
   },
   {
     nome: "Darksiders III",
@@ -232,8 +210,7 @@ const famousGames = [
     anoLancamento: 2018,
     preco: 164.95,
     descricao: "Fúria, a Cavaleira, focada em combate ágil e quebra-cabeças.",
-    imagem: "https://i.pinimg.com/736x/92/b1/a3/92b1a396e0d12a1bbfb9cd15354eb1f8.jpg",
-    plataforma: ["PlayStation", "Xbox", "PC"]
+    imagem: "https://i.pinimg.com/736x/92/b1/a3/92b1a396e0d12a1bbfb9cd15354eb1f8.jpg"
   },
   {
     nome: "Tomb Raider (1996)",
@@ -256,14 +233,13 @@ const famousGames = [
     plataforma: ["PlayStation", "Xbox", "PC"]
   },
   {
-    nome: "Pokémon Red/Blue/Yellow/green",
+    nome: "Pokémon Red/Blue/Yellow",
     desenvolvedor: "Game Freak",
     genero: "RPG",
     anoLancamento: 1996,
     preco: 82.5,
     descricao: "O início da aventura de caça e treinamento de Pokémon.",
-    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6zJNgcbySMVfBycuYDDGeunR7IvWUp8i28w&s",
-    plataforma: ["nintendo", "PC"]
+    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6zJNgcbySMVfBycuYDDGeunR7IvWUp8i28w&s"
   },
   {
     nome: "Pokémon Scarlet/Violet",
@@ -273,8 +249,7 @@ const famousGames = [
     preco: 274.95,
     descricao:
       "A primeira experiência de mundo aberto completa da franquia Pokémon.",
-    imagem: "https://sm.ign.com/ign_br/game/p/pokemon-sc/pokemon-scarlet_aqh9.png",
-    plataforma: ["PlayStation", "Xbox", "PC"]
+    imagem: "https://sm.ign.com/ign_br/game/p/pokemon-sc/pokemon-scarlet_aqh9.png"
   },
   {
     nome: "The Legend of Zelda: Ocarina of Time",
@@ -303,8 +278,7 @@ const famousGames = [
     anoLancamento: 2023,
     preco: 329.95,
     descricao: "Sequência direta de BOTW com foco em criatividade e física.",
-    imagem: "https://i.pinimg.com/736x/86/0a/28/860a287a31ec709f6db30e122ff39627.jpg",
-    plataforma: ["nintendo", "PC"]
+    imagem: "https://i.pinimg.com/736x/86/0a/28/860a287a31ec709f6db30e122ff39627.jpg"
   },
   {
     nome: "Super Mario Bros.",
@@ -348,15 +322,14 @@ const famousGames = [
     plataforma: ["PlayStation", "Xbox", "Nintendo", "PC"]
   },
   {
-    nome: "Sonic Adventure",
+    nome: "Sonic Adventure 2",
     desenvolvedor: "Sonic Team",
     genero: "Aventura",
-    anoLancamento: 1998,
+    anoLancamento: 2001,
     preco: 109.95,
     descricao:
       "O primeiro grande jogo 3D do Sonic, com foco em aventura e velocidade.",
-    imagem: "https://upload.wikimedia.org/wikipedia/en/6/60/Sonic_Adventure.PNG",
-    plataforma: ["PlayStation", "Xbox", "Nintendo", "PC"]
+    imagem: "https://upload.wikimedia.org/wikipedia/en/6/60/Sonic_Adventure.PNG"
   },
   {
     nome: "The Last of Us Part I",
@@ -375,8 +348,7 @@ const famousGames = [
     anoLancamento: 2021,
     preco: 274.95,
     descricao: "Ação frenética em terceira pessoa com estrutura roguelike.",
-    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6SFcw6Dzh8Io0cvNap8RMdXRVbWLlsH6wIg&s",
-    plataforma: ["PlayStation", "PC"]
+    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6SFcw6Dzh8Io0cvNap8RMdXRVbWLlsH6wIg&s"
   },
   {
     nome: "Death Stranding 2: On The Beach",
@@ -385,8 +357,7 @@ const famousGames = [
     anoLancamento: 2025,
     preco: 329.95,
     descricao: "O próximo épico de Hideo Kojima sobre conexão.",
-    imagem: "https://upload.wikimedia.org/wikipedia/en/e/e0/Death_Stranding_2_Icon.jpg",
-    plataforma: ["PlayStation", "PC"]
+    imagem: "https://upload.wikimedia.org/wikipedia/en/e/e0/Death_Stranding_2_Icon.jpg"
   },
   {
     nome: "Red Dead Redemption 2",
@@ -395,8 +366,7 @@ const famousGames = [
     anoLancamento: 2018,
     preco: 329.95,
     descricao: "Um épico faroeste com detalhes impecáveis e mundo aberto.",
-    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6Zw3ba8igTlqTD-rCWWQgpjA1dFwTv0DV3w&s",
-    plataforma: ["PlayStation", "Xbox", "PC"]
+    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6Zw3ba8igTlqTD-rCWWQgpjA1dFwTv0DV3w&s"
   },
   {
     nome: "Grand Theft Auto V",
@@ -405,8 +375,7 @@ const famousGames = [
     anoLancamento: 2013,
     preco: 329.95,
     descricao: "O sucesso de vendas em Los Santos.",
-    imagem: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1gXhYBTiv8whMqlcgbtSi-iegWR0IECT6VdLZo8wFfARvvZR0g52pBqiAOeMcN_9Age0BHzav1MrMpYI2o0ZuJ-6Fjfq7DZLf8ju53IrOTxD4jJb0XRqFJ_2aLxWASjhoEhHgBZU0ZbjE/s1600/capa2.jpg",
-    plataforma: ["PlayStation", "Xbox", "PC"]
+    imagem: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1gXhYBTiv8whMqlcgbtSi-iegWR0IECT6VdLZo8wFfARvvZR0g52pBqiAOeMcN_9Age0BHzav1MrMpYI2o0ZuJ-6Fjfq7DZLf8ju53IrOTxD4jJb0XRqFJ_2aLxWASjhoEhHgBZU0ZbjE/s1600/capa2.jpg"
   },
   {
     nome: "Ghost of Tsushima",
@@ -415,8 +384,7 @@ const famousGames = [
     anoLancamento: 2020,
     preco: 274.95,
     descricao: "Épico samurai visualmente deslumbrante em mundo aberto.",
-    imagem: "https://upload.wikimedia.org/wikipedia/en/b/b6/Ghost_of_Tsushima.jpg",
-    plataforma: ["PlayStation", "PC"]
+    imagem: "https://upload.wikimedia.org/wikipedia/en/b/b6/Ghost_of_Tsushima.jpg"
   },
   {
     nome: "Days Gone",
@@ -425,8 +393,7 @@ const famousGames = [
     anoLancamento: 2019,
     preco: 274.95,
     descricao: "Sobrevivência de motoqueiro contra hordas de Freakers.",
-    imagem: "https://upload.wikimedia.org/wikipedia/pt/1/16/Days_Gone_cover_art.jpg",
-    plataforma: ["PlayStation", "PC"]
+    imagem: "https://upload.wikimedia.org/wikipedia/pt/1/16/Days_Gone_cover_art.jpg"
   },
   {
     nome: "Detroit: Become Human",
@@ -436,8 +403,7 @@ const famousGames = [
     preco: 219.95,
     descricao:
       "Thriller cinemático focado em escolhas sobre a revolução dos andróides.",
-    imagem: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQkUbrHi53C3hasmUFxNtSJFeo4R0M-Prx9n4sRN9Sj4illTqaaxl1s3COQ634fuB8zcDZcIWBg",
-    plataforma: ["PlayStation", "PC"]
+    imagem: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQkUbrHi53C3hasmUFxNtSJFeo4R0M-Prx9n4sRN9Sj4illTqaaxl1s3COQ634fuB8zcDZcIWBg"
   },
   {
     nome: "Shadow of the Colossus",
@@ -446,8 +412,7 @@ const famousGames = [
     anoLancamento: 2005,
     preco: 164.95,
     descricao: "Uma jornada artística e melancólica de combate a gigantes.",
-    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuUuyV7LdlGWkUT144IfjjrY0s2GcLQgQ0vg&s",
-    plataforma: ["PlayStation"]
+    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuUuyV7LdlGWkUT144IfjjrY0s2GcLQgQ0vg&s"
   },
   {
     nome: "Until Dawn",
@@ -476,8 +441,7 @@ const famousGames = [
     anoLancamento: 2004,
     preco: 164.95,
     descricao: "O mestre do stealth focado em sobrevivência na selva.",
-    imagem: "https://upload.wikimedia.org/wikipedia/pt/7/75/Metal_Gear_Solid_3_Subsistence_-_North-american_cover.jpg",
-    plataforma: ["PlayStation", "Xbox", "PC"]
+    imagem: "https://upload.wikimedia.org/wikipedia/pt/7/75/Metal_Gear_Solid_3_Subsistence_-_North-american_cover.jpg"
   },
   {
     nome: "Assassin’s Creed II",
@@ -486,8 +450,7 @@ const famousGames = [
     anoLancamento: 2009,
     preco: 109.95,
     descricao: "A aventura de Ezio Auditore no Renascimento.",
-    imagem: "https://upload.wikimedia.org/wikipedia/pt/a/ac/Assassins_Creed_2_capa.png",
-    plataforma: ["PlayStation", "Xbox", "PC"]
+    imagem: "https://upload.wikimedia.org/wikipedia/pt/a/ac/Assassins_Creed_2_capa.png"
   },
   {
     nome: "Horizon Zero Dawn",
@@ -496,8 +459,7 @@ const famousGames = [
     anoLancamento: 2017,
     preco: 274.95,
     descricao: "Aloy em um mundo pós-apocalíptico com máquinas animais.",
-    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDFmU7vmHYCcaqaxUEpyxmtj8A6SK-cO0aaA&s",
-    plataforma: ["PlayStation", "PC"]
+    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDFmU7vmHYCcaqaxUEpyxmtj8A6SK-cO0aaA&s"
   },
   {
     nome: "Horizon Forbidden West",
@@ -506,8 +468,7 @@ const famousGames = [
     anoLancamento: 2022,
     preco: 329.95,
     descricao: "A continuação da jornada de Aloy no Oeste Proibido.",
-    imagem: "https://upload.wikimedia.org/wikipedia/pt/e/e5/Horizon_Forbidden_West.jpg",
-    plataforma: ["PlayStation", "PC"]
+    imagem: "https://upload.wikimedia.org/wikipedia/pt/e/e5/Horizon_Forbidden_West.jpg"
   },
   {
     nome: "Fallout 4",
@@ -516,8 +477,7 @@ const famousGames = [
     anoLancamento: 2015,
     preco: 164.95,
     descricao: "Sobrevivência e construção no Commonwealth pós-apocalíptico.",
-    imagem: "https://upload.wikimedia.org/wikipedia/pt/7/70/Fallout_4_cover_art.jpg",
-    plataforma: ["PlayStation", "Xbox", "PC"]
+    imagem: "https://upload.wikimedia.org/wikipedia/pt/7/70/Fallout_4_cover_art.jpg"
   },
   {
     nome: "Astrobot Rescue Mission",
@@ -526,8 +486,7 @@ const famousGames = [
     anoLancamento: 2018,
     preco: 164.95,
     descricao: "O aclamado jogo de plataforma exclusivo de PS VR.",
-    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7rVO0lYe_iXtniPexb4wJj2txAcbSlBR_ag&s",
-    plataforma: ["PlayStation"]
+    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7rVO0lYe_iXtniPexb4wJj2txAcbSlBR_ag&s"
   },
   {
     nome: "Marvel's Spider-Man 2",
@@ -536,8 +495,7 @@ const famousGames = [
     anoLancamento: 2023,
     preco: 349.95,
     descricao: "Peter Parker e Miles Morales enfrentam Venom e Kraven.",
-    imagem: "https://upload.wikimedia.org/wikipedia/pt/6/64/Spider-Man_2_2023_capa.jpg",  
-    plataforma: ["PlayStation", "PC"]
+    imagem: "https://upload.wikimedia.org/wikipedia/pt/6/64/Spider-Man_2_2023_capa.jpg"
   },
   {
     nome: "Marvel's Wolverine",
@@ -546,8 +504,7 @@ const famousGames = [
     anoLancamento: 2025,
     preco: 349.95,
     descricao: "O próximo grande jogo de super-heróis da Insomniac Games.",
-    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpTh6Oj-Do4Vsiatfeco0SI-0RgSveCAfQVQ&s",
-    plataforma: ["PlayStation", "PC"]
+    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpTh6Oj-Do4Vsiatfeco0SI-0RgSveCAfQVQ&s"
   },
   {
     nome: "Stellar Blade",
