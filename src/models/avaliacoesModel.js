@@ -46,3 +46,24 @@ export const findById = async (id) => {
         ...includeRelations
     })
 }
+export const updateAvaliacao = async (id, dados) => {
+    const numericId = parseInt(id);
+    if (isNaN(numericId)) {
+        throw new Error("ID inválido fornecido para atualização de avaliação.");
+    }
+    return await prisma.avaliacao.update({
+        where: { id: numericId },
+        data: dados,
+        ...includeRelations
+    })
+}
+export const deleteAvaliacao = async (id) => {
+    const numericId = parseInt(id);
+    if (isNaN(numericId)) { 
+        throw new Error("ID inválido fornecido para exclusão de avaliação.");
+    }
+    return await prisma.avaliacao.delete({
+        where: { id: numericId },
+        ...includeRelations
+    })
+}
