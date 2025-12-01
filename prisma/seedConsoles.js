@@ -1,6 +1,8 @@
 const consolesDataExpandida = [
     {
         nome: "Nintendo Entertainment System (NES)",
+        fabricante: "Nintendo",
+        geracao: "3ª Geração",
         nota: 9.20,
         anoLancamento: 1985,
         preco: 650.00,
@@ -9,6 +11,8 @@ const consolesDataExpandida = [
     },
     {
         nome: "Game Boy",
+        fabricante: "Nintendo",
+        geracao: "4ª Geração",
         nota: 9.50,
         anoLancamento: 1989,
         preco: 400.00,
@@ -17,6 +21,8 @@ const consolesDataExpandida = [
     },
     {
         nome: "Super Nintendo (SNES)",
+        fabricante: "Nintendo",
+        geracao: "4ª Geração",
         nota: 9.50,
         anoLancamento: 1991,
         preco: 850.00,
@@ -25,6 +31,8 @@ const consolesDataExpandida = [
     },
     {
         nome: "Virtual Boy",
+        fabricante: "Nintendo",
+        geracao: "5ª Geração",
         nota: 3.00,
         anoLancamento: 1995,
         preco: 100.00,
@@ -33,6 +41,8 @@ const consolesDataExpandida = [
     },
     {
         nome: "Nintendo 64 (N64)",
+        fabricante: "Nintendo",
+        geracao: "5ª Geração",
         nota: 8.70,
         anoLancamento: 1996,
         preco: 1100.00,
@@ -41,6 +51,8 @@ const consolesDataExpandida = [
     },
     {
         nome: "Game Boy Color",
+        fabricante: "Nintendo",
+        geracao: "5ª Geração",
         nota: 8.00,
         anoLancamento: 1998,
         preco: 300.00,
@@ -49,6 +61,8 @@ const consolesDataExpandida = [
     },
     {
         nome: "Nintendo GameCube",
+        fabricante: "Nintendo",
+        geracao: "6ª Geração",
         nota: 8.50,
         anoLancamento: 2001,
         preco: 1300.00,
@@ -57,6 +71,8 @@ const consolesDataExpandida = [
     },
     {
         nome: "Game Boy Advance (GBA)",
+        fabricante: "Nintendo",
+        geracao: "6ª Geração",
         nota: 9.00,
         anoLancamento: 2001,
         preco: 400.00,
@@ -65,6 +81,8 @@ const consolesDataExpandida = [
     },
     {
         nome: "Nintendo DS",
+        fabricante: "Nintendo",
+        geracao: "7ª Geração",
         nota: 9.40,
         anoLancamento: 2004,
         preco: 700.00,
@@ -73,6 +91,8 @@ const consolesDataExpandida = [
     },
     {
         nome: "Wii",
+        fabricante: "Nintendo",
+        geracao: "7ª Geração",
         nota: 8.20,
         anoLancamento: 2006,
         preco: 1500.00,
@@ -81,6 +101,8 @@ const consolesDataExpandida = [
     },
     {
         nome: "Nintendo 3DS (Família)",
+        fabricante: "Nintendo",
+        geracao: "8ª Geração",
         nota: 8.50,
         anoLancamento: 2011,
         preco: 900.00,
@@ -89,6 +111,8 @@ const consolesDataExpandida = [
     },
     {
         nome: "Wii U",
+        fabricante: "Nintendo",
+        geracao: "8ª Geração",
         nota: 6.50,
         anoLancamento: 2012,
         preco: 1200.00,
@@ -97,14 +121,21 @@ const consolesDataExpandida = [
     },
     {
         nome: "Nintendo Switch (Família)",
+        fabricante: "Nintendo",
+        geracao: "9ª Geração",
         nota: 9.30,
         anoLancamento: 2017,
         preco: 2800.00,
         descricao: "Console híbrido (portátil e de mesa) de grande sucesso atual.",
         imagens: ["https://images.kabum.com.br/produtos/fotos/sync_mirakl/690409/xlarge/Console-Nintendo-Switch-32gb-Standard-Preto-Cinza_1742855432.png"]
     },
+
+    /* --- SONY --- */
+
     {
         nome: "PlayStation (PS1)",
+        fabricante: "Sony",
+        geracao: "5ª Geração",
         nota: 9.60,
         anoLancamento: 1995,
         preco: 1200.00,
@@ -113,6 +144,8 @@ const consolesDataExpandida = [
     },
     {
         nome: "PlayStation 2 (PS2)",
+        fabricante: "Sony",
+        geracao: "6ª Geração",
         nota: 9.80,
         anoLancamento: 2000,
         preco: 1500.00,
@@ -121,6 +154,8 @@ const consolesDataExpandida = [
     },
     {
         nome: "PlayStation Portable (PSP)",
+        fabricante: "Sony",
+        geracao: "7ª Geração",
         nota: 8.50,
         anoLancamento: 2004,
         preco: 700.00,
@@ -129,6 +164,8 @@ const consolesDataExpandida = [
     },
     {
         nome: "PlayStation 3 (PS3)",
+        fabricante: "Sony",
+        geracao: "7ª Geração",
         nota: 8.60,
         anoLancamento: 2006,
         preco: 1800.00,
@@ -137,6 +174,8 @@ const consolesDataExpandida = [
     },
     {
         nome: "PlayStation Vita (PS Vita)",
+        fabricante: "Sony",
+        geracao: "8ª Geração",
         nota: 7.50,
         anoLancamento: 2011,
         preco: 900.00,
@@ -145,6 +184,8 @@ const consolesDataExpandida = [
     },
     {
         nome: "PlayStation 4 (PS4)",
+        fabricante: "Sony",
+        geracao: "8ª Geração",
         nota: 9.40,
         anoLancamento: 2013,
         preco: 2500.00,
@@ -153,6 +194,8 @@ const consolesDataExpandida = [
     },
     {
         nome: "PlayStation VR (PS VR)",
+        fabricante: "Sony",
+        geracao: "8ª Geração",
         nota: 8.00,
         anoLancamento: 2016,
         preco: 1900.00,
@@ -161,6 +204,8 @@ const consolesDataExpandida = [
     },
     {
         nome: "PlayStation 5 (PS5)",
+        fabricante: "Sony",
+        geracao: "9ª Geração",
         nota: 9.70,
         anoLancamento: 2020,
         preco: 4999.00,
@@ -169,14 +214,21 @@ const consolesDataExpandida = [
     },
     {
         nome: "PlayStation VR2 (PS VR2)",
+        fabricante: "Sony",
+        geracao: "9ª Geração",
         nota: 9.00,
         anoLancamento: 2023,
         preco: 3500.00,
         descricao: "A segunda geração do sistema de Realidade Virtual da Sony, exclusivo para o PlayStation 5.",
         imagens: ["https://m.media-amazon.com/images/I/61KecCIiU3L.jpg"]
     },
+
+    /* --- MICROSOFT --- */
+
     {
         nome: "Xbox (Original)",
+        fabricante: "Microsoft",
+        geracao: "6ª Geração",
         nota: 8.90,
         anoLancamento: 2001,
         preco: 1400.00,
@@ -185,6 +237,8 @@ const consolesDataExpandida = [
     },
     {
         nome: "Xbox 360",
+        fabricante: "Microsoft",
+        geracao: "7ª Geração",
         nota: 9.00,
         anoLancamento: 2005,
         preco: 1700.00,
@@ -193,6 +247,8 @@ const consolesDataExpandida = [
     },
     {
         nome: "Xbox One",
+        fabricante: "Microsoft",
+        geracao: "8ª Geração",
         nota: 8.70,
         anoLancamento: 2013,
         preco: 2400.00,
@@ -201,6 +257,8 @@ const consolesDataExpandida = [
     },
     {
         nome: "Xbox Series X",
+        fabricante: "Microsoft",
+        geracao: "9ª Geração",
         nota: 9.60,
         anoLancamento: 2020,
         preco: 4599.00,
@@ -209,14 +267,21 @@ const consolesDataExpandida = [
     },
     {
         nome: "Xbox Series S",
+        fabricante: "Microsoft",
+        geracao: "9ª Geração",
         nota: 9.00,
         anoLancamento: 2020,
         preco: 2800.00,
         descricao: "Modelo de entrada da Nona Geração, totalmente digital e menor que o Series X.",
         imagens: ["https://www.adrenaline.com.br/wp-content/uploads/2023/03/xbox-series-s-caixa.jpg"]
     },
+
+    /* --- STEAM/VALVE --- */
+
     {
         nome: "Steam (Plataforma Digital)",
+        fabricante: "Steam",
+        geracao: "7ª Geração",
         nota: 9.90,
         anoLancamento: 2003,
         preco: 0.00,
@@ -225,6 +290,8 @@ const consolesDataExpandida = [
     },
     {
         nome: "Steam Machine",
+        fabricante: "Steam",
+        geracao: "8ª Geração",
         nota: 6.50,
         anoLancamento: 2015,
         preco: 3000.00,
@@ -233,13 +300,16 @@ const consolesDataExpandida = [
     },
     {
         nome: "Steam Deck (Portátil)",
+        fabricante: "Steam",
+        geracao: "9ª Geração",
         nota: 9.00,
         anoLancamento: 2022,
         preco: 4200.00,
         descricao: "PC portátil da Valve, sucesso em levar a biblioteca Steam para a mobilidade.",
         imagens: ["https://a-static.mlcdn.com.br/800x800/steam-deck-64gb-jogos-portateis-de-alta-qualidade-valve/olistplus/o2es0d4gqtwkost3/4dc89293e99ea1569601f936736e27fd.jpeg"]
-    },
+    }
 ];
+
 
 export async function seedConsoles(prisma) {
     console.log(`\n🌎 Iniciando o seed de consoles com ${consolesDataExpandida.length} itens (valores em reais)...`);
