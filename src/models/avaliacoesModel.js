@@ -46,6 +46,18 @@ export const findById = async (id) => {
         ...includeRelations
     })
 }
+
+export const create = async (data) => {
+    return await prisma.avaliacao.create({
+        data: {
+            comentario: data.comentario,
+            nota: data.nota ,
+            usuarioId: data.usuarioId,
+            jogoId: data.jogoId || null,
+            consoleId: data.consoleId || null
+        }
+    })
+}
 export const updateAvaliacao = async (id, dados) => {
     const numericId = parseInt(id);
     if (isNaN(numericId)) {
