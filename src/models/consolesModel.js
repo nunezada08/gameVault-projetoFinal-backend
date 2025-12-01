@@ -22,6 +22,8 @@ export const create = async (data) => {
       anoLancamento: data.anoLancamento,
       preco: data.preco,
       descricao: data.descricao,
+      fabricante: data.fabricante,
+      geracao: data.geracao
     },
   })
 }
