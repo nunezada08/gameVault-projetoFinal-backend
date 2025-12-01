@@ -291,8 +291,9 @@ const famousGames = [
     anoLancamento: 2023,
     preco: 329.95,
     descricao: "Sequência direta de BOTW com foco em criatividade e física.",
-    imagem: "https://images.wallpapersden.com/image/download/the-legend-of-zelda-tears-of-the-kingdom-logo_bWtpZWaUmZqaraWkpJRmbmdlrWZlbWU.jpg"
-  },
+    imagem: "https://images.wallpapersden.com/image/download/the-legend-of-zelda-tears-of-the-kingdom-logo_bWtpZWaUmZqaraWkpJRmbmdlrWZlbWU.jpg",
+    plataforma: ["nintendo", "PC"]
+},
   {
     nome: "Super Mario Bros.",
     desenvolvedor: "Nintendo",
@@ -352,7 +353,7 @@ const famousGames = [
     preco: 219.95,
     descricao: "Uma jornada emocional de sobrevivência em um mundo devastado.",
     imagem: "https://images5.alphacoders.com/394/394511.jpg",
-    plataforma: ["PlayStation", "PC"]
+    plataforma: ["PlayStation"]
   },
   {
     nome: "Returnal",
@@ -524,8 +525,9 @@ const famousGames = [
     anoLancamento: 2023,
     preco: 349.95,
     descricao: "Peter Parker e Miles Morales enfrentam Venom e Kraven.",
-    imagem: "https://cdn.awsli.com.br/2500x2500/524/524499/produto/221202026/spider-man-2-a-9efux8agpq.jpg"
-  },
+    imagem: "https://cdn.awsli.com.br/2500x2500/524/524499/produto/221202026/spider-man-2-a-9efux8agpq.jpg",
+    plataforma: ["PlayStation"]
+},
   {
     nome: "Marvel's Wolverine",
     desenvolvedor: "Insomniac Games",
@@ -796,7 +798,7 @@ const famousGames = [
   preco: 274.95,
   descricao: "Nova aventura de Master Chief com campanha aberta e multiplayer competitivo.",
   imagem: "https://xboxwire.thesourcemediaassets.com/sites/8/2022/11/HALO_INFINITE_WINTER_UPDATE_WALLPAPER_XBOX_CONSOLE_1920x1080_BRANDED_RGB-ca953c303455f686fe68.jpg",
-  plataforma: ["PC", "Xbox"]
+  plataforma: ["Xbox"]
 },
 {
   nome: "Apex Legends",
@@ -946,7 +948,7 @@ const famousGames = [
   preco: 219.95,
   descricao: "Aventura pirata cooperativa em mundo aberto cheio de exploração e batalhas navais.",
   imagem: "https://wallpapers.com/images/hd/sea-of-thieves-cove-skull-art-2imf70tf329n4nm5.jpg",
-  plataforma: ["PC", "Xbox"]
+  plataforma: ["Xbox"]
 },
 {
   nome: "Hades",
