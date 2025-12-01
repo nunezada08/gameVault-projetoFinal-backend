@@ -48,7 +48,7 @@ const famousGames = [
     anoLancamento: 1996,
     preco: 82.5,
     descricao: "O início do survival horror e da mansão assombrada.",
-    imagem: "https://upload.wikimedia.org/wikipedia/pt/0/04/Resident_Evil_capa.png"
+    imagem: "https://external-preview.redd.it/S7fyh8psn39YUepqyupLxIPhW873QW6mZ9nJticvdaI.jpg?auto=webp&s=fafd81d0a8d00ac6f0d2897afbf713343fa7d555"
   },
   {
     nome: "Resident Evil 2 Remake",
@@ -57,7 +57,7 @@ const famousGames = [
     anoLancamento: 2019,
     preco: 164.95,
     descricao: "O remake aterrorizante da experiência de Raccoon City.",
-    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZZxPlqR8F_VrvILKygK1cfHt_RBzIDtmGOg&s"
+    imagem: "https://i0.wp.com/nerdinterior.com.br/wp-content/uploads/2019/02/topo.png?ssl=1s"
   },
   {
     nome: "Resident Evil 3 Remake",
@@ -66,7 +66,7 @@ const famousGames = [
     anoLancamento: 2020,
     preco: 164.95,
     descricao: "Jill Valentine e a perseguição implacável de Nemesis.",
-    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi0YYUF_c2t9gzvLAVAcrdpEfz-KfpBIxAkQ&s"
+    imagem: "https://images2.alphacoders.com/107/1072531.jpg"
   },
   {
     nome: "Resident Evil 4",
@@ -75,7 +75,7 @@ const famousGames = [
     anoLancamento: 2005,
     preco: 109.95,
     descricao:"O clássico que mudou o survival horror para uma câmera sobre o ombro.",
-    imagem: "https://upload.wikimedia.org/wikipedia/pt/9/91/Resident_Evil_4_-_North-american_cover.jpg"
+    imagem: "https://images.alphacoders.com/130/thumb-1920-1308576.jpeg"
   },
   {
     nome: "Resident Evil 5",
@@ -84,7 +84,7 @@ const famousGames = [
     anoLancamento: 2009,
     preco: 54.95,
     descricao: "Foco total na ação cooperativa e na África.",
-    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcI1IHTDyATH7gaE3g6V0hptj4EqI8YldA4g&s"
+    imagem: "https://images.alphacoders.com/606/606323.jpg"
   },
   {
     nome: "Resident Evil 6",
@@ -93,7 +93,7 @@ const famousGames = [
     anoLancamento: 2012,
     preco: 54.95,
     descricao: "O jogo mais focado em ação da série, com múltiplas campanhas.",
-    imagem: "https://upload.wikimedia.org/wikipedia/pt/7/73/Resident_evil_6.jpg"
+    imagem: "https://images.wallpapersden.com/image/download/resident-evil-6-biohazard-6-leon-scott-kennedy_ZmdsZmeUmZqaraWkpJRmbmdlrWZlbWU.jpg"
   },
   {
     nome: "Resident Evil 7: Biohazard",
@@ -102,7 +102,7 @@ const famousGames = [
     anoLancamento: 2017,
     preco: 109.95,
     descricao: "Retorno às raízes do horror em primeira pessoa.",
-    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6tAmNF8GByl-jAhJL23YiCD59ELR_axdMNg&s"
+    imagem: "https://superman-on-film.com/wp-content/uploads/2018/11/Resident-Evil.jpg"
   },
   {
     nome: "Resident Evil Village",
@@ -111,7 +111,7 @@ const famousGames = [
     anoLancamento: 2021,
     preco: 274.95,
     descricao: "A aventura de Ethan Winters na vila sombria.",
-    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfBkJY9wY8UHr-_S-cZFuEwKbVdzZsYiWh-Q&s"
+    imagem: "https://i.redd.it/4lf1onhuuc451.png"
   },
   {
     nome: "Resident Evil requiem",
@@ -121,7 +121,7 @@ const famousGames = [
     preco: 329.95,
     descricao:
       "O próximo grande título da série, focado no terror de sobrevivência.",
-    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2Jqi5z1KdRrCGDj_f9UiclrEU5bhIZVg0pQ&s"
+    imagem: "https://images7.alphacoders.com/139/thumb-1920-1397345.jpg"
   },
   {
     nome: "God of War",
@@ -232,7 +232,7 @@ const famousGames = [
     anoLancamento: 1996,
     preco: 82.5,
     descricao: "A aventura original de Lara Croft.",
-    imagem: "https://i.pinimg.com/736x/48/79/d0/4879d0204101ef565d87e06d38130230.jpg",
+    imagem: "https://www.tombraiderchronicles.com/images/tomb-raider-i-remastered-loading-artwork/tomb-raider-i-remastered-loading-artwork-title-eu.png",
     plataforma: ["PlayStation", "PC"]
   },
   {
@@ -242,7 +242,7 @@ const famousGames = [
     anoLancamento: 2013,
     preco: 109.95,
     descricao: "O reboot moderno de Lara Croft, focado em sobrevivência.",
-    imagem: "https://i.pinimg.com/1200x/9d/15/fd/9d15fdc0d0580a3aba708690a99ac7c2.jpg",
+    imagem: "https://images6.alphacoders.com/423/thumb-1920-423181.jpg",
     plataforma: ["PlayStation", "Xbox", "PC"]
   },
   {
@@ -252,7 +252,7 @@ const famousGames = [
     anoLancamento: 1996,
     preco: 82.5,
     descricao: "O início da aventura de caça e treinamento de Pokémon.",
-    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6zJNgcbySMVfBycuYDDGeunR7IvWUp8i28w&s"
+    imagem: "https://external-preview.redd.it/8CPukZU_up5MuNQJWNELSBiDYTtin2IY5wxLzucYniA.jpg?auto=webp&s=def32e8a334f205a16aa290fa36e93924c153851"
   },
   {
     nome: "Pokémon Scarlet/Violet",
@@ -262,7 +262,7 @@ const famousGames = [
     preco: 274.95,
     descricao:
       "A primeira experiência de mundo aberto completa da franquia Pokémon.",
-    imagem: "https://sm.ign.com/ign_br/game/p/pokemon-sc/pokemon-scarlet_aqh9.png"
+    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhzL6qNHTn8PP0CJWaZj59anYvVNtUGFd6rw&s"
   },
   {
     nome: "The Legend of Zelda: Ocarina of Time",
@@ -271,7 +271,7 @@ const famousGames = [
     anoLancamento: 1998,
     preco: 274.95,
     descricao: "Revolucionou o 3D e o gênero Ação-Aventura.",
-    imagem: "https://upload.wikimedia.org/wikipedia/pt/thumb/1/17/The_Legend_of_Zelda_Ocarina_of_Time_capa.png/330px-The_Legend_of_Zelda_Ocarina_of_Time_capa.png",
+    imagem: "https://images2.alphacoders.com/519/thumb-1920-519206.jpg",
     plataforma: ["nintendo", "PC"]
   },
   {
@@ -281,7 +281,7 @@ const famousGames = [
     anoLancamento: 2017,
     preco: 329.95,
     descricao: "Um mundo aberto massivo que redefiniu a série Zelda.",
-    imagem: "https://www.oficinadanet.com.br/imagens/post/18127/capa-zelda.jpg",
+    imagem: "https://cdn.wallpapersafari.com/73/40/u4rW8T.jpg",
     plataforma: ["nintendo", "PC"]
   },
   {
@@ -291,7 +291,7 @@ const famousGames = [
     anoLancamento: 2023,
     preco: 329.95,
     descricao: "Sequência direta de BOTW com foco em criatividade e física.",
-    imagem: "https://i.pinimg.com/736x/86/0a/28/860a287a31ec709f6db30e122ff39627.jpg"
+    imagem: "https://images.wallpapersden.com/image/download/the-legend-of-zelda-tears-of-the-kingdom-logo_bWtpZWaUmZqaraWkpJRmbmdlrWZlbWU.jpg"
   },
   {
     nome: "Super Mario Bros.",
@@ -300,7 +300,7 @@ const famousGames = [
     anoLancamento: 1985,
     preco: 109.95,
     descricao: "O jogo que definiu o gênero plataforma 2D.",
-    imagem: "https://upload.wikimedia.org/wikipedia/en/0/03/Super_Mario_Bros._box.png",
+    imagem: "https://images4.alphacoders.com/136/thumb-1920-1367246.png",
     plataforma: ["nintendo", "PC"]
   },
   {
@@ -310,7 +310,7 @@ const famousGames = [
     anoLancamento: 1996,
     preco: 164.95,
     descricao: "Definiu o padrão para jogos de plataforma 3D.",
-    imagem: "https://upload.wikimedia.org/wikipedia/pt/7/7b/Super_Mario_64_front.jpg",
+    imagem: "https://images8.alphacoders.com/821/thumb-1920-821497.png",
     plataforma: ["nintendo", "PC"]
   },
   {
@@ -321,7 +321,7 @@ const famousGames = [
     preco: 274.95,
     descricao:
       "Uma aventura criativa em vários mundos abertos com a mecânica Cappy.",
-    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3FqAPExRaY0RFOGfuS7E-l89vq8zyWXKITA&s",
+    imagem: "https://cloudfront-us-east-1.images.arcpublishing.com/estadao/4GDQSODGUJLGPBUTFQFHO3JTAU.jpg",
     plataforma: ["nintendo", "PC"]
   },
   {
@@ -331,7 +331,7 @@ const famousGames = [
     anoLancamento: 1991,
     preco: 54.95,
     descricao: "O ouriço azul em sua estreia de alta velocidade.",
-    imagem: "https://i.pinimg.com/736x/18/bc/2a/18bc2a2b0b7b1eef9fcbf01edb9c1d5a.jpg",
+    imagem: "https://i0.wp.com/indie-hive.com/wp-content/uploads/2021/03/sonic1_sms_00.png?fit=1920%2C1080&ssl=1",
     plataforma: ["PlayStation", "Xbox", "Nintendo", "PC"]
   },
   {
@@ -342,7 +342,7 @@ const famousGames = [
     preco: 109.95,
     descricao:
       "O primeiro grande jogo 3D do Sonic, com foco em aventura e velocidade.",
-    imagem: "https://upload.wikimedia.org/wikipedia/en/6/60/Sonic_Adventure.PNG"
+    imagem: "https://wallpapers.com/images/hd/sonic-2-hd-3vfjq535wztwo9dr.jpg"
   },
   {
     nome: "The Last of Us Part I",
@@ -351,7 +351,7 @@ const famousGames = [
     anoLancamento: 2013,
     preco: 219.95,
     descricao: "Uma jornada emocional de sobrevivência em um mundo devastado.",
-    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyhsmtczq1oC0O70PQDDAb4qYs99lAPnGDhw&s",
+    imagem: "https://images5.alphacoders.com/394/394511.jpg",
     plataforma: ["PlayStation", "PC"]
   },
   {
@@ -361,8 +361,9 @@ const famousGames = [
     anoLancamento: 2021,
     preco: 274.95,
     descricao: "Ação frenética em terceira pessoa com estrutura roguelike.",
-    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6SFcw6Dzh8Io0cvNap8RMdXRVbWLlsH6wIg&s",
+    imagem: "https://wallpapers.com/images/hd/returnal-sci-fi-action-game-qqn4ho921p60tpm1.jpg",
     plataforma: ["PlayStation", "Xbox", "Nintendo", "PC"]
+
   },
   {
     nome: "Death Stranding 2: On The Beach",
@@ -381,8 +382,9 @@ const famousGames = [
     anoLancamento: 2018,
     preco: 329.95,
     descricao: "Um épico faroeste com detalhes impecáveis e mundo aberto.",
-    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6Zw3ba8igTlqTD-rCWWQgpjA1dFwTv0DV3w&s",
+    imagem: "https://ovicio.com.br/wp-content/uploads/2022/11/20221117-ovicio-red-dead-capa.webp",
     plataforma: ["PlayStation", "Xbox", "Nintendo", "PC"]
+
   },
   {
     nome: "Grand Theft Auto V",
@@ -432,8 +434,9 @@ const famousGames = [
     anoLancamento: 2005,
     preco: 164.95,
     descricao: "Uma jornada artística e melancólica de combate a gigantes.",
-    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuUuyV7LdlGWkUT144IfjjrY0s2GcLQgQ0vg&s",
+    imagem: "https://www.pixelstalk.net/wp-content/uploads/images1/HD-Free-Desktop-Shadow-Of-The-Colossus-Backgrounds.jpg",
     plataforma: ["PlayStation"]
+
   },
   {
     nome: "Until Dawn",
@@ -442,7 +445,7 @@ const famousGames = [
     anoLancamento: 2015,
     preco: 164.95,
     descricao: "Drama de terror adolescente com muitas escolhas e mortes.",
-    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPZGBVz1ezIcDfttlSzsWFtshLHnPeDUUT2Q&s",
+    imagem: "https://cdn.wallpapersafari.com/75/7/6mCsQa.jpg",
     plataforma: ["PlayStation"]
   },
   {
@@ -452,7 +455,7 @@ const famousGames = [
     anoLancamento: 2016,
     preco: 274.95,
     descricao: "O final emocionante da saga de Nathan Drake.",
-    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm0snNlNaY4pMltVnfXr36jQ-QnBWfDB5LmA&s",
+    imagem: "https://wallpapers.com/images/featured/uncharted-y5wt54otbfmw8wxy.jpg",
     plataforma: ["PlayStation", "PC"]
   },
   {
@@ -462,7 +465,7 @@ const famousGames = [
     anoLancamento: 2004,
     preco: 164.95,
     descricao: "O mestre do stealth focado em sobrevivência na selva.",
-    imagem: "https://upload.wikimedia.org/wikipedia/pt/7/75/Metal_Gear_Solid_3_Subsistence_-_North-american_cover.jpg",
+    imagem: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZ7dSb9mpzgSOEJiVLkxK-OcoDJsaL8Hcj_rMN7YdszRO93ANUcTnPLlKv1bI2k-krJ9uwP0LaDpUupY2w8Z5ewkrgWW6_daXsCKi8Cteo4Kd3WASpSc5QreyhosyOB6wUx5EcIEctGb5qOkO5Aog2uRSN6dNBLIFh_2yRRnPRcrHPogS4tAMMdU310Fs/s1920/mgs3-capa.jpg",
     plataforma: ["PlayStation", "PC"]
   },
   {
@@ -482,7 +485,8 @@ const famousGames = [
     anoLancamento: 2017,
     preco: 274.95,
     descricao: "Aloy em um mundo pós-apocalíptico com máquinas animais.",
-    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDFmU7vmHYCcaqaxUEpyxmtj8A6SK-cO0aaA&s"
+    imagem: "https://wallpapers.com/images/hd/horizon-forbidden-west-4kqph3igk5yeucps.jpg",
+     plataforma: ["Playstation"]
   },
   {
     nome: "Horizon Forbidden West",
@@ -491,7 +495,7 @@ const famousGames = [
     anoLancamento: 2022,
     preco: 329.95,
     descricao: "A continuação da jornada de Aloy no Oeste Proibido.",
-    imagem: "https://upload.wikimedia.org/wikipedia/pt/e/e5/Horizon_Forbidden_West.jpg"
+    imagem: "https://meialua.net/wp-content/uploads/2023/07/horizon-forbidden-west-voo-scaled-e1689196999890.jpg"
   },
   {
     nome: "Fallout 4",
@@ -520,7 +524,7 @@ const famousGames = [
     anoLancamento: 2023,
     preco: 349.95,
     descricao: "Peter Parker e Miles Morales enfrentam Venom e Kraven.",
-    imagem: "https://upload.wikimedia.org/wikipedia/pt/6/64/Spider-Man_2_2023_capa.jpg"
+    imagem: "https://cdn.awsli.com.br/2500x2500/524/524499/produto/221202026/spider-man-2-a-9efux8agpq.jpg"
   },
   {
     nome: "Marvel's Wolverine",
@@ -529,7 +533,7 @@ const famousGames = [
     anoLancamento: 2025,
     preco: 349.95,
     descricao: "O próximo grande jogo de super-heróis da Insomniac Games.",
-    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpTh6Oj-Do4Vsiatfeco0SI-0RgSveCAfQVQ&s"
+    imagem: "https://cabanadoleitor.com.br/wp-content/uploads/2025/09/wolverine.jpg"
   },
   {
     nome: "Stellar Blade",
@@ -539,7 +543,7 @@ const famousGames = [
     preco: 329.95,
     descricao:
       "Ação intensa focada no combate e na estética de ficção científica.",
-    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp4kA0xkIYLy9RM6lDBkCq9fkyDFKCOOTnjg&s",
+    imagem: "https://cdn1.epicgames.com/spt-assets/5013c0fbf0aa4a5e84d948ab5bfe99c6/stellar-blade-155ny.jpg",
     plataforma: ["PlayStation", "PC"]
   },
   {
@@ -549,7 +553,7 @@ const famousGames = [
     anoLancamento: 2016,
     preco: 164.95,
     descricao: "O final da história de Kazuma Kiryu.",
-    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNM1pfasYvt458WDSDElam8PVNLemBnRFu3w&s",
+    imagem: "https://images3.alphacoders.com/990/990473.jpg",
     plataforma: ["PlayStation", "PC"]
   },
   {
@@ -570,7 +574,7 @@ const famousGames = [
     anoLancamento: 2003,
     preco: 54.95,
     descricao: "Popularizou as corridas de rua e a customização de carros.",
-    imagem: "https://upload.wikimedia.org/wikipedia/en/5/52/Need_for_Speed_Underground_cover.jpg",
+    imagem: "https://i.redd.it/cc6ohiqz3fz31.png",
     plataforma: ["PlayStation", "Xbox", "PC"]
   },
   {
@@ -631,7 +635,7 @@ const famousGames = [
   anoLancamento: 2024,
   preco: 54.95,
   descricao: "Um jogo indie de exploração focado em escalada e narrativa.",
-  imagem: "https://assets-prd.ignimgs.com/2025/06/23/peak-1750699534248.jpg?crop=1%3A1%2Csmart&format=jpg&auto=webp&quality=80",
+  imagem: "https://images.alphacoders.com/140/thumb-1920-1402376.png",
   plataforma: ["PC", "PlayStation", "Xbox"]
 },
 {
@@ -641,7 +645,7 @@ const famousGames = [
   anoLancamento: 2006,
   preco: 0.0,
   descricao: "Plataforma de criação de jogos onde usuários desenvolvem e jogam experiências feitas pela comunidade.",
-  imagem: "https://m.media-amazon.com/images/I/81YoKLnmDTL._AC_UF1000,1000_QL80_.jpg",
+  imagem: "https://images5.alphacoders.com/121/1217521.jpg",
   plataforma: ["PC", "PlayStation", "Xbox"]
 },
 {
@@ -651,7 +655,7 @@ const famousGames = [
   anoLancamento: 2011,
   preco: 99.95,
   descricao: "Jogo de sobrevivência e construção em mundo aberto com blocos totalmente modificáveis.",
-  imagem: "https://cdn.sistemawbuy.com.br/arquivos/c30f3cdb5ede193830560f4c44f96b28/produtos/641bdb2392c6a/gift-card-minecraft-java-641bdb24085f4.jpg",
+  imagem: "https://img.odcdn.com.br/wp-content/uploads/2025/07/cansou-minecraft-coisas-fazer-1920x1080.jpg",
   plataforma: ["PC", "PlayStation", "Xbox", "Nintendo"]
 },
 {
@@ -661,7 +665,7 @@ const famousGames = [
   anoLancamento: 2025,
   preco: 110.00,
   descricao: "RPG de aventura com criação de mundos, exploração e combate inspirado por Minecraft.",
-  imagem: "https://sm.ign.com/t/ign_pt/cover/h/hytale/hytale_fpdy.1200.jpg",
+  imagem: "https://gaming-cdn.com/images/products/6154/orig/hytale-pc-jogo-cover.jpg?v=1749215609",
   plataforma: ["PC", "PlayStation", "Xbox"]
 },
 {
@@ -711,7 +715,7 @@ const famousGames = [
   anoLancamento: 2015,
   preco: 164.95,
   descricao: "RPG de mundo aberto onde Geralt busca sua filha adotiva enquanto enfrenta monstros.",
-  imagem: "https://upload.wikimedia.org/wikipedia/pt/0/06/TW3_Wild_Hunt.png",
+  imagem: "https://wallpapers.com/images/hd/the-witcher-3-wild-hunt-fmctiy6vyhh9jih5.jpg",
   plataforma: ["PC", "PlayStation", "Xbox", "Nintendo"]
 },
 {
@@ -731,7 +735,7 @@ const famousGames = [
   anoLancamento: 2023,
   preco: 329.95,
   descricao: "RPG espacial focado em exploração de planetas, combate e narrativa.",
-  imagem: "https://store-images.s-microsoft.com/image/apps.35187.13567343664224659.1eb6fdf9-8a0b-4344-a135-ab17dfa3c609.c83b6d6a-56c3-4c3f-8b31-456cfb21c3b7",
+  imagem: "https://images.ctfassets.net/rporu91m20dc/58xcQ2LJUo6ib05MLjAjfq/f930458cc06de43d10f22013d44ae703/Starfield_JourneySpace_Wallpaper_1920x1080-01.jpg",
   plataforma: ["PC", "Xbox"]
 },
 {
@@ -771,7 +775,7 @@ const famousGames = [
   anoLancamento: 2022,
   preco: 219.95,
   descricao: "RPG tático com heróis da Marvel usando cartas de habilidades em batalhas estratégicas.",
-  imagem: "https://m.media-amazon.com/images/I/81gdMzWvONL._AC_UF1000,1000_QL80_.jpg",
+  imagem: "https://cdn1.epicgames.com/offer/ea73c08ac633414584e281f838b3a78c/EGS_MarvelsMidnightSunsSeasonPass_Firaxis_SeasonPass_G1A_00_1920x1080-38be3069ddfe4f2680a97165f8df153e",
   plataforma: ["PC", "PlayStation", "Xbox", "Nintendo"]
 },
 {
@@ -811,7 +815,7 @@ const famousGames = [
   anoLancamento: 2020,
   preco: 0.0,
   descricao: "FPS tático competitivo focado em precisão e habilidades especiais dos agentes.",
-  imagem: "https://store-images.s-microsoft.com/image/apps.21507.13663857844271189.4c1de202-3961-4c40-a0aa-7f4f1388775a.20ed7782-0eda-4f9d-b421-4cc47492edc6",
+  imagem: "https://wallpapers.com/images/hd/valorant-1920x1080-v3fe8wvu7ufefvij.jpg",
   plataforma: ["PC"]
 },
 {
@@ -841,7 +845,7 @@ const famousGames = [
   anoLancamento: 2023,
   preco: 274.95,
   descricao: "Soulslike inspirado em Pinóquio com combate desafiador e atmosfera sombria.",
-  imagem: "https://i.pinimg.com/736x/bd/d2/b2/bdd2b243c0455a7e17eb61360275b441.jpg",
+  imagem: "https://xboxwire.thesourcemediaassets.com/sites/8/2025/03/Lies-of-P-Overture-Key-Art-Wide-38540e3a23c761616681.jpg",
   plataforma: ["PC", "PlayStation", "Xbox", "Nintendo"]
 },
 {
@@ -851,7 +855,7 @@ const famousGames = [
   anoLancamento: 2016,
   preco: 109.95,
   descricao: "Jogo de estratégia espacial com exploração, diplomacia e grandes impérios.",
-  imagem: "https://m.media-amazon.com/images/I/81TR-hOIA+L._AC_UF1000,1000_QL80_.jpg",
+  imagem: "https://images8.alphacoders.com/701/thumb-1920-701001.jpg",
   plataforma: ["PC"]
 },
 {
@@ -901,7 +905,7 @@ const famousGames = [
   anoLancamento: 2009,
   preco: 0.0,
   descricao: "MOBA competitivo com dezenas de campeões e estratégia em equipe.",
-  imagem: "https://i.pinimg.com/736x/20/54/b6/2054b617ac11f24e23d62e05f85303d4.jpg",
+  imagem: "https://cdn.wallpapersafari.com/77/28/c4DmOo.jpg",
   plataforma: ["PC"]
 },
 {
@@ -931,7 +935,7 @@ const famousGames = [
   anoLancamento: 2023,
   preco: 0.0,
   descricao: "RPG por turnos com história espacial e personagens estilizados.",
-  imagem: "https://i.pinimg.com/736x/d4/27/88/d4278882675eb693d7c9d84e3ed310bf.jpg",
+  imagem: "https://upload-os-bbs.hoyolab.com/upload/2024/06/08/17138284/3988bca820b4ee337ac2786512ce35ee_4039921325816600005.png?x-oss-process=image%2Fresize%2Cs_1000%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_70",
   plataforma: ["PC", "PlayStation", "Nintendo"]
 },
 {
@@ -941,7 +945,7 @@ const famousGames = [
   anoLancamento: 2018,
   preco: 219.95,
   descricao: "Aventura pirata cooperativa em mundo aberto cheio de exploração e batalhas navais.",
-  imagem: "https://i.pinimg.com/1200x/ea/14/78/ea1478c29344f7254cf702787a88523c.jpg",
+  imagem: "https://wallpapers.com/images/hd/sea-of-thieves-cove-skull-art-2imf70tf329n4nm5.jpg",
   plataforma: ["PC", "Xbox"]
 },
 {
@@ -981,7 +985,7 @@ const famousGames = [
   anoLancamento: 2022,
   preco: 219.95,
   descricao: "Jogo de luta com foco em artes marciais e sistema de envelhecimento do personagem.",
-  imagem: "https://i.pinimg.com/736x/1f/42/d4/1f42d45de726a110384e3ff3c2bf36fe.jpg",
+  imagem: "https://images8.alphacoders.com/121/1211757.jpg",
   plataforma: ["PC", "PlayStation", "Xbox", "Nintendo"]
 },
 {
@@ -991,7 +995,7 @@ const famousGames = [
   anoLancamento: 2022,
   preco: 109.95,
   descricao: "Aventura onde você controla um gato explorando uma cidade futurista habitada por robôs.",
-  imagem: "https://i.pinimg.com/736x/35/c2/97/35c297898eb3caa546fb15f714959e06.jpg",
+  imagem: "https://wallpapers.com/images/featured/stray-taob394fcubgvuwk.jpg",
   plataforma: ["PC", "PlayStation", "Xbox"]
 }
 ]
