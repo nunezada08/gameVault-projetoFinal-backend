@@ -36,7 +36,7 @@ export const listarTodosJogos = async (req, res) => {
         if (!resultado || resultado.length === 0) {
             return res.status(404).json({
                 status: 404,
-                sucess: false,
+                success: false,
                 total: resultado.length,
                 mensagem: 'Nenhum jogo encontrado.',
                 jogos: resultado
@@ -45,9 +45,9 @@ export const listarTodosJogos = async (req, res) => {
 
         return res.status(200).json({
             status: 200,
-            sucess: true,
+            success: true,
             total: resultado.length,
-            mensagem: 'Lista de jogos encontrada com sucesso.',
+            mensagem: 'Lista de jogos encontrada com successo.',
             jogos: resultado
         });
         
@@ -56,7 +56,7 @@ export const listarTodosJogos = async (req, res) => {
             erro: 'Erro interno no servidor.',
             detalhes: error.message,
             status: 500,
-            sucess: false
+            success: false
         });
     }
 };
@@ -68,7 +68,7 @@ export const listarUm = async (req, res) => {
         if (isNaN(id)) {
             return res.status(400).json({
                 status: 400,
-                sucess: false,
+                success: false,
                 erro: 'ID inválido. Deve ser um número inteiro.',
                 id: req.params.id
             });
@@ -79,7 +79,7 @@ export const listarUm = async (req, res) => {
         if (!jogo) {
             return res.status(404).json({
                 status: 404,
-                sucess: false,
+                success: false,
                 erro: 'Jogo não encontrado!',
                 mensagem: 'Verifique se o id do jogo existe',
                 id: id
@@ -88,14 +88,14 @@ export const listarUm = async (req, res) => {
         
         res.status(200).json({
             status: 200,
-            sucess: true,
+            success: true,
             mensagem: 'Jogo encontrado',
             jogo
         });
     } catch (error) {
         res.status(500).json({
             status: 500,
-            sucess: false,
+            success: false,
             erro: 'Erro ao buscar jogo por id',
             detalhes: error.message
         });
@@ -113,7 +113,7 @@ export const criarJogo = async (req, res) => {
         if (faltando.length > 0) {
             return res.status(400).json({
                 status: 400,
-                sucess: false,
+                success: false,
                 erro: `Os seguintes campos são obrigatórios: ${faltando.join(', ')}.`
             });
         }
@@ -122,7 +122,7 @@ export const criarJogo = async (req, res) => {
         if (!generosValidos.includes(genero)) {
             return res.status(400).json({
                 status: 400,
-                sucess: false,
+                success: false,
                 erro: `Gênero inválido. Gêneros válidos são: ${generosValidos.join(', ')}.`,
                 generosValidos
             });
@@ -131,7 +131,7 @@ export const criarJogo = async (req, res) => {
         if (!nome || nome.length < 3 || nome.length > 100) {
             return res.status(400).json({
                 status: 400,
-                sucess: false,
+                success: false,
                 erro: "O nome do jogo é obrigatório e deve ter entre 3 e 100 caracteres."
             });
         }
@@ -139,7 +139,7 @@ export const criarJogo = async (req, res) => {
         if (!anoLancamento || isNaN(anoLancamento) || anoLancamento < 1970 || anoLancamento > 2025) {
             return res.status(400).json({
                 status: 400,
-                sucess: false,
+                success: false,
                 erro: `Ano de lançamento inválido. Deve ser entre 1970 e 2025.`,
                 anoMinimo: 1970,
                 anoMaximo: 2025
@@ -150,7 +150,7 @@ export const criarJogo = async (req, res) => {
         if (!plataformasValidas.includes(plataforma)) {
             return res.status(400).json({
                 status: 400,
-                sucess: false,
+                success: false,
                 erro: `Plataforma inválida. Plataformas válidas são: ${plataformasValidas.join(', ')}.`
             });
         }
@@ -158,7 +158,7 @@ export const criarJogo = async (req, res) => {
         if (isNaN(preco) || preco <= 0) {
             return res.status(400).json({
                 status: 400,
-                sucess: false,
+                success: false,
                 erro: "Preço inválido. Deve ser um número positivo."
             });
         }
@@ -166,7 +166,7 @@ export const criarJogo = async (req, res) => {
         if (descricao && descricao.length > 500) {
             return res.status(400).json({
                 status: 400,
-                sucess: false,
+                success: false,
                 erro: "A descrição deve ter no máximo 500 caracteres."
             });
         }
@@ -183,7 +183,7 @@ export const criarJogo = async (req, res) => {
 
         res.status(201).json({
             status: 201,
-            sucess: true,
+            success: true,
             mensagem: 'Novo jogo criado com sucesso.',
             jogo: novoJogo
         });
@@ -191,7 +191,7 @@ export const criarJogo = async (req, res) => {
     } catch (error) {
         res.status(500).json({
             status: 500,
-            sucess: false,
+            success: false,
             erro: 'Erro ao criar novo jogo.',
             detalhes: error.message
         });
@@ -205,7 +205,7 @@ export const atualizarJogo = async (req, res) => {
         if (isNaN(id)) {
             return res.status(400).json({
                 status: 400,
-                sucess: false,
+                success: false,
                 erro: 'ID inválido. Deve ser um número inteiro.',
                 id: req.params.id
             });
@@ -218,7 +218,7 @@ export const atualizarJogo = async (req, res) => {
         if (!jogoExiste) {
             return res.status(404).json({
                 status: 404,
-                sucess: false,
+                success: false,
                 erro: 'Jogo não encontrado.',
                 mensagem: "Verifique se o ID do jogo existe.",
                 id: id,
@@ -230,7 +230,7 @@ export const atualizarJogo = async (req, res) => {
             if (!generosValidos.includes(dados.genero)) {
                 return res.status(400).json({
                     status: 400,
-                    sucess: false,
+                    success: false,
                     erro: `Gênero inválido. Gêneros válidos são: ${generosValidos.join(', ')}.`,
                     generosValidos
                 });
@@ -242,7 +242,7 @@ export const atualizarJogo = async (req, res) => {
             if (!plataformasValidas.includes(dados.plataforma)) {
                 return res.status(400).json({
                     status: 400,
-                    sucess: false,
+                    success: false,
                     erro: `Plataforma inválida. Plataformas válidas são: ${plataformasValidas.join(', ')}.`
                 });
             }
@@ -251,7 +251,7 @@ export const atualizarJogo = async (req, res) => {
             if (anoLancamento < 1970 || anoLancamento > 2025) {
                 return res.status(400).json({
                     status: 400,
-                    sucess: false,
+                    success: false,
                     erro: `Ano de lançamento inválido. Deve ser entre 1970 e 2025.`
                 });
             }
@@ -260,7 +260,7 @@ export const atualizarJogo = async (req, res) => {
         if (dados.preco && (isNaN(dados.preco) || dados.preco <= 0)) {
             return res.status(400).json({
                 status: 400,
-                sucess: false,
+                success: false,
                 erro: "Preço inválido. Deve ser um número positivo."
             });
         }
@@ -268,7 +268,7 @@ export const atualizarJogo = async (req, res) => {
         if (dados.descricao && dados.descricao.length > 500) {
             return res.status(400).json({
                 status: 400,
-                sucess: false,
+                success: false,
                 erro: "A descrição deve ter no máximo 500 caracteres."
             });
         }
@@ -277,7 +277,7 @@ export const atualizarJogo = async (req, res) => {
 
         res.status(200).json({
             status: 200,
-            sucess: true,
+            success: true,
             mensagem: 'Jogo atualizado com sucesso.',
             jogo: jogoAtualizado
         });
@@ -285,7 +285,7 @@ export const atualizarJogo = async (req, res) => {
     } catch (error) {
         res.status(500).json({
             status: 500,
-            sucess: false,
+            success: false,
             erro: 'Erro ao atualizar o jogo.',
             detalhes: error.message
         });
@@ -299,7 +299,7 @@ export const apagar = async (req, res) => {
         if (isNaN(id)) {
             return res.status(400).json({
                 status: 400,
-                sucess: false,
+                success: false,
                 erro: 'ID inválido. Deve ser um número inteiro.',
                 id: req.params.id
             });
@@ -310,7 +310,7 @@ export const apagar = async (req, res) => {
         if (!jogoExiste) {
             return res.status(404).json({
                 status: 404,
-                sucess: false,
+                success: false,
                 erro: 'Jogo não encontrado.',
                 mensagem: "Verifique se o ID do jogo existe.",
                 id: id,
@@ -321,15 +321,15 @@ export const apagar = async (req, res) => {
 
         res.status(200).json({
             status: 200,
-            sucess: true,
-            mensagem: "Jogo apagado com sucesso.",
+            success: true,
+            mensagem: "Jogo apagado com successo.",
             jogoRemovido: jogoExiste
         });
 
     } catch (error) {
         res.status(500).json({
             status: 500,
-            sucess: false,
+            success: false,
             erro: 'Erro ao apagar o jogo.',
             detalhes: error.message
         });

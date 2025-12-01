@@ -74,17 +74,26 @@ export const ConsoleById = async (req, res) => {
 
 export const criarConsole = async (req, res) => {
   try {
-    const { nome, nota, anoLancamento, preco, descricao } = req.body
+    const { nome, nota, anoLancamento, preco, descricao, fabricante, geracao } = req.body
     const dado = req.body
 
-    const camposObrigatorios = ['nome', 'nota', 'anoLancamento', 'preco', 'descricao']
+    const camposObrigatorios = ['nome', 'nota', 'anoLancamento', 'preco', 'descricao', 'fabricante', 'geracao']
     const faltando = camposObrigatorios.filter((campo) => !dado[campo])
 
     if (faltando.length > 0) {
       return res.status(400).json({
-        status:400,
-        sucess:false,
+        status: 400,
+        success: false,
         erro: `Os seguintes campos são obrigatórios: ${faltando.join(', ')}.`,
+      })
+    }
+
+    const fabricantesValidos = ['sony', 'microsoft', 'nintendo', 'steam']
+    if (!fabricantesValidos.includes(fabricante.toLowerCase())) {
+      return res.status(400).json({
+        status: 400,
+        success: false,
+        erro: `Fabricante inválido. Fabricantes válidos são: ${fabricantesValidos.join(', ')}.`,
       })
     }
 
@@ -154,6 +163,17 @@ export const atualizarConsole = async (req, res) => {
                 id: id
             })
         }
+        if (dados.fabricante) {
+      const fabricantesValidos = ['sony', 'microsoft', 'nintendo', 'steam']
+      if (!fabricantesValidos.includes(dados.fabricante.toLowerCase())) {
+        return res.status(400).json({
+          status: 400,
+          success: false,
+          erro: `Fabricante inválido. Fabricantes válidos são: ${fabricantesValidos.join(', ')}.`,
+        })
+      }
+    }
+
 
         const consoleAtualizado = await consolesModel.update(id, dados);
 
