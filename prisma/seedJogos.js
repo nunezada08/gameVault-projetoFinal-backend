@@ -170,7 +170,7 @@ const famousGames = [
     anoLancamento: 2022,
     preco: 329.95,
     descricao: "O épico final da saga nórdica.",
-    imagem: "https://images3.alphacoders.com/128/thumb-1920-1287842.jpg",
+    imagem: "https://cdn1.epicgames.com/spt-assets/edaff839f0734d16bc89d2ddb1dc9339/steel-magnolia-ybxhs.jpg",
     plataforma: ["PlayStation"]
   },
   {
@@ -191,7 +191,7 @@ const famousGames = [
     preco: 164.95,
     descricao:
       "O ápice da ação 'hack and slash' com três personagens jogáveis.",
-    imagem: "https://wallpapers.com/images/featured/devil-may-cry-5-df0md7tksqp8wi0g.jpg",
+    imagem: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimqlOlG2vFejzRJpL_eL7s7R7TGRedEz8CG67h12UBeOVieMlyugEhlOaKJOXSF54_VOhGVNnJ2aQP3VKN_EejNImGAK91lAkTvqeoG6r3cqGwbVa69_ANF4jTUhNuWrcwf-sC5bANW1g/s1600/x1080-z0w.jpg",
     plataforma: ["PlayStation", "Xbox", "PC"]
   },
   {
@@ -246,7 +246,7 @@ const famousGames = [
     plataforma: ["PlayStation", "Xbox", "PC"]
   },
   {
-    nome: "Pokémon Red/Blue/Yellow",
+    nome: "Pokémon Red",
     desenvolvedor: "Game Freak",
     genero: "RPG",
     anoLancamento: 1996,
@@ -271,8 +271,8 @@ const famousGames = [
     anoLancamento: 1998,
     preco: 274.95,
     descricao: "Revolucionou o 3D e o gênero Ação-Aventura.",
-    imagem: "https://images2.alphacoders.com/519/thumb-1920-519206.jpg",
-    plataforma: ["nintendo", "PC"]
+    imagem: "https://i0.wp.com/guarientoportal.com/wp-content/uploads/2021/06/The-Legend-of-Zelda-Ocarina-of-Time-Curiosidades-Game-Nintendo.jpg?fit=1600%2C900&ssl=1",
+    plataforma: ["nintendo"]
   },
   {
     nome: "The Legend of Zelda: Breath of the Wild",
@@ -281,8 +281,8 @@ const famousGames = [
     anoLancamento: 2017,
     preco: 329.95,
     descricao: "Um mundo aberto massivo que redefiniu a série Zelda.",
-    imagem: "https://cdn.wallpapersafari.com/73/40/u4rW8T.jpg",
-    plataforma: ["nintendo", "PC"]
+    imagem: "https://wallpapers.com/images/hd/zelda-breath-of-the-wild-4k-cy4i3gjya3rggrjr.jpg",
+    plataforma: ["nintendo"]
   },
   {
     nome: "The Legend of Zelda: Tears of the Kingdom",
@@ -292,7 +292,7 @@ const famousGames = [
     preco: 329.95,
     descricao: "Sequência direta de BOTW com foco em criatividade e física.",
     imagem: "https://images.wallpapersden.com/image/download/the-legend-of-zelda-tears-of-the-kingdom-logo_bWtpZWaUmZqaraWkpJRmbmdlrWZlbWU.jpg",
-    plataforma: ["nintendo", "PC"]
+    plataforma: ["nintendo"]
 },
   {
     nome: "Super Mario Bros.",
@@ -302,7 +302,7 @@ const famousGames = [
     preco: 109.95,
     descricao: "O jogo que definiu o gênero plataforma 2D.",
     imagem: "https://images4.alphacoders.com/136/thumb-1920-1367246.png",
-    plataforma: ["nintendo", "PC"]
+    plataforma: ["nintendo"]
   },
   {
     nome: "Super Mario 64",
@@ -312,7 +312,7 @@ const famousGames = [
     preco: 164.95,
     descricao: "Definiu o padrão para jogos de plataforma 3D.",
     imagem: "https://images8.alphacoders.com/821/thumb-1920-821497.png",
-    plataforma: ["nintendo", "PC"]
+    plataforma: ["nintendo"]
   },
   {
     nome: "Super Mario Odyssey",
@@ -322,8 +322,8 @@ const famousGames = [
     preco: 274.95,
     descricao:
       "Uma aventura criativa em vários mundos abertos com a mecânica Cappy.",
-    imagem: "https://cloudfront-us-east-1.images.arcpublishing.com/estadao/4GDQSODGUJLGPBUTFQFHO3JTAU.jpg",
-    plataforma: ["nintendo", "PC"]
+    imagem: "https://images7.alphacoders.com/878/thumb-1920-878233.png",
+    plataforma: ["nintendo"]
   },
   {
     nome: "Sonic The Hedgehog (1991)",
@@ -343,7 +343,8 @@ const famousGames = [
     preco: 109.95,
     descricao:
       "O primeiro grande jogo 3D do Sonic, com foco em aventura e velocidade.",
-    imagem: "https://wallpapers.com/images/hd/sonic-2-hd-3vfjq535wztwo9dr.jpg"
+    imagem: "https://wallpapers.com/images/hd/sonic-2-hd-3vfjq535wztwo9dr.jpg",
+    plataforma: ["PlayStation", "Xbox", "Nintendo", "PC"]
   },
   {
     nome: "The Last of Us Part I",
@@ -352,7 +353,7 @@ const famousGames = [
     anoLancamento: 2013,
     preco: 219.95,
     descricao: "Uma jornada emocional de sobrevivência em um mundo devastado.",
-    imagem: "https://images5.alphacoders.com/394/394511.jpg",
+    imagem: "https://cdn1.epicgames.com/offer/0c40923dd1174a768f732a3b013dcff2/EGS_TheLastofUsPartIDigitalDeluxeEdition_NaughtyDogLLC_Editions_S1_2560x1440-c8c0c43aa0157f1236735a0508e59c0d",
     plataforma: ["PlayStation"]
   },
   {
@@ -476,7 +477,7 @@ const famousGames = [
     anoLancamento: 2009,
     preco: 109.95,
     descricao: "A aventura de Ezio Auditore no Renascimento.",
-    imagem: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH0YV72G9BI65NeUSLKG6CkjvjZXrWbHEvaQ&s",
+    imagem: "https://cdn.suwalls.com/wallpapers/games/assassins-creed-2-6117-1920x1200.jpg",
     plataforma: ["PlayStation", "Xbox", "PC"]
   },
   {
@@ -586,7 +587,7 @@ const famousGames = [
     anoLancamento: 2025,
     preco: 329.95,
     descricao: "O prelúdio épico da saga Doom, focado em combate medieval.",
-    imagem: "https://www.gamewallpapers.com/download.php?img=wallpaper_doom_the_dark_ages_01_1920x1080.jpg",
+    imagem: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-LuHjtSFKeSNwxyowhx9J_lpqRuXqINPXliU7gPUSY35DDdXzspmNALiUhE7KnNNwx_-jy-AdJaKAzJfm-CxqVHv98VpS4KThDF1wNAc6sXJBkoB9A8lHw67HUcmcVldJxKzl4E68hzQvvP7Edle4klZvWxPoEu8Pijk3N-OW9nrW1Yk5TJiZjtry93-h/s2048/488012736_1098761192289606_1891797037597410291_n.jpg",
     plataforma: ["PlayStation", "Xbox", "PC"]
   },
 
@@ -607,7 +608,7 @@ const famousGames = [
   anoLancamento: 2010,
   preco: 164.95,
   descricao: "FPS com foco em operações secretas da Guerra Fria.",
-  imagem: "https://wallpapers.com/images/hd/call-of-duty-black-ops-1-1920-x-1200-vo4c1dti83efvqvd.jpg",
+  imagem: "https://wallpapers.com/images/hd/call-of-duty-black-ops-1-2rgb4i5st4y9tddg.jpg",
   plataforma: ["PC", "PlayStation", "Xbox"]
 },
 {
@@ -627,7 +628,7 @@ const famousGames = [
   anoLancamento: 2025,
   preco: 109.95,
   descricao: "A esperada sequência do 'metroidvania' aclamado pela crítica.",
-  imagem: "https://images.squarespace-cdn.com/content/v1/606d4deb4db8c15ea53b3624/1617781631369-1MXKY1XUZXMPNL3TVF2X/banner-3.jpg",
+  imagem: "https://i.redd.it/mn63zlsl47i21.png",
   plataforma: ["PC", "PlayStation", "Xbox", "Nintendo"]
 },
 {
@@ -688,7 +689,7 @@ const famousGames = [
   preco: 54.95,
   descricao: "Jogo de terror onde o jogador deve sobreviver à noite monitorando animatrônicos assustadores.",
   imagem: "https://www.pixelstalk.net/wp-content/uploads/images6/Fnaf-HD-Wallpaper-Free-download.png",
-  plataforma: ["PC", "PlayStation", "Xbox", "Nintendo"]
+  plataforma: ["PC"]
 },
 {
   nome: "Bendy and the Ink Machine",
@@ -704,10 +705,10 @@ const famousGames = [
   nome: "Grand Theft Auto VI",
   desenvolvedor: "Rockstar Games",
   genero: "Mapa Aberto",
-  anoLancamento: 2030,
+  anoLancamento: 2026,
   preco: 399.95,
   descricao: "Nova entrada da série GTA com mundo aberto expansivo e narrativa cinematográfica.",
-  imagem: "https://img.gta5-mods.com/q95/images/save-game-44/a82937-v_trunk_1920x1080.jpg",
+  imagem: "https://sm.ign.com/ign_br/screenshot/default/gta-6-capa_ctzt.jpg",
   plataforma: ["PC", "PlayStation", "Xbox"]
 },
 {
@@ -977,7 +978,7 @@ const famousGames = [
   anoLancamento: 2021,
   preco: 274.95,
   descricao: "FPS em que o jogador fica preso em um looping temporal e deve eliminar alvos.",
-  imagem: "https://cdn2.unrealengine.com/dl-epic-blog-featuredimage-1920x1080-1920x1080-768bd758c833.png",
+  imagem: "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_DEATHLOOP_ArkaneStudios_S1_2560x1440-bf6d342edbd2411ccf24e326852fca93",
   plataforma: ["PC", "PlayStation", "Xbox"]
 },
 {
