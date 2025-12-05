@@ -7,7 +7,7 @@ const consolesDataExpandida = [
         anoLancamento: 1985,
         preco: 650.00,
         descricao: "Revitalizou o mercado de videogames na Terceira Geração (Nintendinho).",
-        imagens: ["https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEim7Jn4n-8qHE0kUs6FqZIJ7nowN3krqSnT0SF2PEI_n4t8fX_oSgEUbZjgSXD0vtCHW5JZtbtoKskE1fTH0IdkXDpiXzK2P7FYlJkyCAunYUYe_YDlljXeQZeVBUb3VVEEeQdVGLXAG6c/s1920/cap3_03.jpg"]
+        imagens: ["https://sm.ign.com/t/ign_br/news/n/nintendo-d/nintendo-discontinues-the-nes-classic-edition_s78w.1200.jpg"]
     },
     {
         nome: "Game Boy",
@@ -27,7 +27,7 @@ const consolesDataExpandida = [
         anoLancamento: 1991,
         preco: 850.00,
         descricao: "Console de 16-bits, líder da Quarta Geração no Brasil e América.",
-        imagens: ["https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEim7Jn4n-8qHE0kUs6FqZIJ7nowN3krqSnT0SF2PEI_n4t8fX_oSgEUbZjgSXD0vtCHW5JZtbtoKskE1fTH0IdkXDpiXzK2P7FYlJkyCAunYUYe_YDlljXeQZeVBUb3VVEEeQdVGLXAG6c/s1920/cap3_03.jpg"]
+        imagens: ["https://upload.wikimedia.org/wikipedia/commons/3/31/SNES-Mod1-Console-Set.jpg"]
     },
     {
         nome: "Virtual Boy",
@@ -47,7 +47,7 @@ const consolesDataExpandida = [
         anoLancamento: 1996,
         preco: 1100.00,
         descricao: "Consagrou os gráficos 3D e o uso do stick analógico.",
-        imagens: ["https://pop.proddigital.com.br/wp-content/uploads/sites/8/2023/11/modelos-de-game-boy-color-image-limen8-reddit-1024x478.jpg"]
+        imagens: ["https://upload.wikimedia.org/wikipedia/commons/0/02/N64-Console-Set.png"]
     },
     {
         nome: "Game Boy Color",
@@ -77,7 +77,7 @@ const consolesDataExpandida = [
         anoLancamento: 2001,
         preco: 400.00,
         descricao: "Portátil de 32-bits que trouxe qualidade de SNES para o formato móvel.",
-        imagens: ["https://tm.ibxk.com.br/2024/03/07/07154822734222.jpg"]
+        imagens: ["https://img.odcdn.com.br/wp-content/uploads/2024/11/imagem_2024-11-19_114522612-1920x1080.png"]
     },
     {
         nome: "Nintendo DS",
@@ -87,7 +87,7 @@ const consolesDataExpandida = [
         anoLancamento: 2004,
         preco: 700.00,
         descricao: "Portátil com tela dupla e touchscreen, sucesso estrondoso.",
-        imagens: ["https://i.pinimg.com/1200x/54/53/57/545357ff2723c63f8c2adc4b519a1f62.jpg"]
+        imagens: ["https://tm.ibxk.com.br/2024/03/07/07154822734222.jpg"]
     },
     {
         nome: "Wii",
