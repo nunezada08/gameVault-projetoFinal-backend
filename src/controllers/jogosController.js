@@ -171,7 +171,7 @@ export const criarJogo = async (req, res) => {
             });
         }
 
-        const novoJogo = await jogosModel.createJogo({ 
+        const novoJogo = await jogosModel.criarJogo({ 
             nome, 
             desenvolvedor, 
             genero, 
@@ -212,7 +212,6 @@ export const atualizarJogo = async (req, res) => {
         }
 
         const dados = req.body;
-
         const jogoExiste = await jogosModel.findById(id);
 
         if (!jogoExiste) {
@@ -225,47 +224,49 @@ export const atualizarJogo = async (req, res) => {
             });
         }
 
-        if (dados.genero) {
-            const generosValidos = ["Ação", "Soulslike", "FPS", "RPG", "Aventura", "Realidade virtual", "Mapa aberto", "Luta", "Terror", "Indie"];
-            if (!generosValidos.includes(dados.genero)) {
+        if (dados.genero && ! ["Ação", "Soulslike", "FPS", "RPG", "Aventura", "Realidade virtual", "Mapa aberto", "Luta", "Terror", "Indie"].includes(dados.genero)) {
                 return res.status(400).json({
                     status: 400,
                     success: false,
                     erro: `Gênero inválido. Gêneros válidos são: ${generosValidos.join(', ')}.`,
-                    generosValidos
+                    generosValidos: ["Ação", "Soulslike", "FPS", "RPG", "Aventura", "Realidade virtual", "Mapa aberto", "Luta", "Terror", "Indie"]
                 });
             }
-        }
 
-        if (dados.plataforma) {
-            const plataformasValidas = ['PlayStation', 'Xbox', 'Nintendo', 'PC', 'VR'];
-            if (!plataformasValidas.includes(dados.plataforma)) {
-                return res.status(400).json({
-                    status: 400,
-                    success: false,
-                    erro: `Plataforma inválida. Plataformas válidas são: ${plataformasValidas.join(', ')}.`
-                });
-            }
-        }
- {
-            if (anoLancamento < 1970 || anoLancamento > 2025) {
-                return res.status(400).json({
-                    status: 400,
-                    success: false,
-                    erro: `Ano de lançamento inválido. Deve ser entre 1970 e 2025.`
-                });
-            }
-        }
-
-        if (dados.preco && (isNaN(dados.preco) || dados.preco <= 0)) {
+        if (dados.plataforma && !['PlayStation', 'Xbox', 'Nintendo', 'PC', 'VR'].includes(dados.plataforma)) {
             return res.status(400).json({
                 status: 400,
                 success: false,
-                erro: "Preço inválido. Deve ser um número positivo."
+                erro: `Plataforma inválida. Plataformas válidas são: PlayStation, Xbox, Nintendo, PC, VR.`
             });
         }
+        
+            if (dados.anoLancamento !== undefined) {
+                const ano = parseInt(dados.anoLancamento);
+                if (isNaN(ano) || ano < 1970 || ano > 2025) {
+                    return res.status(400).json({
+                        status: 400,
+                        success: false,
+                        erro: `Ano de lançamento inválido. Deve ser entre 1970 e 2025.`,
+                        anoMinimo: 1970,
+                        anoMaximo: 2025
+                    });
+                }
+            }
+                
 
-        if (dados.descricao && dados.descricao.length > 500) {
+        if (dados.preco !== undefined) {
+            const preco = parseFloat(dados.preco);
+            if (isNaN(preco) || preco <= 0){
+                return res.status(400).json({
+                    status: 400,
+                    success: false,
+                    erro: "Preço inválido. Deve ser um número positivo."
+                });
+            }
+        }
+
+        if (dados.descricao !== undefined && dados.descricao.length > 500) {
             return res.status(400).json({
                 status: 400,
                 success: false,
@@ -273,7 +274,7 @@ export const atualizarJogo = async (req, res) => {
             });
         }
 
-        const jogoAtualizado = await jogosModel.updateJogo(id, dados);
+        const jogoAtualizado = await jogosModel.atualizarJogo(id, dados);
 
         res.status(200).json({
             status: 200,

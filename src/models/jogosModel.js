@@ -14,7 +14,7 @@ export const findById = async (id) => {
     })
 }
 
-export const create = async (data) => {
+export const criarJogo = async (data) => {
     return await prisma.jogo.create({
         data: {
             nome:data.nome,
@@ -27,7 +27,7 @@ export const create = async (data) => {
     })
 
 }
-export const updatejogo = async (id, dados) => {
+export const atualizarJogo = async (id, dados) => {
     return await prisma.jogo.update({
         where: { id: Number (id) },
         data: {
